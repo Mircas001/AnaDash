@@ -8499,7 +8499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Display:Adafruit_SSD1306"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 247.904 110.49 0)
 			(hide yes)
 			(show_name no)
