@@ -79,114 +79,6 @@
 			)
 			(symbol "Adafruit_MCP4728_1_1"
 				(pin power_in line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -7.62 -7.62 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -7.62 -10.16 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -12.7 0)
-					(length 2.54)
-					(name "LDAC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -7.62 -15.24 0)
-					(length 2.54)
-					(name "RDY"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "GND"
@@ -196,7 +88,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -214,7 +106,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -232,7 +124,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -250,7 +142,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -268,7 +160,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -286,7 +178,115 @@
 							)
 						)
 					)
-					(number ""
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -7.62 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -10.16 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -12.7 0)
+					(length 2.54)
+					(name "LDAC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -15.24 0)
+					(length 2.54)
+					(name "RDY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3755,16 +3755,16 @@
 		(uuid "07208db9-d0e5-4c35-9ff6-43d74916ddba")
 	)
 	(junction
-		(at 128.27 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b9c9fe4-666c-4bc5-add0-39e553f34a0a")
-	)
-	(junction
 		(at 66.04 91.44)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "3ad36e6a-6d1d-4b36-b3db-6b5fde63fe5c")
+	)
+	(junction
+		(at 128.27 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d43ee05-ea14-43ff-8dba-8581d1643825")
 	)
 	(junction
 		(at 177.8 96.52)
@@ -4579,7 +4579,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 260.35 41.91 0)
+		(at 252.73 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4590,7 +4590,7 @@
 		(fields_autoplaced yes)
 		(uuid "00950a4d-b9d8-4977-9180-2c14d47de517")
 		(property "Reference" "J2"
-			(at 261.62 41.9099 0)
+			(at 254 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4601,7 +4601,7 @@
 			)
 		)
 		(property "Value" "Meter2"
-			(at 261.62 44.4499 0)
+			(at 254 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4612,7 +4612,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 260.35 41.91 0)
+			(at 252.73 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4623,7 +4623,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 41.91 0)
+			(at 252.73 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4634,7 +4634,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 260.35 41.91 0)
+			(at 252.73 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,7 +4671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f3dfdd3-1fe6-45d1-b6be-6554f010e1da")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR015"
 			(at 229.87 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -4731,7 +4731,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR010")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4749,7 +4749,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "145900f7-e5b3-4d4b-9594-69b023c240af")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR07"
 			(at 127 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -4809,7 +4809,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR01")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4838,7 +4838,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5VTestPoint"
+		(property "Value" "5VTP"
 			(at 133.35 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5102,7 +5102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bf8009e-94b7-4d68-999b-0d0f66d619d4")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR09"
 			(at 124.46 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -5163,97 +5163,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor - 1%")
-		(at 247.65 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c435621-9757-4648-80ea-eb2764ef7503")
-		(property "Reference" "R6"
-			(at 251.46 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 251.46 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 247.65 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor - 1%"
-			(at 247.65 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "${TOLERANCE}"
-			(at 251.46 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bbdad080-ba26-4a3b-912a-e7ce6a9e4ef5")
-		)
-		(pin "2"
-			(uuid "3dae758f-b8b6-4f6f-b331-e2adfb18da3c")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R6")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5352,7 +5262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d79ac0b-092e-4cf6-9285-7ed4955fd203")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR012"
 			(at 219.71 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5413,7 +5323,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR04")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5500,8 +5410,118 @@
 		)
 	)
 	(symbol
+		(lib_id "Adafruit_MCP4728:Adafruit_MCP4728")
+		(at 223.52 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "339800ac-3442-462c-8c52-b84d172dbc80")
+		(property "Reference" "U1"
+			(at 223.52 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 223.52 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Adafruit_MCP4728:Adafruit_MCP4728"
+			(at 223.52 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-mcp4728-i2c-quad-dac.pdf"
+			(at 223.52 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "An breakout board for the MCP4728 Quad DAC by Adafruit."
+			(at 223.52 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9212262e-5aab-4f70-80ef-42981feff2f1")
+		)
+		(pin "2"
+			(uuid "83609a29-1b19-4a37-8396-1c8a2acb8673")
+		)
+		(pin "3"
+			(uuid "6b721e11-8b90-499a-9967-61db8a8407ef")
+		)
+		(pin "9"
+			(uuid "b1b538d8-aa88-4961-af8e-4a4d738a70db")
+		)
+		(pin "4"
+			(uuid "5f3c5886-716b-4645-9c45-4c43ff4aa570")
+		)
+		(pin "8"
+			(uuid "1354d8fd-8fcc-437e-96e7-8d9235a63f1b")
+		)
+		(pin "10"
+			(uuid "efa3d784-ef69-4768-9a3c-2f71fb4866a1")
+		)
+		(pin "12"
+			(uuid "dd4564f0-68d8-4fb9-9bf6-fbf83c40e820")
+		)
+		(pin "11"
+			(uuid "76afbb20-3f34-4114-a261-38588a26799c")
+		)
+		(pin "5"
+			(uuid "2e28c433-0118-4043-b32f-5ed4d75bdeb6")
+		)
+		(pin "6"
+			(uuid "fcfbf1d5-5bc1-4cea-8894-64ab28b7bc4c")
+		)
+		(pin "7"
+			(uuid "7d194476-c719-4003-b451-f6dd1b33e595")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 255.27 44.45 270)
+		(at 247.65 44.45 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -5512,8 +5532,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34f5b826-cbab-4023-83a0-d4334f8bb099")
-		(property "Reference" "#PWR06"
-			(at 248.92 44.45 0)
+		(property "Reference" "#PWR017"
+			(at 241.3 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5524,7 +5544,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 44.4499 90)
+			(at 243.84 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5535,7 +5555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 44.45 0)
+			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5546,7 +5566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 44.45 0)
+			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5557,7 +5577,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 44.45 0)
+			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5573,7 +5593,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR06")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5673,7 +5693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38b28b37-8f47-4834-9d66-7a434c576266")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR01"
 			(at 59.69 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5734,207 +5754,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor - 1%")
-		(at 247.65 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b0a048b-4c2d-402d-ad2f-ec7f6ab551f7")
-		(property "Reference" "R7"
-			(at 251.46 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 251.46 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 247.65 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor - 1%"
-			(at 247.65 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "${TOLERANCE}"
-			(at 251.46 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bdf6c741-25c9-4bc3-ba33-9abc0d41d016")
-		)
-		(pin "2"
-			(uuid "d077548f-22f3-43cd-ba54-98a9a626c5c9")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit_MCP4728:Adafruit_MCP4728")
-		(at 223.52 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b9e8276-d879-4d92-a25f-133d7f337a02")
-		(property "Reference" "U1"
-			(at 223.52 29.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 223.52 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit_MCP4728:Adafruit_MCP4728"
-			(at 223.52 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-mcp4728-i2c-quad-dac.pdf"
-			(at 223.52 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "An breakout board for the MCP4728 Quad DAC by Adafruit."
-			(at 223.52 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "56d9128e-8195-4448-800a-7dc3980838b3")
-		)
-		(pin ""
-			(uuid "4f123ff3-cfdc-431f-be95-a71b5f9e971d")
-		)
-		(pin ""
-			(uuid "867baf55-d84a-447d-9d43-7fa2c125c621")
-		)
-		(pin ""
-			(uuid "ca823202-864b-48ba-bfba-88d91da82c26")
-		)
-		(pin ""
-			(uuid "7c620bbf-1dc1-4d74-b716-cbc275a57152")
-		)
-		(pin ""
-			(uuid "fc48bce1-b786-46f9-b6fc-4c5e3ec9b719")
-		)
-		(pin ""
-			(uuid "56cdc229-5e59-474a-8f10-9f01df9aaf73")
-		)
-		(pin ""
-			(uuid "edcd5472-7780-484b-9c91-42ee50ae4090")
-		)
-		(pin ""
-			(uuid "cf83a660-fcf8-429c-bff1-06ac57d33d51")
-		)
-		(pin ""
-			(uuid "c893a882-0448-4bc6-b8cc-1b7589241c71")
-		)
-		(pin ""
-			(uuid "9bceeeb9-119a-44cc-a192-13a741ff9a02")
-		)
-		(pin ""
-			(uuid "95df17e7-e2ca-4c01-99cb-505b4e38b182")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "U1")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5942,7 +5762,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 57.15 270)
+		(at 247.65 57.15 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -5953,8 +5773,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4170fff8-9570-4450-b613-84741a962914")
-		(property "Reference" "#PWR07"
-			(at 248.92 57.15 0)
+		(property "Reference" "#PWR018"
+			(at 241.3 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5965,7 +5785,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 57.1499 90)
+			(at 243.84 57.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5976,7 +5796,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 57.15 0)
+			(at 247.65 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5987,7 +5807,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 57.15 0)
+			(at 247.65 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5998,7 +5818,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 57.15 0)
+			(at 247.65 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6014,7 +5834,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR07")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6022,7 +5842,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 260.35 54.61 0)
+		(at 252.73 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6033,7 +5853,7 @@
 		(fields_autoplaced yes)
 		(uuid "49de4376-319e-4c67-9cf7-36559cbb5d40")
 		(property "Reference" "J3"
-			(at 261.62 54.6099 0)
+			(at 254 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6044,7 +5864,7 @@
 			)
 		)
 		(property "Value" "Meter3"
-			(at 261.62 57.1499 0)
+			(at 254 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6055,7 +5875,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 260.35 54.61 0)
+			(at 252.73 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6066,7 +5886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 54.61 0)
+			(at 252.73 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6077,7 +5897,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 260.35 54.61 0)
+			(at 252.73 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6286,7 +6106,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3V3TestPoint"
+		(property "Value" "3V3TP"
 			(at 133.35 184.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6445,7 +6265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64e54a48-af02-47b7-8ee2-20f20d83e3b7")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR02"
 			(at 72.39 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6505,7 +6325,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR013")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6594,7 +6414,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 260.35 67.31 0)
+		(at 252.73 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6605,7 +6425,7 @@
 		(fields_autoplaced yes)
 		(uuid "790c69e2-ab8d-4d0e-9ab7-22eeb6f7a5f9")
 		(property "Reference" "J4"
-			(at 261.62 67.3099 0)
+			(at 254 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6616,7 +6436,7 @@
 			)
 		)
 		(property "Value" "Meter4"
-			(at 261.62 69.8499 0)
+			(at 254 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6627,7 +6447,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 260.35 67.31 0)
+			(at 252.73 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6638,7 +6458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 67.31 0)
+			(at 252.73 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6649,7 +6469,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 260.35 67.31 0)
+			(at 252.73 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6686,7 +6506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b8902b7-4a93-4e42-bfc9-53f14003c3d8")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR03"
 			(at 92.71 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6747,7 +6567,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR014")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6755,7 +6575,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 260.35 29.21 0)
+		(at 252.73 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6766,7 +6586,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d6bcb15-b314-4f39-a248-ec9ac98bc066")
 		(property "Reference" "J1"
-			(at 261.62 29.2099 0)
+			(at 254 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6777,7 +6597,7 @@
 			)
 		)
 		(property "Value" "Meter1"
-			(at 261.62 31.7499 0)
+			(at 254 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6788,7 +6608,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 260.35 29.21 0)
+			(at 252.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6799,7 +6619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 29.21 0)
+			(at 252.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6810,7 +6630,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 260.35 29.21 0)
+			(at 252.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6847,7 +6667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f016d7e-6573-407d-93e6-1fe1d3816c55")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR06"
 			(at 121.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -6907,7 +6727,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR02")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7014,7 +6834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "940052a4-f3f7-4f7e-8a68-a48d670b4e82")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR011"
 			(at 184.15 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7075,7 +6895,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR015")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7093,7 +6913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3a773ff-e6a8-4378-8b99-f9c138a3530e")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR05"
 			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -7153,7 +6973,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR016")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7251,7 +7071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac52eb4c-b06b-42a9-acfe-194279d94261")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR08"
 			(at 124.46 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7312,7 +7132,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR019")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7330,7 +7150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac76977d-1659-4713-998e-3d819c4e75f9")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR013"
 			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7391,7 +7211,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR03")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7409,7 +7229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af639598-7bfe-4aff-898b-73cb29b68bef")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR014"
 			(at 229.87 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7469,7 +7289,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR09")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7487,7 +7307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afafedf2-b138-48c7-80f4-29ecf91be197")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 243.84 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7497,7 +7317,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "680"
 			(at 243.84 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7559,7 +7379,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R2")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7577,7 +7397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4035c7a-7ba9-4cae-b584-e6d2b0f92608")
-		(property "Reference" "R10"
+		(property "Reference" "R1"
 			(at 124.46 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7639,97 +7459,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor - 1%")
-		(at 247.65 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b730b6a0-1de8-49b1-91da-1c277ab660a5")
-		(property "Reference" "R5"
-			(at 251.46 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 251.46 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 247.65 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor - 1%"
-			(at 247.65 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "${TOLERANCE}"
-			(at 251.46 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7400c13e-5702-4bd3-a146-4f93ce3ccb1d")
-		)
-		(pin "2"
-			(uuid "dc01b24d-3962-4709-a1bb-168314fe32bf")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7908,7 +7638,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 31.75 270)
+		(at 247.65 31.75 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7919,8 +7649,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "beebfb04-3697-49f6-936b-f281e51cd432")
-		(property "Reference" "#PWR05"
-			(at 248.92 31.75 0)
+		(property "Reference" "#PWR016"
+			(at 241.3 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7931,7 +7661,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 31.7499 90)
+			(at 243.84 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7942,7 +7672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 31.75 0)
+			(at 247.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7953,7 +7683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 31.75 0)
+			(at 247.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7964,7 +7694,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 31.75 0)
+			(at 247.65 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7980,7 +7710,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR05")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7998,7 +7728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bef377bd-f8f2-4344-ac39-9500182c0171")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 243.84 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8008,7 +7738,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "680"
 			(at 243.84 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8070,7 +7800,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8088,7 +7818,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c14e1b1f-b781-4bc1-b455-7c5987832ca0")
-		(property "Reference" "R9"
+		(property "Reference" "R3"
 			(at 153.67 120.6501 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +7882,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R9")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8171,7 +7901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6c59f12-dd99-4962-9810-7f575d14396e")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR010"
 			(at 151.13 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8231,7 +7961,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR012")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8249,7 +7979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6ce9c51-c23b-4d09-82b6-a1923bb8ca0e")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 243.84 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8259,7 +7989,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "680"
 			(at 243.84 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8321,7 +8051,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8329,7 +8059,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 69.85 270)
+		(at 247.65 69.85 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8340,8 +8070,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc3d636a-ab48-43b4-9e77-15c33409acc6")
-		(property "Reference" "#PWR08"
-			(at 248.92 69.85 0)
+		(property "Reference" "#PWR019"
+			(at 241.3 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8352,7 +8082,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 69.8499 90)
+			(at 243.84 69.8499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8363,7 +8093,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 69.85 0)
+			(at 247.65 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8374,7 +8104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 69.85 0)
+			(at 247.65 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8385,7 +8115,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 69.85 0)
+			(at 247.65 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8401,7 +8131,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR08")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8419,7 +8149,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce1fdd74-e1e8-473d-a63e-c391dda6aabe")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR04"
 			(at 106.68 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -8480,7 +8210,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR017")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -8498,7 +8228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d53f4b65-c8c9-4b76-aeb2-1e4e173060dd")
-		(property "Reference" "R11"
+		(property "Reference" "R2"
 			(at 124.46 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8560,7 +8290,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R11")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8578,7 +8308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6eb4f3d-e149-4428-bc15-aacc938535bb")
-		(property "Reference" "R3"
+		(property "Reference" "R6"
 			(at 243.84 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8588,7 +8318,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "680"
 			(at 243.84 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8650,97 +8380,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor - 1%")
-		(at 247.65 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "deec8a5d-f615-420d-84cd-fcc9649d4980")
-		(property "Reference" "R8"
-			(at 251.46 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 251.46 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 247.65 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor - 1%"
-			(at 247.65 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "${TOLERANCE}"
-			(at 251.46 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6fcdc881-9974-48da-845c-7cd90b796879")
-		)
-		(pin "2"
-			(uuid "1c1c0511-be1f-4ce7-bc26-712f17078f10")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8769,7 +8409,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GNDTP"
 			(at 118.11 184.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8859,7 +8499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
+		(property "Footprint" "Display:Adafruit_SSD1306"
 			(at 247.904 110.49 0)
 			(hide yes)
 			(show_name no)
