@@ -3560,7 +3560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06090e88-5d76-40f4-b171-ef6feef2250d")
-		(property "Reference" "J?"
+		(property "Reference" "J4"
 			(at 170.18 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3582,7 +3582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 167.64 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3630,7 +3630,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J?")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3922,7 +3922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b70b8d6-5ba2-4bc7-ad53-4cc17f1503f9")
-		(property "Reference" "MES?"
+		(property "Reference" "MES2"
 			(at 251.46 46.5454 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3944,7 +3944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 247.65 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -3986,7 +3986,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "MES?")
+					(reference "MES2")
 					(unit 1)
 				)
 			)
@@ -4082,7 +4082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "226c5f91-1433-4bf5-a0bf-8fa1303d7acf")
-		(property "Reference" "MES?"
+		(property "Reference" "MES4"
 			(at 251.46 87.1854 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4104,7 +4104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 247.65 86.36 90)
 			(hide yes)
 			(show_name no)
@@ -4146,7 +4146,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "MES?")
+					(reference "MES4")
 					(unit 1)
 				)
 			)
@@ -4980,7 +4980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8500f18c-d398-4ca2-9d89-6489711a9386")
-		(property "Reference" "MES?"
+		(property "Reference" "MES1"
 			(at 251.46 26.2254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5002,7 +5002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 247.65 25.4 90)
 			(hide yes)
 			(show_name no)
@@ -5044,7 +5044,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "MES?")
+					(reference "MES1")
 					(unit 1)
 				)
 			)
@@ -5219,7 +5219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d2c82ef-a953-4bfb-96f4-cf6219e54ac0")
-		(property "Reference" "J?"
+		(property "Reference" "J3"
 			(at 170.18 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5241,7 +5241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 167.64 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -5292,7 +5292,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J?")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5479,7 +5479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7b00b8a-ef95-433b-8e38-eda716e97531")
-		(property "Reference" "J?"
+		(property "Reference" "J2"
 			(at 67.31 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5499,7 +5499,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 67.31 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5550,7 +5550,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J?")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5724,7 +5724,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb64a44d-70c1-4128-a471-7df2ce0615f1")
-		(property "Reference" "MES?"
+		(property "Reference" "MES3"
 			(at 251.46 66.8654 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5746,7 +5746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 247.65 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -5788,7 +5788,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "MES?")
+					(reference "MES3")
 					(unit 1)
 				)
 			)
@@ -6065,7 +6065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb7c4faf-66e6-4910-aacf-f7da84727a12")
-		(property "Reference" "J?"
+		(property "Reference" "J1"
 			(at 67.31 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6085,7 +6085,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 67.31 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6133,7 +6133,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J?")
+					(reference "J1")
 					(unit 1)
 				)
 			)

@@ -1220,6 +1220,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1499,28 +1638,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 45.72) (xy 63.5 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "09aaa21b-430c-4b2f-9d1e-d4202fa509e3")
-	)
-	(wire
-		(pts
-			(xy 50.8 34.29) (xy 50.8 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "0a3b002b-90cf-48b5-b9e5-37059841f9b9")
-	)
-	(wire
-		(pts
 			(xy 76.2 158.75) (xy 76.2 173.99)
 		)
 		(stroke
@@ -1549,17 +1666,6 @@
 			(type default)
 		)
 		(uuid "13940596-6900-4b27-9ef2-ca794ce9d423")
-	)
-	(wire
-		(pts
-			(xy 41.91 34.29) (xy 50.8 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "16652abf-b945-4e39-9d56-7ea70754346d")
 	)
 	(wire
 		(pts
@@ -1907,6 +2013,17 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 34.29) (xy 48.26 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "c6a6cf51-2f44-45c1-9c49-d4aef069191e")
+	)
+	(wire
+		(pts
 			(xy 52.07 33.02) (xy 53.34 33.02)
 		)
 		(stroke
@@ -2089,6 +2206,85 @@
 			(color 0 0 0 1)
 		)
 		(uuid "ffccb0a1-c659-4132-9334-28c771149775")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 63.5 45.72 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05d4a8ec-d3d8-46ce-8dd5-0a3e9171420f")
+		(property "Reference" "#PWR022"
+			(at 63.5 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 63.5 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 63.5 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c488c15-18b3-4640-9783-f2af9f5e9b92")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
@@ -2458,7 +2654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24f0fc2e-95d6-4982-8db3-97d82c788cc5")
-		(property "Reference" "J?"
+		(property "Reference" "J8"
 			(at 55.88 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2478,7 +2674,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 57.15 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -2526,7 +2722,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2638,7 +2834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41bb160d-7d2a-4ae0-83f9-dd020e0f6621")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 68.58 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2698,7 +2894,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -2981,7 +3177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69b5d6b3-3780-46e8-bd56-8bca16fb8dd4")
-		(property "Reference" "J?"
+		(property "Reference" "J6"
 			(at 38.1 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3001,7 +3197,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 38.1 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3052,7 +3248,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -3229,6 +3425,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 48.26 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba8896fe-4753-41f1-a6b6-cb0e5824dd6b")
+		(property "Reference" "#PWR021"
+			(at 48.26 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 48.26 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 48.26 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6dca9fc2-2f7e-4b36-84e8-bea2f85f7b3d")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 36.83 34.29 0)
 		(mirror y)
@@ -3241,7 +3515,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2ccbffa-1140-488a-99d7-1883ada361f0")
-		(property "Reference" "J?"
+		(property "Reference" "J5"
 			(at 36.83 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3261,7 +3535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 36.83 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -3309,7 +3583,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3491,7 +3765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dae223fe-f4ed-4659-89a4-24f3d96c5962")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 69.85 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -3551,7 +3825,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3660,7 +3934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea8d3e9f-516b-46db-8044-2964619ebeef")
-		(property "Reference" "J?"
+		(property "Reference" "J7"
 			(at 38.1 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3680,7 +3954,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 38.1 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3731,23 +4005,10 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J7")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group ""
-		(uuid "56af52a8-65fe-4e76-ab17-d4409eca4e52")
-		(members "0064d7c6-e046-4c47-a5b5-392c3f332a7c" "09aaa21b-430c-4b2f-9d1e-d4202fa509e3"
-			"0a3b002b-90cf-48b5-b9e5-37059841f9b9" "16652abf-b945-4e39-9d56-7ea70754346d"
-			"20222321-04f5-48e4-9384-781389b1bc5a" "29beb818-2489-4ab1-9cb7-a6b6d6418d51"
-			"2cf4a841-33ba-4893-9d6d-9c9311da3c6e" "3ee3be73-a80a-4abf-a87e-db0aa8defa38"
-			"4586cdcd-a940-4f13-9f6e-8500f2cfa679" "60b5d69d-16a5-42b4-9cdc-eff9ba3e4d1e"
-			"751a88b8-34d3-4f93-b03f-b32010e8649c" "8e54a3bc-6697-4721-ad93-f30b0cf0d921"
-			"963121e6-6af2-40a0-9830-aad8664735e3" "a97de467-418d-49db-bb2b-4b7c4b629ba3"
-			"c2ccbffa-1140-488a-99d7-1883ada361f0" "c6b6280f-a6f7-4aa0-bd63-47e858999f74"
-			"d5ffc558-14fc-4cdc-8137-4d105d6175a4" "e0d0aa10-5de3-4217-bd80-47c58969e6aa"
 		)
 	)
 	(group ""
