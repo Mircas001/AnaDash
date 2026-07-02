@@ -646,15 +646,24 @@
         "filename": "anadash_pcb.kicad_sch",
         "name": "anadash_pcb",
         "uuid": "be2e610a-0da0-4417-ae24-40d589f4bf40"
+      },
+      {
+        "filename": "switchesanddisplay.kicad_sch",
+        "name": "switchesanddisplay",
+        "uuid": "356b9cf0-7532-4174-862f-41594407df39"
       }
     ],
-    "used_designators": "#PWR1-20,U1-2,SW1-9,TP1-3,R1-11,J1-4,D1-2,A1",
+    "used_designators": "#PWR1-20,U1-2,SW1-9,TP1-3,R1-11,J1-7,D1-2,A1",
     "variants": []
   },
   "sheets": [
     [
       "be2e610a-0da0-4417-ae24-40d589f4bf40",
       "anadash_pcb"
+    ],
+    [
+      "356b9cf0-7532-4174-862f-41594407df39",
+      "switchesanddisplay"
     ]
   ],
   "text_variables": {},

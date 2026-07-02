@@ -297,189 +297,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x02_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Socket"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -603,12 +420,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connectors:Connector 2 Female"
 			(pin_names
-				(offset 1.016)
+				(offset 1.27)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -616,23 +430,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "J"
+				(at 3.81 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
+			(property "Value" "${FAMILY}"
+				(at 3.81 -0.762 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
@@ -658,7 +473,7 @@
 					)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "Description" "Connector 2 Female"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -669,642 +484,95 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_0_1"
+			(symbol "Connector 2 Female_1_0"
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 0 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:RotaryEncoder_Switch"
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "RotaryEncoder_Switch"
-				(at 0 -6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.81 4.064 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "rotary switch encoder switch push button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "RotaryEncoder*Switch*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "RotaryEncoder_Switch_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.81 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -1.778) (xy -0.635 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.381 0)
-					(radius 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.381 -1.778) (xy -0.381 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.381 -2.794)
-					(mid -3.0988 -0.0635)
-					(end -0.381 2.667)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 1.778) (xy -0.127 -1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 1.016) (xy 3.81 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 3.429 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.318 1.016)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.318 -1.016)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RotaryEncoder_Switch_1_1"
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Display_Graphic:ER_OLEDM0.91_1x-I2C"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ER_OLEDM0.91_1x-I2C"
-				(at 14.224 -10.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
-				(at 18.034 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
-				(at 42.672 -14.732 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
-				(at 26.67 -16.764 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "EastRising"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "ER?OLEDM0.91?1x?I2C*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "ER_OLEDM0.91_1x-I2C_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
 						(type solid)
 					)
 					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -2.9608) (xy 3.1085 -3.302) (xy 3.81 -3.302)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 2.54 -5.08) (xy 2.54 -5.5008) (xy 3.1085 -5.842) (xy 3.81 -5.842)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 3.81 -1.778) (xy 3.1085 -1.778) (xy 2.54 -2.1191) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 3.81 -4.318) (xy 3.1085 -4.318) (xy 2.54 -4.6591) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 0)
+					(end 0 -7.62)
+					(stroke
+						(width 0.0254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
+				(pin bidirectional line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1312,42 +580,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1356,16 +588,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "SDA"
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2410,160 +1642,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Resistors:Resistor"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.27)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 3.81 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "${VALUE}"
-				(at 3.81 -1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor_1_0"
-				(polyline
-					(pts
-						(xy 1.524 0.762) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -0.762) (xy 6.096 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.096 0.762) (xy 1.524 0.762)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.096 -0.762) (xy 6.096 0.762)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 1.524)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 1.524)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Resistors:Resistor - 1%"
 			(pin_numbers
 				(hide yes)
@@ -2718,522 +1796,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Sensor_Optical:LDR07"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at -5.08 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LDR07"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify top)
-				)
-			)
-			(property "Footprint" "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical"
-				(at 4.445 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf"
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "light dependent resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "light dependent photo resistor LDR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R*LDR*5.1x4.3mm*P3.4mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LDR07_0_1"
-				(polyline
-					(pts
-						(xy -1.524 -0.762) (xy -4.064 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.762) (xy -2.286 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.762) (xy -1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.286) (xy -4.064 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.286) (xy -2.286 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.286) (xy -1.524 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.016 2.54)
-					(end 1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LDR07_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3663,8 +2225,8 @@
 		(uuid "63e4ad7b-d290-4b93-9dbd-1bd23bdaeec6")
 	)
 	(rectangle
-		(start 147.32 193.04)
-		(end 147.32 193.04)
+		(start 148.2797 192.024)
+		(end 148.2797 192.024)
 		(stroke
 			(width 0)
 			(type default)
@@ -3675,8 +2237,8 @@
 		(uuid "a42ef725-0e75-413f-8139-2de5201730cb")
 	)
 	(rectangle
-		(start 104.14 157.48)
-		(end 147.32 187.96)
+		(start 109.5447 160.274)
+		(end 137.4847 184.404)
 		(stroke
 			(width 0)
 			(type default)
@@ -3684,23 +2246,11 @@
 		(fill
 			(type none)
 		)
-		(uuid "a54a7e82-e75c-40b0-889e-455358504c9c")
-	)
-	(rectangle
-		(start 210.82 81.28)
-		(end 261.62 114.3)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "f29da845-eb64-469a-be39-3fd68ed2d299")
+		(uuid "f350ae7a-4a28-4ea9-98f2-44729052655a")
 	)
 	(text "MCU and Switches"
 		(exclude_from_sim no)
-		(at 116.84 141.478 0)
+		(at 121.92 141.478 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3708,19 +2258,9 @@
 		)
 		(uuid "0ebbc839-2a74-49ee-bb96-2ffcec44ecad")
 	)
-	(text ""
-		(exclude_from_sim no)
-		(at 144.526 163.576 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "3fa44a06-87c2-4c96-a409-466ff1be1067")
-	)
 	(text "DAC and Meters\n"
 		(exclude_from_sim no)
-		(at 239.268 77.47 0)
+		(at 237.49 77.47 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3730,83 +2270,13 @@
 	)
 	(text "Debug"
 		(exclude_from_sim no)
-		(at 126.746 191.77 0)
+		(at 123.19 186.69 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
 		)
 		(uuid "d87e5b9c-d6fb-446a-852d-516c32d7fc26")
-	)
-	(text "Display"
-		(exclude_from_sim no)
-		(at 236.22 116.586 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "e989a060-2497-4432-9ebb-8712a3b46554")
-	)
-	(junction
-		(at 66.04 96.52)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "07208db9-d0e5-4c35-9ff6-43d74916ddba")
-	)
-	(junction
-		(at 66.04 91.44)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "3ad36e6a-6d1d-4b36-b3db-6b5fde63fe5c")
-	)
-	(junction
-		(at 128.27 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d43ee05-ea14-43ff-8dba-8581d1643825")
-	)
-	(junction
-		(at 177.8 96.52)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "935ea299-51cf-4d20-93b3-4e51cbf733e2")
-	)
-	(junction
-		(at 177.8 91.44)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "989a3a62-a8d5-4536-859d-ebea2142ec06")
-	)
-	(junction
-		(at 113.03 172.72)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "a0182928-07be-4d8c-92ff-e6b52c4314e7")
-	)
-	(junction
-		(at 177.8 86.36)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "b076c8be-ea2c-4536-8d6c-7320e5bcf88a")
-	)
-	(junction
-		(at 66.04 86.36)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "c058e528-ef0b-4d2b-9dc9-32a056a1ad64")
-	)
-	(junction
-		(at 128.27 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cca059b1-da4e-433b-8296-fe056267b736")
-	)
-	(junction
-		(at 113.03 177.8)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "d1be0fdd-af6a-43e4-b568-752417f48ea4")
 	)
 	(wire
 		(pts
@@ -3820,37 +2290,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 91.44) (xy 83.82 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "038574ee-b4ec-45cb-94d6-d0dc0966a07b")
-	)
-	(wire
-		(pts
-			(xy 128.27 175.26) (xy 128.27 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "040ef648-56b1-4f39-8a71-1989af45c025")
-	)
-	(wire
-		(pts
-			(xy 177.8 96.52) (xy 177.8 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "05fad962-0738-4d9d-a896-cf658b29726c")
-	)
-	(wire
-		(pts
 			(xy 233.68 44.45) (xy 233.68 67.31)
 		)
 		(stroke
@@ -3858,77 +2297,6 @@
 			(type default)
 		)
 		(uuid "06a26fc6-a29f-4812-b53c-811b13cfe7d7")
-	)
-	(wire
-		(pts
-			(xy 66.04 86.36) (xy 66.04 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "0a6197d6-20b5-4bf7-9953-aacf44c66881")
-	)
-	(wire
-		(pts
-			(xy 76.2 101.6) (xy 76.2 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11cac96c-e576-47ee-a0c7-c42b7c599ef3")
-	)
-	(wire
-		(pts
-			(xy 99.06 101.6) (xy 76.2 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17aa366e-4298-4930-b49a-19e3850c1c24")
-	)
-	(wire
-		(pts
-			(xy 99.06 93.98) (xy 86.36 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17bfd7a2-75d5-48e3-8a71-b16155c01a9c")
-	)
-	(wire
-		(pts
-			(xy 167.64 93.98) (xy 167.64 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a368630-ebbb-43d3-bc0d-ed7230e9de67")
-	)
-	(wire
-		(pts
-			(xy 152.4 96.52) (xy 144.78 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "201fb9a5-a0f0-4a7d-b457-614a9350ef48")
-	)
-	(wire
-		(pts
-			(xy 99.06 99.06) (xy 76.2 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "215477be-466f-4e5f-b505-61e48465537b")
 	)
 	(wire
 		(pts
@@ -3942,120 +2310,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 121.92) (xy 72.39 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "3bdabc1e-918b-433f-859e-c66618b54afb")
-	)
-	(wire
-		(pts
-			(xy 113.03 177.8) (xy 113.03 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "3c710020-d6c4-4466-84cf-c865b2ed9b6a")
-	)
-	(wire
-		(pts
-			(xy 167.64 106.68) (xy 152.4 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d3fa467-8201-4f51-b8ad-e9d6e5fc60de")
-	)
-	(wire
-		(pts
-			(xy 88.9 118.11) (xy 92.71 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "3da0289b-8408-4abf-a8ac-7d34574fad32")
-	)
-	(wire
-		(pts
-			(xy 177.8 76.2) (xy 177.8 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "439f6460-0d80-426c-8967-f019848cd46c")
-	)
-	(wire
-		(pts
-			(xy 88.9 115.57) (xy 88.9 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47512d86-1b41-49dc-9bd7-aff196390f0e")
-	)
-	(wire
-		(pts
-			(xy 76.2 86.36) (xy 76.2 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48e258dd-6ef7-4894-a78e-e9699a38c6aa")
-	)
-	(wire
-		(pts
-			(xy 144.78 93.98) (xy 167.64 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54809d84-742a-4fe5-a01f-98b386a453e5")
-	)
-	(wire
-		(pts
-			(xy 128.27 177.8) (xy 128.27 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d8c9af1-9ca9-47c4-b088-25324cbdc946")
-	)
-	(wire
-		(pts
-			(xy 86.36 76.2) (xy 86.36 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67b3acf3-bb78-47d8-bdf4-dbe8859424a0")
-	)
-	(wire
-		(pts
-			(xy 151.13 111.76) (xy 151.13 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "697e9264-43f5-437d-9799-47ff6511a013")
-	)
-	(wire
-		(pts
 			(xy 238.76 41.91) (xy 240.03 41.91)
 		)
 		(stroke
@@ -4063,16 +2317,6 @@
 			(type default)
 		)
 		(uuid "6d5f98d3-fd4a-4bee-9508-3072afbc4a42")
-	)
-	(wire
-		(pts
-			(xy 128.27 162.56) (xy 128.27 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76dac02b-d65b-4e6e-8be4-80a5e71b2dac")
 	)
 	(wire
 		(pts
@@ -4086,68 +2330,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 111.76) (xy 99.06 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c1a8189-69af-4c73-a75c-767d64a8b6f1")
-	)
-	(wire
-		(pts
-			(xy 92.71 118.11) (xy 92.71 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "7cebe5f1-93c5-4946-984c-8784e4aa37d5")
-	)
-	(wire
-		(pts
-			(xy 167.64 86.36) (xy 167.64 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e841ce8-4782-4c3a-a960-c666bdae57d1")
-	)
-	(wire
-		(pts
-			(xy 167.64 91.44) (xy 144.78 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8186dcc9-e8cb-40ad-9ee2-1cfa4c4eebbe")
-	)
-	(wire
-		(pts
-			(xy 113.03 167.64) (xy 113.03 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "82740db4-1997-441f-beb5-a92fc02abb06")
-	)
-	(wire
-		(pts
-			(xy 76.2 76.2) (xy 86.36 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8699ca96-427f-4ae3-b158-29f7c5ba8e97")
-	)
-	(wire
-		(pts
 			(xy 236.22 41.91) (xy 236.22 54.61)
 		)
 		(stroke
@@ -4155,16 +2337,6 @@
 			(type default)
 		)
 		(uuid "88a6a830-3ed9-48a4-a475-c50a6a17edb9")
-	)
-	(wire
-		(pts
-			(xy 153.67 76.2) (xy 153.67 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "899abbfd-48c4-4cef-9c97-caedb33edc4e")
 	)
 	(wire
 		(pts
@@ -4188,68 +2360,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 76.2) (xy 66.04 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "90a735c8-e3ec-48b5-8e86-3bb3e614eed2")
-	)
-	(wire
-		(pts
-			(xy 167.64 76.2) (xy 153.67 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93f3fd77-873d-4f98-8582-2baaf546ca15")
-	)
-	(wire
-		(pts
-			(xy 83.82 91.44) (xy 83.82 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b01d758-9d68-4c27-b3d2-148ba4d0ae90")
-	)
-	(wire
-		(pts
-			(xy 128.27 167.64) (xy 128.27 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3445215-8005-49ed-9dcc-e8102fa06295")
-	)
-	(wire
-		(pts
-			(xy 91.44 120.65) (xy 91.44 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af287c0d-e7f3-4982-bdc2-e1724b3ba775")
-	)
-	(wire
-		(pts
-			(xy 72.39 120.65) (xy 73.66 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "b09a941a-3047-49b6-b2ce-72a38994d310")
-	)
-	(wire
-		(pts
 			(xy 233.68 67.31) (xy 240.03 67.31)
 		)
 		(stroke
@@ -4257,27 +2367,6 @@
 			(type default)
 		)
 		(uuid "bc8c5a31-c6e7-4be4-a041-a6ca57b81d60")
-	)
-	(wire
-		(pts
-			(xy 83.82 96.52) (xy 99.06 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfd074d4-b77a-49ef-b058-90cf52701c1d")
-	)
-	(wire
-		(pts
-			(xy 66.04 91.44) (xy 66.04 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "c4cff450-dbe0-44f5-9a7c-509c9c395f60")
 	)
 	(wire
 		(pts
@@ -4291,38 +2380,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 172.72) (xy 113.03 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "c95bdcfe-e05e-41ad-b423-78a8e4f93bfd")
-	)
-	(wire
-		(pts
-			(xy 91.44 114.3) (xy 99.06 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc289cb8-7ad5-4be1-99ec-295b1a9d5fe8")
-	)
-	(wire
-		(pts
-			(xy 177.8 91.44) (xy 177.8 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "d6701a07-16a3-4da4-b063-5fdec5b3e9b0")
-	)
-	(wire
-		(pts
 			(xy 231.14 39.37) (xy 238.76 39.37)
 		)
 		(stroke
@@ -4333,37 +2390,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 88.9) (xy 153.67 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daba431f-b3e5-4824-b57d-425b1d86893f")
-	)
-	(wire
-		(pts
-			(xy 152.4 106.68) (xy 152.4 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db624161-38ef-4859-ae8b-7d791fb11e49")
-	)
-	(wire
-		(pts
-			(xy 66.04 96.52) (xy 66.04 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "dc3ab4e4-8344-4825-bb3d-c25e0dc43941")
-	)
-	(wire
-		(pts
 			(xy 231.14 44.45) (xy 233.68 44.45)
 		)
 		(stroke
@@ -4371,91 +2397,6 @@
 			(type default)
 		)
 		(uuid "e20b8879-9d91-4ed3-8065-5d1056ca69a0")
-	)
-	(wire
-		(pts
-			(xy 144.78 111.76) (xy 151.13 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7f93bb3-0a18-42b5-8952-4adde63f43a7")
-	)
-	(wire
-		(pts
-			(xy 73.66 109.22) (xy 99.06 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f325bfdb-ef74-4718-a6c6-8dbe564f0f13")
-	)
-	(wire
-		(pts
-			(xy 88.9 120.65) (xy 91.44 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f569e707-ee4c-46c0-a2f6-fcef6a3fd1ec")
-	)
-	(wire
-		(pts
-			(xy 177.8 86.36) (xy 177.8 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "f67551e1-fa7b-4df3-9498-7b9e64bb207a")
-	)
-	(wire
-		(pts
-			(xy 76.2 99.06) (xy 76.2 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc5dcbe7-cbe8-42e1-a85b-ab2aa1d44d75")
-	)
-	(wire
-		(pts
-			(xy 73.66 115.57) (xy 73.66 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff508133-cc98-48f4-9131-ff67169222ba")
-	)
-	(global_label "SCL"
-		(shape bidirectional)
-		(at 219.71 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2052f3df-fa48-44d1-aa27-10a3e5ec9ee6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.1059 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -4470,30 +2411,6 @@
 		(uuid "2591c759-b865-42db-a3b0-edfbcce7ffea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 91.3954 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SDA"
-		(shape bidirectional)
-		(at 219.71 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "682dc053-2545-46f7-8e77-558894d72b1d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.0454 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4578,8 +2495,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 252.73 41.91 0)
+		(lib_id "Connector:TestPoint")
+		(at 125.4197 166.624 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4587,10 +2505,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00950a4d-b9d8-4977-9180-2c14d47de517")
-		(property "Reference" "J2"
-			(at 254 41.9099 0)
+		(uuid "05b5b6ff-6390-4aef-9ae2-219116cf1488")
+		(property "Reference" "TP?"
+			(at 127.9597 171.1961 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4600,8 +2517,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Meter2"
-			(at 254 44.4499 0)
+		(property "Value" "TestPoint"
+			(at 127.9597 168.6561 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4609,91 +2526,10 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 252.73 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 252.73 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ba11e02-df6d-482c-9a70-69e83ae76556")
-		)
-		(pin "2"
-			(uuid "d4e4d238-1cb9-4042-96a2-91382eb0b9c0")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 229.87 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f3dfdd3-1fe6-45d1-b6be-6554f010e1da")
-		(property "Reference" "#PWR015"
-			(at 229.87 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 229.87 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 107.95 0)
+			(at 130.4997 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4704,7 +2540,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 107.95 0)
+			(at 130.4997 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4714,8 +2550,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 229.87 107.95 0)
+		(property "Description" "test point"
+			(at 125.4197 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4726,12 +2562,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a3a6df07-0ee3-418c-9860-3038a3c7767b")
+			(uuid "cb87502a-072c-4b76-8eaa-b84a35671516")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR015")
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -4810,85 +2646,6 @@
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 128.27 162.56 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "162fd13d-0001-4768-8577-6b433fcb0b88")
-		(property "Reference" "TP2"
-			(at 133.35 161.2899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5VTP"
-			(at 133.35 163.8299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 128.27 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 128.27 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1885d356-5652-4b79-8517-2059ef901fa4")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -5091,8 +2848,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 128.27 175.26 270)
+		(lib_id "Connectors:Connector 2 Female")
+		(at 252.73 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5101,9 +2858,91 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1bf8009e-94b7-4d68-999b-0d0f66d619d4")
-		(property "Reference" "#PWR09"
-			(at 124.46 175.26 0)
+		(uuid "1b620dc1-8863-4d82-8145-1faafde31be0")
+		(property "Reference" "J?"
+			(at 261.62 30.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "${FAMILY}"
+			(at 256.54 27.432 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector 2 Female"
+			(at 252.73 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2f368567-b1c1-4d90-9e96-ef17910749b2")
+		)
+		(pin "1"
+			(uuid "c1650a94-1cff-4ec3-b80d-6af5e5d9b786")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 125.4197 166.624 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20378109-5735-41b4-ae45-b4fdcfa335ff")
+		(property "Reference" "#PWR08"
+			(at 125.4197 170.434 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5114,18 +2953,17 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 132.08 175.2599 90)
+			(at 125.4197 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 175.26 0)
+			(at 125.4197 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5136,7 +2974,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 175.26 0)
+			(at 125.4197 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5147,7 +2985,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 128.27 175.26 0)
+			(at 125.4197 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5158,21 +2996,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "cb0feae5-a222-4196-9a3b-62764c436702")
+			(uuid "29fdcc31-3952-4b8c-a7b9-ec21d316e835")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 172.72 76.2 0)
-		(mirror y)
+		(lib_id "Connectors:Connector 2 Female")
+		(at 252.73 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5181,29 +3018,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2c716a50-1096-42d2-b8ba-d4c3ea5cec16")
-		(property "Reference" "SW6"
-			(at 172.72 68.58 0)
+		(uuid "269044f0-e8f9-4f1b-b8fb-50d98ac52487")
+		(property "Reference" "J?"
+			(at 261.62 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 172.72 71.12 0)
+		(property "Value" "${FAMILY}"
+			(at 256.54 52.832 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 172.72 71.12 0)
+		(property "Footprint" ""
+			(at 252.73 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5214,7 +3053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 71.12 0)
+			(at 252.73 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5224,8 +3063,8 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 172.72 76.2 0)
+		(property "Description" "Connector 2 Female"
+			(at 252.73 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,17 +3073,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "72d298bf-ea26-47d0-bac8-5c955a82658d")
 		)
 		(pin "2"
-			(uuid "61319b7b-42c7-49e4-b3f7-bdf3a32273ad")
+			(uuid "b51132fa-96b4-41df-b5d6-8259fe69fea1")
+		)
+		(pin "1"
+			(uuid "0931ba26-17eb-4c80-b829-2af93374f25c")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW6")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -5324,86 +3163,6 @@
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 71.12 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f908451-4211-4700-8f76-9bdb4958db00")
-		(property "Reference" "SW4"
-			(at 71.12 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 71.12 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 71.12 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 71.12 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bca4a5ba-a899-4a1a-82f8-b57ee4c538cc")
-		)
-		(pin "2"
-			(uuid "7eed510e-5cc4-444c-9cbf-52db579ccb12")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -5600,167 +3359,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 172.72 106.68 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "360087bd-6fa3-42b8-afa2-6dcf30010b94")
-		(property "Reference" "SW9"
-			(at 172.72 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 172.72 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 172.72 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 172.72 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "77712285-3647-431c-a887-73e38ca3ac1c")
-		)
-		(pin "2"
-			(uuid "0d337350-ddfd-4aab-a9ba-e955e5d61a9f")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 66.04 91.44 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38b28b37-8f47-4834-9d66-7a434c576266")
-		(property "Reference" "#PWR01"
-			(at 59.69 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 62.23 91.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "44ae4c84-9529-4196-ad06-e1abb4341a1c")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 247.65 57.15 270)
 		(mirror x)
@@ -5841,251 +3439,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 252.73 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49de4376-319e-4c67-9cf7-36559cbb5d40")
-		(property "Reference" "J3"
-			(at 254 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Meter3"
-			(at 254 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 252.73 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 252.73 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ab480de1-7d35-46f6-bc23-2987e2ea8d30")
-		)
-		(pin "2"
-			(uuid "352d3632-2c81-40d7-a238-f1cedca06e05")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 172.72 96.52 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a3ad032-9f39-4b11-b2f8-4776ee741477")
-		(property "Reference" "SW8"
-			(at 172.72 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 172.72 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 172.72 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 172.72 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58d28d82-f04c-49e8-9577-8de9c7e7a1a9")
-		)
-		(pin "2"
-			(uuid "1eff933e-8764-429f-8624-4018626b5276")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 71.12 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "607e6d03-b296-46f5-866a-601b010ce2ff")
-		(property "Reference" "SW3"
-			(at 71.12 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 71.12 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 71.12 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 71.12 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3affc56-b6db-48bf-b0c3-f98b2eea01ed")
-		)
-		(pin "2"
-			(uuid "a146c036-9c0b-415a-9735-dda8ac938b96")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 128.27 182.88 270)
+		(at 111.4497 166.624 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6093,10 +3449,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62fc3fda-85c0-41f6-82e7-39255b818d44")
-		(property "Reference" "TP3"
-			(at 133.35 181.6099 90)
+		(uuid "48b47b85-d1ce-4dfd-8327-6e9245712dda")
+		(property "Reference" "TP?"
+			(at 113.9897 171.1961 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6106,8 +3461,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3V3TP"
-			(at 133.35 184.1499 90)
+		(property "Value" "TestPoint"
+			(at 113.9897 168.6561 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6117,8 +3472,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 128.27 187.96 0)
+		(property "Footprint" ""
+			(at 116.5297 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6129,7 +3484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 187.96 0)
+			(at 116.5297 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6140,7 +3495,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 128.27 182.88 0)
+			(at 111.4497 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6151,103 +3506,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cb0de8eb-ab90-4864-a0c9-b1633de5793a")
+			(uuid "c6fd7911-6131-47a3-8991-fd8da21c4ffd")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 116.84 177.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6365618e-d981-49f9-9a02-aedcf9a3885f")
-		(property "Reference" "D2"
-			(at 115.2525 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 115.2525 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 116.84 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 116.84 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 116.84 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6b6a7ac-6dac-4ccc-9f34-fea42b2ee3a3")
-		)
-		(pin "2"
-			(uuid "1c628c4f-99d3-448e-b490-d8c69e098061")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "D2")
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -6255,7 +3519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 121.92 0)
+		(at 119.0697 178.054 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6264,9 +3528,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "64e54a48-af02-47b7-8ee2-20f20d83e3b7")
-		(property "Reference" "#PWR02"
-			(at 72.39 128.27 0)
+		(uuid "5a0ff7a2-3d9d-48f0-8690-140f4d27f5ca")
+		(property "Reference" "#PWR010"
+			(at 119.0697 184.404 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6277,7 +3541,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 127 0)
+			(at 119.0697 183.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6287,7 +3551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 121.92 0)
+			(at 119.0697 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6298,7 +3562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 121.92 0)
+			(at 119.0697 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6309,7 +3573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 121.92 0)
+			(at 119.0697 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6320,336 +3584,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b06063f-4a65-4870-befe-09ddc9bc9b7c")
+			(uuid "46fe1ba4-e2bb-462c-95f8-0cf98c0b4721")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 172.72 86.36 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "751a2944-1d43-432a-8211-4fd7ef32e463")
-		(property "Reference" "SW7"
-			(at 172.72 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 172.72 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 172.72 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a7f34aac-848d-440a-82af-8abaa936551e")
-		)
-		(pin "2"
-			(uuid "d8cc5eda-0a18-435c-a0d7-9496a8b275d6")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 252.73 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "790c69e2-ab8d-4d0e-9ab7-22eeb6f7a5f9")
-		(property "Reference" "J4"
-			(at 254 67.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Meter4"
-			(at 254 69.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 252.73 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 252.73 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "71f6d7b0-b961-4aae-b91d-b3b0b2cc0a86")
-		)
-		(pin "2"
-			(uuid "840fea03-2f97-470e-a651-077da90130ff")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 92.71 121.92 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7b8902b7-4a93-4e42-bfc9-53f14003c3d8")
-		(property "Reference" "#PWR03"
-			(at 92.71 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 92.7099 125.73 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "161172cb-bb28-4a7f-a33d-756b72a32bf2")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 252.73 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d6bcb15-b314-4f39-a248-ec9ac98bc066")
-		(property "Reference" "J1"
-			(at 254 29.2099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Meter1"
-			(at 254 31.7499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1d13145f-5731-448f-a8df-53e96b785e85")
-		)
-		(pin "2"
-			(uuid "b4a54e01-e28c-4480-9210-79687da60f82")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J1")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6734,8 +3674,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:RotaryEncoder_Switch")
-		(at 81.28 118.11 180)
+		(lib_id "Connector:TestPoint")
+		(at 119.0697 178.054 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6744,120 +3684,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8f92b016-aeaf-4c06-9c36-c65da96795b1")
-		(property "Reference" "SW5"
-			(at 81.28 107.95 0)
+		(uuid "85f98981-2a7c-46e6-8e82-951c818304ae")
+		(property "Reference" "TP?"
+			(at 121.6097 173.4819 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "RotaryEncoder_Switch"
-			(at 81.28 110.49 0)
+		(property "Value" "TestPoint"
+			(at 121.6097 176.0219 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 85.09 122.174 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 124.714 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-			(at 81.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S2"
-			(uuid "3f3e2961-57a2-4385-93b8-0e0bd39e10e5")
-		)
-		(pin "B"
-			(uuid "b15cddf7-6018-4dc6-9c10-2c8ca604266b")
-		)
-		(pin "C"
-			(uuid "5287bc94-a071-41c6-aa54-b3ed5faa4f2e")
-		)
-		(pin "S1"
-			(uuid "084d5ed5-20f6-438b-aae5-b42fe0dd5858")
-		)
-		(pin "A"
-			(uuid "c37e29a8-55fd-4547-b10e-3ecba0596422")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 91.44 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "940052a4-f3f7-4f7e-8a68-a48d670b4e82")
-		(property "Reference" "#PWR011"
-			(at 184.15 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 181.61 91.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 91.44 0)
+			(at 124.1497 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6868,7 +3719,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 91.44 0)
+			(at 124.1497 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6878,8 +3729,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 91.44 0)
+		(property "Description" "test point"
+			(at 119.0697 178.054 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6890,12 +3741,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5300d860-d104-4c01-ae21-771fb20dbdd7")
+			(uuid "38b3d692-85f6-4e63-8fae-0b4fb4415b8b")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR011")
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -6980,8 +3831,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 71.12 76.2 0)
+		(lib_id "Connectors:Connector 2 Female")
+		(at 252.73 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6990,111 +3841,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a541ddd2-afa0-4daa-8b03-5d7a7debc336")
-		(property "Reference" "SW1"
-			(at 71.12 68.58 0)
+		(uuid "a53ef5a8-f2fb-44f3-9a5a-d3a2a97eea48")
+		(property "Reference" "J?"
+			(at 261.62 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 71.12 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 71.12 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 71.12 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b205c374-925a-421d-b704-e6d46138feb4")
-		)
-		(pin "2"
-			(uuid "be219cd8-e49f-4020-9dcf-488529491563")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 128.27 170.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac52eb4c-b06b-42a9-acfe-194279d94261")
-		(property "Reference" "#PWR08"
-			(at 124.46 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 132.08 170.1799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(justify left)
 			)
 		)
+		(property "Value" "${FAMILY}"
+			(at 256.54 40.132 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
 		(property "Footprint" ""
-			(at 128.27 170.18 0)
+			(at 252.73 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7105,7 +3876,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 170.18 0)
+			(at 252.73 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7115,8 +3886,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 128.27 170.18 0)
+		(property "Description" "Connector 2 Female"
+			(at 252.73 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7125,14 +3896,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "9f682f02-54be-4e59-96a0-48950ad66e93")
 		)
 		(pin "1"
-			(uuid "3ac8c6ca-802d-4801-bd5e-2bc669573d37")
+			(uuid "336b36e8-c11e-4d31-b6a2-f0640dcead9f")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR08")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -7218,8 +3992,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 229.87 87.63 0)
+		(lib_id "Connectors:Connector 2 Female")
+		(at 252.73 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7228,30 +4002,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "af639598-7bfe-4aff-898b-73cb29b68bef")
-		(property "Reference" "#PWR014"
-			(at 229.87 91.44 0)
+		(uuid "af269a6b-424e-4f54-8c0f-5a1df22d1c18")
+		(property "Reference" "J?"
+			(at 261.62 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "${FAMILY}"
+			(at 256.54 65.532 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 229.87 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 87.63 0)
+			(at 252.73 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7262,7 +4037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 87.63 0)
+			(at 252.73 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7272,8 +4047,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 229.87 87.63 0)
+		(property "Description" "Connector 2 Female"
+			(at 252.73 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7284,12 +4059,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b87c3c5c-29df-4af0-ad06-6b0ac145b86a")
+			(uuid "b1850533-818d-4ba1-8695-5e2c05425b29")
+		)
+		(pin "2"
+			(uuid "97be8c94-30c6-4a8f-83f7-52a9c7aee0ed")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR014")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -7380,257 +4158,6 @@
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor")
-		(at 120.65 167.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4035c7a-7ba9-4cae-b584-e6d2b0f92608")
-		(property "Reference" "R1"
-			(at 124.46 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 124.46 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 120.65 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 120.65 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4e3e769-430c-4c59-b92d-c8d18db037bd")
-		)
-		(pin "2"
-			(uuid "d349934e-82fc-40aa-a066-fab1bf9b7f08")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 116.84 167.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8c5cb72-e8de-4f97-a05b-7c0d9e576086")
-		(property "Reference" "D1"
-			(at 115.2525 161.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 115.2525 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 116.84 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 116.84 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 116.84 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ac9e886-b052-4569-900d-c5a1b7aea363")
-		)
-		(pin "2"
-			(uuid "88b1db65-b2df-4e0a-87c4-1e1a959d5b14")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 71.12 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd46e896-7ab6-4cdd-b552-75c383d99fa0")
-		(property "Reference" "SW2"
-			(at 71.12 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 71.12 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 71.12 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 71.12 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b215e076-7b94-471f-9b20-6ee203223427")
-		)
-		(pin "2"
-			(uuid "746cfbb9-75be-41f9-a211-7f99750ade61")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7807,91 +4334,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Optical:LDR07")
-		(at 151.13 119.38 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c14e1b1f-b781-4bc1-b455-7c5987832ca0")
-		(property "Reference" "R3"
-			(at 153.67 120.6501 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LDR07"
-			(at 153.67 118.1101 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical"
-			(at 155.575 119.38 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf"
-			(at 151.13 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "light dependent resistor"
-			(at 151.13 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1abae77c-0a63-4407-a82e-3f54bf67e3ea")
-		)
-		(pin "2"
-			(uuid "f1fbc62b-81bb-4426-942c-4fbd7c1e7ac3")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 151.13 123.19 0)
-		(mirror x)
+		(lib_id "power:+5V")
+		(at 111.4497 166.624 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7900,9 +4344,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c6c59f12-dd99-4962-9810-7f575d14396e")
-		(property "Reference" "#PWR010"
-			(at 151.13 119.38 0)
+		(uuid "c28e2bbb-4f6c-425d-bda6-806af40b6dbf")
+		(property "Reference" "#PWR09"
+			(at 111.4497 170.434 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7912,8 +4356,8 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 151.13 128.27 0)
+		(property "Value" "+5V"
+			(at 111.4497 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7923,7 +4367,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 123.19 0)
+			(at 111.4497 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7934,7 +4378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 123.19 0)
+			(at 111.4497 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7944,8 +4388,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 151.13 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 111.4497 166.624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7956,12 +4400,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe836a7d-a418-48b9-99df-5071cc741b0c")
+			(uuid "762075a0-65b4-4380-86d7-4098997db649")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8138,165 +4582,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 113.03 172.72 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce1fdd74-e1e8-473d-a63e-c391dda6aabe")
-		(property "Reference" "#PWR04"
-			(at 106.68 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 109.22 172.7199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "67402117-3b17-40de-bdc4-11c1a176957c")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor")
-		(at 120.65 177.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d53f4b65-c8c9-4b76-aeb2-1e4e173060dd")
-		(property "Reference" "R2"
-			(at 124.46 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 124.46 175.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 120.65 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 120.65 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "91d6ba7a-add9-433c-8901-9f807d8791cb")
-		)
-		(pin "2"
-			(uuid "7a9c7c16-d973-447e-8233-ef5a6366b414")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Resistors:Resistor - 1%")
 		(at 240.03 54.61 0)
 		(unit 1)
@@ -8386,172 +4671,57 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 113.03 182.88 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e74f97ed-249a-4171-8cb4-5768e7bb168b")
-		(property "Reference" "TP1"
-			(at 118.11 181.6099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GNDTP"
-			(at 118.11 184.1499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 113.03 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 113.03 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "49b6ac9c-9dc3-4662-adbe-a083700d402d")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
+	(group ""
+		(uuid "05e6f965-f75d-4fc7-abcc-bd417514df7d")
+		(members "145900f7-e5b3-4d4b-9594-69b023c240af" "16fe090f-071d-406e-9cd1-2fe1c6cfe000"
+			"2591c759-b865-42db-a3b0-edfbcce7ffea" "63e4ad7b-d290-4b93-9dbd-1bd23bdaeec6"
+			"7f016d7e-6573-407d-93e6-1fe1d3816c55" "a3a773ff-e6a8-4378-8b99-f9c138a3530e"
+			"d6aca6a2-deee-4cb9-8cdd-6c9f9a5b19f2"
 		)
 	)
-	(symbol
-		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
-		(at 229.87 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef5c3a7c-38f9-49f9-8012-236070ba5c1b")
-		(property "Reference" "U2"
-			(at 238.76 96.5199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+	(group ""
+		(uuid "078d3f2f-0117-4871-b6dc-5d8de8cadc71")
+		(members "05b5b6ff-6390-4aef-9ae2-219116cf1488" "20378109-5735-41b4-ae45-b4fdcfa335ff")
+	)
+	(group ""
+		(uuid "2ab20e8c-19d1-451b-9035-3af7faaaf867")
+		(members "078d3f2f-0117-4871-b6dc-5d8de8cadc71" "502238fb-3577-4dbd-a3c6-a9bc91c359cb"
+			"d776267e-069c-46dc-9dd1-3d41fa8d54d7"
 		)
-		(property "Value" "ER_OLEDM0.91_1x-I2C"
-			(at 238.76 99.0599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
+	)
+	(group ""
+		(uuid "2d8d65d7-a4fa-4d87-bf48-f8c8ff1282b9")
+		(members "02c66326-9d1a-4a26-b4a8-361fb05cbcb7" "06a26fc6-a29f-4812-b53c-811b13cfe7d7"
+			"1b620dc1-8863-4d82-8145-1faafde31be0" "269044f0-e8f9-4f1b-b8fb-50d98ac52487"
+			"2bd9c3b9-cc13-4797-8e0e-901725a0c622" "2d79ac0b-092e-4cf6-9285-7ed4955fd203"
+			"339800ac-3442-462c-8c52-b84d172dbc80" "34f5b826-cbab-4023-83a0-d4334f8bb099"
+			"3bb0abef-9831-465d-8175-f2b00ea57ebb" "4170fff8-9570-4450-b613-84741a962914"
+			"6d5f98d3-fd4a-4bee-9508-3072afbc4a42" "73edb4ce-5d56-4b56-af50-712213aae32c"
+			"78de8894-4a55-4756-96b4-b296af5d0a94" "88a6a830-3ed9-48a4-a475-c50a6a17edb9"
+			"8da3d7d0-fd86-4cc0-ab78-369fed9426e2" "8e30f2ec-5bc7-465c-b412-2179f5fd3e2d"
+			"a53ef5a8-f2fb-44f3-9a5a-d3a2a97eea48" "ac76977d-1659-4713-998e-3d819c4e75f9"
+			"af269a6b-424e-4f54-8c0f-5a1df22d1c18" "afafedf2-b138-48c7-80f4-29ecf91be197"
+			"bc8c5a31-c6e7-4be4-a041-a6ca57b81d60" "beebfb04-3697-49f6-936b-f281e51cd432"
+			"bef377bd-f8f2-4344-ac39-9500182c0171" "c4d26226-95ff-4832-b58c-0394bb271934"
+			"c68af952-d195-4140-a8c0-19dfc6ced5b5" "c6ce9c51-c23b-4d09-82b6-a1923bb8ca0e"
+			"cc3d636a-ab48-43b4-9e77-15c33409acc6" "d6eb4f3d-e149-4428-bc15-aacc938535bb"
+			"d877c920-60a4-4b2b-98b7-759a278d0109" "d8ce0054-8416-4996-8a5a-fb584dfec033"
+			"e20b8879-9d91-4ed3-8065-5d1056ca69a0"
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 247.904 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+	)
+	(group ""
+		(uuid "502238fb-3577-4dbd-a3c6-a9bc91c359cb")
+		(members "5a0ff7a2-3d9d-48f0-8690-140f4d27f5ca" "85f98981-2a7c-46e6-8e82-951c818304ae")
+	)
+	(group ""
+		(uuid "c0ccfdd6-bba0-43c9-9a62-969880fb42be")
+		(members "2ab20e8c-19d1-451b-9035-3af7faaaf867" "a42ef725-0e75-413f-8139-2de5201730cb"
+			"d87e5b9c-d6fb-446a-852d-516c32d7fc26" "f350ae7a-4a28-4ea9-98f2-44729052655a"
 		)
-		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
-			(at 272.542 112.522 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
-			(at 256.54 114.554 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d1204f92-55a6-4f3c-9838-0fc9ebc7a274")
-		)
-		(pin "2"
-			(uuid "2a6eec78-32fc-46c9-81df-a5857fc365d5")
-		)
-		(pin "1"
-			(uuid "31349c77-ef1a-4353-9eaf-783768823870")
-		)
-		(pin "4"
-			(uuid "8b1a12b6-e0a2-4504-aa63-8aac074c800f")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
+	)
+	(group ""
+		(uuid "d776267e-069c-46dc-9dd1-3d41fa8d54d7")
+		(members "48b47b85-d1ce-4dfd-8327-6e9245712dda" "c28e2bbb-4f6c-425d-bda6-806af40b6dbf")
 	)
 	(sheet_instances
 		(path "/"
