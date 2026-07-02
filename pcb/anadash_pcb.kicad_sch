@@ -2966,25 +2966,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 86.36) (xy 73.66 86.36)
+			(xy 146.05 83.82) (xy 144.78 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 0 1)
 		)
-		(uuid "0937efae-e16e-4635-843f-f3708b7ffcd7")
+		(uuid "10b33f53-38b9-4bd1-9f46-f505c3740d2b")
 	)
 	(wire
 		(pts
-			(xy 73.66 86.36) (xy 73.66 93.98)
+			(xy 144.78 91.44) (xy 148.59 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 0 1)
 		)
-		(uuid "0dacb3e8-a8e1-41e0-a62f-d4bf4abab83f")
+		(uuid "1ab311bc-d67b-4494-b890-052e0325d097")
 	)
 	(wire
 		(pts
@@ -3009,6 +3007,26 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 78.74) (xy 144.78 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "320ac881-ade0-402e-9206-acffda9a8af4")
+	)
+	(wire
+		(pts
+			(xy 162.56 99.06) (xy 147.32 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a1e9291-9d2b-45e6-9bd3-767dd7a33ff9")
+	)
+	(wire
+		(pts
 			(xy 238.76 29.21) (xy 240.03 29.21)
 		)
 		(stroke
@@ -3019,13 +3037,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 91.44) (xy 87.63 91.44)
+			(xy 72.39 88.9) (xy 87.63 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "41c24db2-9c04-4369-8ecd-3632bf62b0fa")
+	)
+	(wire
+		(pts
+			(xy 148.59 86.36) (xy 148.59 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "431c238c-e8d1-4ba3-98ba-4a61c2120ff4")
 	)
 	(wire
 		(pts
@@ -3049,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 88.9) (xy 88.9 93.98)
+			(xy 88.9 86.36) (xy 88.9 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3080,6 +3108,47 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 99.06) (xy 147.32 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5886bf16-9006-422c-8d77-51065bdf149e")
+	)
+	(wire
+		(pts
+			(xy 148.59 88.9) (xy 144.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6165ef0f-4212-488d-893c-5745ddf2a14d")
+	)
+	(wire
+		(pts
+			(xy 146.05 101.6) (xy 162.56 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a6b9a85-a5b8-4970-ab7d-faa7448f3f98")
+	)
+	(wire
+		(pts
+			(xy 73.66 91.44) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "6af72b81-f296-4091-b7b6-479e0b477d9e")
+	)
+	(wire
+		(pts
 			(xy 238.76 41.91) (xy 240.03 41.91)
 		)
 		(stroke
@@ -3097,6 +3166,37 @@
 			(type default)
 		)
 		(uuid "78de8894-4a55-4756-96b4-b296af5d0a94")
+	)
+	(wire
+		(pts
+			(xy 73.66 93.98) (xy 73.66 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "7a0805d2-fd65-4c84-812d-f52a892962b6")
+	)
+	(wire
+		(pts
+			(xy 144.78 96.52) (xy 146.05 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83241afe-74ca-4d6a-a546-e4d92b51c24d")
+	)
+	(wire
+		(pts
+			(xy 146.05 81.28) (xy 146.05 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88971498-a5a6-4c6e-8c75-c01065af469d")
 	)
 	(wire
 		(pts
@@ -3140,6 +3240,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 78.74) (xy 144.78 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b04510bd-850b-46b6-abc2-0aca19562cf5")
+	)
+	(wire
+		(pts
+			(xy 146.05 96.52) (xy 146.05 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b39ddd9e-8a50-47c2-b8f9-273a314ea7eb")
+	)
+	(wire
+		(pts
 			(xy 91.44 88.9) (xy 99.06 88.9)
 		)
 		(stroke
@@ -3150,13 +3270,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 88.9) (xy 88.9 88.9)
+			(xy 72.39 86.36) (xy 88.9 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b954bf48-8bd1-4447-8b5b-5d67985544e6")
+	)
+	(wire
+		(pts
+			(xy 144.78 86.36) (xy 147.32 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b97133b0-9479-4f8e-8f2e-5341481bd4f5")
 	)
 	(wire
 		(pts
@@ -3180,6 +3310,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 93.98) (xy 144.78 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca96fe38-eb18-452b-aa23-dda2a3c440a0")
+	)
+	(wire
+		(pts
 			(xy 231.14 39.37) (xy 238.76 39.37)
 		)
 		(stroke
@@ -3190,13 +3330,33 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 91.44) (xy 87.63 96.52)
+			(xy 148.59 96.52) (xy 162.56 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dced45c5-a43e-4f76-9d3e-70d1c6e62694")
+	)
+	(wire
+		(pts
+			(xy 87.63 88.9) (xy 87.63 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e097400c-6a47-4c4d-8ead-2b496656cc29")
+	)
+	(wire
+		(pts
+			(xy 162.56 81.28) (xy 146.05 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c2b043-42ce-4401-a175-5ba14c8d07cb")
 	)
 	(wire
 		(pts
@@ -3207,6 +3367,46 @@
 			(type default)
 		)
 		(uuid "e20b8879-9d91-4ed3-8065-5d1056ca69a0")
+	)
+	(wire
+		(pts
+			(xy 147.32 86.36) (xy 147.32 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31849cb-a815-47f2-b031-7a5d22dc200c")
+	)
+	(wire
+		(pts
+			(xy 162.56 86.36) (xy 148.59 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4998aac-33ad-4bce-a1da-0d8920afca4b")
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 148.59 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd1d5c82-ebe4-42ce-a52b-240359e1bc80")
+	)
+	(wire
+		(pts
+			(xy 147.32 83.82) (xy 162.56 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee86919-c5c0-4640-9c5b-1ed80c39b83a")
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -3443,7 +3643,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "145900f7-e5b3-4d4b-9594-69b023c240af")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR09"
 			(at 127 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3503,7 +3703,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR011")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3799,7 +3999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20378109-5735-41b4-ae45-b4fdcfa335ff")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR08"
 			(at 125.4197 170.434 0)
 			(hide yes)
 			(show_name no)
@@ -3859,7 +4059,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR010")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3959,7 +4159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d79ac0b-092e-4cf6-9285-7ed4955fd203")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR013"
 			(at 219.71 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -4020,7 +4220,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR012")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4137,6 +4337,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connectors:Connector 4 Female")
+		(at 167.64 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41b70456-d30a-46a1-b943-62e9af8d2a85")
+		(property "Reference" "J4"
+			(at 176.53 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "${FAMILY}"
+			(at 171.45 94.742 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector 4 Female"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78743def-c75e-4f3d-9b7b-8bf7fa29a2b1")
+		)
+		(pin "4"
+			(uuid "140fc20d-20a3-46f6-82b5-ea9b85b01613")
+		)
+		(pin "2"
+			(uuid "af925b7e-3c34-4374-a858-d9192d3182b3")
+		)
+		(pin "3"
+			(uuid "7983e5a2-5dbb-4da3-806c-1c8f311c7562")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 72.39 64.77 270)
 		(unit 1)
@@ -4148,7 +4436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47779c75-46a4-479e-914b-050802ae518c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 68.58 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4209,7 +4497,85 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR02")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 162.56 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47e84b4a-c3a0-4d80-b5e4-0467e77da5d1")
+		(property "Reference" "#PWR010"
+			(at 162.56 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4f29c6d-6d55-4032-9383-6a9f0aea49d0")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -4306,7 +4672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a0ff7a2-3d9d-48f0-8690-140f4d27f5ca")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR05"
 			(at 119.0697 184.404 0)
 			(hide yes)
 			(show_name no)
@@ -4366,7 +4732,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR07")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4384,7 +4750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6970ce7e-cef7-47a5-b4da-d319eeb03094")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 83.82 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -4445,7 +4811,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4463,7 +4829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fa383a3-44d8-4c1d-85f3-a0360d384727")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 247.65 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4523,7 +4889,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4541,7 +4907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f016d7e-6573-407d-93e6-1fe1d3816c55")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 121.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -4601,7 +4967,85 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR09")
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 162.56 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83280b5d-5741-480b-9f2c-d9348a6a4cb3")
+		(property "Reference" "#PWR011"
+			(at 162.56 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4096c93-d3c0-4144-b05d-8423a15c5c6c")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4698,7 +5142,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b7d177e-a905-41f8-aff4-6eae72891fa0")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 247.65 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4758,7 +5202,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4776,7 +5220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3a773ff-e6a8-4378-8b99-f9c138a3530e")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR06"
 			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -4836,7 +5280,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR08")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5199,7 +5643,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b89806e0-cb12-49d7-9bd6-e7db4daf2a8c")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR017"
 			(at 247.65 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5259,7 +5703,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR04")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5277,7 +5721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9418f87-54b1-444b-a82d-eac5d874f081")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR015"
 			(at 247.65 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5337,7 +5781,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR014")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5445,7 +5889,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c28e2bbb-4f6c-425d-bda6-806af40b6dbf")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR04"
 			(at 111.4497 170.434 0)
 			(hide yes)
 			(show_name no)
@@ -5505,7 +5949,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR06")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5613,7 +6057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3eaeff9-8f21-41dc-810e-af35f6cb72ef")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 205.74 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -5673,7 +6117,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5781,7 +6225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0a788b7-43b4-44b7-af9f-d54daad24f4d")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 73.66 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -5842,7 +6286,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5931,6 +6375,97 @@
 			(project "anadash_pcb"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connectors:Connector 5 Female")
+		(at 167.64 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ede879fe-47cf-46b3-bc82-8ee1eaf67f76")
+		(property "Reference" "J3"
+			(at 176.53 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "${FAMILY}"
+			(at 171.45 76.962 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
+			(at 167.64 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector 5 Female"
+			(at 167.64 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "dea53554-9341-4618-a090-a2ea214c43f4")
+		)
+		(pin "2"
+			(uuid "f699cd5b-eb63-444a-ac02-238e53dc167c")
+		)
+		(pin "1"
+			(uuid "cb452c8c-a19c-4a0d-94f1-d773f9fc9a03")
+		)
+		(pin "3"
+			(uuid "f50f2b0b-a25d-4fff-bd22-719a93f0f239")
+		)
+		(pin "5"
+			(uuid "ca34d45d-5a5f-4570-8a9d-5945c7c65247")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "J3")
 					(unit 1)
 				)
 			)
