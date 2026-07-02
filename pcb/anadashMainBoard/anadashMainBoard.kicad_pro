@@ -490,7 +490,7 @@
     ]
   },
   "meta": {
-    "filename": "anadash_pcb.kicad_pro",
+    "filename": "anadashMainBoard.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -645,14 +645,9 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "anadash_pcb.kicad_sch",
-        "name": "anadash_pcb",
+        "filename": "anadashMainBoard.kicad_sch",
+        "name": "anadashMainBoard",
         "uuid": "be2e610a-0da0-4417-ae24-40d589f4bf40"
-      },
-      {
-        "filename": "switchesanddisplay.kicad_sch",
-        "name": "switchesanddisplay",
-        "uuid": "356b9cf0-7532-4174-862f-41594407df39"
       }
     ],
     "used_designators": "A1,D1-2,MES1-4,J1-12,R1-11,TP1-3,SW1-9,U1-2,#PWR1-25",
@@ -662,10 +657,6 @@
     [
       "be2e610a-0da0-4417-ae24-40d589f4bf40",
       "anadash_pcb"
-    ],
-    [
-      "356b9cf0-7532-4174-862f-41594407df39",
-      "switchesanddisplay"
     ]
   ],
   "text_variables": {},

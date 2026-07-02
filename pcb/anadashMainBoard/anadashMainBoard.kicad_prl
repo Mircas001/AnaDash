@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "anadash_pcb.kicad_prl",
+    "filename": "anadashMainBoard.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
