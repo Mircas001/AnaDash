@@ -1522,7 +1522,7 @@
 		)
 	)
 	(rectangle
-		(start 24.13 24.13)
+		(start 24.13 19.05)
 		(end 95.25 52.07)
 		(stroke
 			(width 0)
@@ -1621,16 +1621,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 25.4) (xy 41.91 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02b8c1a9-289b-4da0-ba03-deb65e0a54be")
-	)
-	(wire
-		(pts
 			(xy 54.61 67.31) (xy 49.53 67.31)
 		)
 		(stroke
@@ -1638,6 +1628,28 @@
 			(type default)
 		)
 		(uuid "089a6f87-a710-4716-9910-0a11b2cfb5bf")
+	)
+	(wire
+		(pts
+			(xy 50.8 45.72) (xy 63.5 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "09aaa21b-430c-4b2f-9d1e-d4202fa509e3")
+	)
+	(wire
+		(pts
+			(xy 50.8 34.29) (xy 50.8 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "0a3b002b-90cf-48b5-b9e5-37059841f9b9")
 	)
 	(wire
 		(pts
@@ -1682,13 +1694,24 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 34.29) (xy 53.34 34.29)
+			(xy 41.91 34.29) (xy 50.8 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "16652abf-b945-4e39-9d56-7ea70754346d")
+	)
+	(wire
+		(pts
+			(xy 52.07 36.83) (xy 52.07 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "17dc32cb-c8db-4da1-9464-58068c503cef")
+		(uuid "20222321-04f5-48e4-9384-781389b1bc5a")
 	)
 	(wire
 		(pts
@@ -1734,23 +1757,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 36.83) (xy 53.34 38.1)
+			(xy 41.91 38.1) (xy 41.91 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41708643-3424-4e3f-8ce4-c3820082ef64")
+		(uuid "3ee3be73-a80a-4abf-a87e-db0aa8defa38")
 	)
 	(wire
 		(pts
-			(xy 53.34 34.29) (xy 53.34 33.02)
+			(xy 41.91 36.83) (xy 52.07 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4361b248-d99c-425d-a158-5028d97e670a")
+		(uuid "4586cdcd-a940-4f13-9f6e-8500f2cfa679")
 	)
 	(wire
 		(pts
@@ -1929,6 +1952,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 33.02) (xy 53.34 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b6280f-a6f7-4aa0-bd63-47e858999f74")
+	)
+	(wire
+		(pts
 			(xy 31.75 158.75) (xy 31.75 173.99)
 		)
 		(stroke
@@ -1939,6 +1972,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 38.1) (xy 41.91 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ffc558-14fc-4cdc-8137-4d105d6175a4")
+	)
+	(wire
+		(pts
 			(xy 49.53 67.31) (xy 49.53 87.63)
 		)
 		(stroke
@@ -1946,16 +1989,6 @@
 			(type default)
 		)
 		(uuid "d64f32d4-1527-45bc-b1cf-983a21c4ef9a")
-	)
-	(wire
-		(pts
-			(xy 53.34 36.83) (xy 41.91 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7cf2044-7b59-4d15-b547-40f5fdb555cc")
 	)
 	(wire
 		(pts
@@ -1986,16 +2019,6 @@
 			(type default)
 		)
 		(uuid "de3675d7-7612-45e3-a8fb-2ac4d6a3aee2")
-	)
-	(wire
-		(pts
-			(xy 41.91 25.4) (xy 41.91 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1cfcacf-bf2b-4929-bebc-b198d31c1073")
 	)
 	(wire
 		(pts
@@ -2079,7 +2102,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02a54c9f-2276-4902-b5b8-2338b72eaf2f")
-		(property "Reference" "J6"
+		(property "Reference" "J9"
 			(at 27.94 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2149,7 +2172,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J6")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -2346,7 +2369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2119164a-a83a-40ef-b327-ce9bac507413")
-		(property "Reference" "J?"
+		(property "Reference" "J10"
 			(at 34.29 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2418,7 +2441,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2517,93 +2540,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 41.91 39.37 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "289171e0-99a3-49b4-ad00-9b536e75cdf5")
-		(property "Reference" "#PWR01"
-			(at 48.26 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 39.3699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "72ec7230-2640-470c-98a2-cad8a113e882")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
 		(at 63.5 35.56 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2611,10 +2550,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "29beb818-2489-4ab1-9cb7-a6b6d6418d51")
 		(property "Reference" "U2"
-			(at 72.39 34.2899 0)
+			(at 72.39 36.8301 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2625,7 +2563,7 @@
 			)
 		)
 		(property "Value" "ER_OLEDM0.91_1x-I2C"
-			(at 72.39 36.8299 0)
+			(at 72.39 34.2901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2636,7 +2574,7 @@
 			)
 		)
 		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
-			(at 81.534 48.26 0)
+			(at 81.534 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2647,7 +2585,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
-			(at 106.172 50.292 0)
+			(at 106.172 20.828 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2658,7 +2596,7 @@
 			)
 		)
 		(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
-			(at 90.17 52.324 0)
+			(at 90.17 18.796 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2793,7 +2731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ff66cb6-cfed-49d0-af0f-ac7401b3e8bb")
-		(property "Reference" "SW?"
+		(property "Reference" "SW1"
 			(at 49.53 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2867,7 +2805,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW?")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -2977,7 +2915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "531a0da4-79fe-417d-9e32-6dae160505a4")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR022"
 			(at 44.45 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -3037,7 +2975,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR05")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3147,7 +3085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "626bb2c0-00fb-41c3-8a60-01a43f9fd102")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR020"
 			(at 49.53 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3208,91 +3146,13 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR06")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8493d832-d749-408f-86af-ea9207fd83f1")
-		(property "Reference" "#PWR011"
-			(at 63.5 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "59814976-aa7a-4858-bfb1-ae4f1e9db8c2")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3397,7 +3257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "931cc359-a9fe-4c74-959a-645a3200c9c2")
-		(property "Reference" "J?"
+		(property "Reference" "J11"
 			(at 34.29 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3469,7 +3329,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -3493,7 +3353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95f418da-9e07-447a-bd4d-057fb77e1d69")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR021"
 			(at 49.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3554,7 +3414,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR07")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -3578,7 +3438,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a83f059-522e-41a9-b9ea-4e5f747bf3bc")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR025"
 			(at 71.12 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -3639,13 +3499,102 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR02")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connectors:Connector 4 Female")
+		(at 39.37 179.07 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c39bd453-b1d7-4319-9ad5-bc8c84f9648c")
+		(property "Reference" "J12"
+			(at 53.34 182.8799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "${FAMILY}"
+			(at 40.132 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector 4 Female"
+			(at 39.37 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "9d13c8ae-f9c7-4271-9c32-4a4e716ca547")
+		)
+		(pin "2"
+			(uuid "96edd9de-ccc5-43f4-a93b-d7931a90ac6f")
+		)
+		(pin "1"
+			(uuid "a2dc79bc-9b18-40f8-9612-f0676d360f55")
+		)
+		(pin "3"
+			(uuid "ecb9b487-3105-412e-a256-c26dda78c0f9")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -3663,7 +3612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4b7081d-b40a-4224-a389-a718c0c2b955")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR023"
 			(at 63.5 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -3724,7 +3673,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR04")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3834,7 +3783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deb7c043-9255-4bd8-8e3a-95287cd6bdb5")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR018"
 			(at 34.29 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -3895,7 +3844,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR03")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -3908,8 +3857,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connectors:Connector 4 Female")
-		(at 52.07 179.07 270)
+		(lib_id "power:GND")
+		(at 41.91 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3918,31 +3867,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fce0fdd2-497f-4ea0-b4d5-ca1bf4e31659")
-		(property "Reference" "J?"
-			(at 53.34 182.8799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "${FAMILY}"
-			(at 51.308 182.88 0)
+		(uuid "e5093c2b-cb5d-4757-aeee-f0515dd7fb94")
+		(property "Reference" "#PWR019"
+			(at 48.26 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "Value" "GND"
+			(at 45.72 31.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(property "Footprint" ""
-			(at 52.07 179.07 0)
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3953,7 +3902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 179.07 0)
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3963,8 +3912,8 @@
 				)
 			)
 		)
-		(property "Description" "Connector 4 Female"
-			(at 52.07 179.07 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3975,52 +3924,105 @@
 			)
 		)
 		(pin "1"
-			(uuid "b71b6eb6-6807-4ab4-a398-053044063543")
-		)
-		(pin "2"
-			(uuid "95118e7f-b840-4316-a0d7-4f04fb257b9f")
-		)
-		(pin "4"
-			(uuid "3aca5e60-d2d5-4f5c-92b3-e3a4f97e6b24")
-		)
-		(pin "3"
-			(uuid "97083c0f-22cf-4ab4-b72c-e706ebcaaa1d")
+			(uuid "577bb563-89e3-4bb4-9b36-019ee9e83eb5")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "J?")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J?")
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 25.4 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f254f160-c873-4af4-9e47-360f1536c7c5")
+		(property "Reference" "#PWR024"
+			(at 63.5 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54c5a93d-fcfc-46d5-8b65-165d3c005b46")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(group ""
-		(uuid "6dc22a13-ef4e-412c-97a9-32901e455987")
-		(members "0d6c1e75-6865-4678-a830-a5a47004e69c" "4ff66cb6-cfed-49d0-af0f-ac7401b3e8bb"
-			"531a0da4-79fe-417d-9e32-6dae160505a4" "588ef8ce-2d23-49e0-955e-6a2b2a0d9b7b"
-			"717c2a8f-7eb3-4cfa-87b8-1c3b7c4bd13c" "8960acff-a9b3-4c84-a5f7-896bff9a3a0c"
-			"93a362a9-ea8c-42c8-8d06-69c219f336a3" "b82df318-c542-4484-b3e6-de13d2cb4fd7"
-			"cd3cd42f-87d0-4d43-9c40-2d4a38fa7598" "d4b7081d-b40a-4224-a389-a718c0c2b955"
-			"da51135c-1e34-473c-a899-9e14792c23ca" "dd9729c5-818e-46ff-ae4c-23beaf2744b9"
-			"de3675d7-7612-45e3-a8fb-2ac4d6a3aee2" "deb7c043-9255-4bd8-8e3a-95287cd6bdb5"
-			"f7ce8dc2-3273-4b85-a0f5-59405ec2d53f" "fce0fdd2-497f-4ea0-b4d5-ca1bf4e31659"
-		)
-	)
-	(group ""
-		(uuid "c281cdf2-ed0a-4066-85d8-10be0bfc72a4")
-		(members "02a54c9f-2276-4902-b5b8-2338b72eaf2f" "02b8c1a9-289b-4da0-ba03-deb65e0a54be"
-			"17dc32cb-c8db-4da1-9464-58068c503cef" "289171e0-99a3-49b4-ad00-9b536e75cdf5"
-			"29beb818-2489-4ab1-9cb7-a6b6d6418d51" "41708643-3424-4e3f-8ce4-c3820082ef64"
-			"4361b248-d99c-425d-a158-5028d97e670a" "8493d832-d749-408f-86af-ea9207fd83f1"
-			"8e54a3bc-6697-4721-ad93-f30b0cf0d921" "d7cf2044-7b59-4d15-b547-40f5fdb555cc"
-			"e1cfcacf-bf2b-4929-bebc-b198d31c1073"
+		(uuid "12663318-4868-46b2-9deb-6e9f81d1a799")
+		(members "02a54c9f-2276-4902-b5b8-2338b72eaf2f" "09aaa21b-430c-4b2f-9d1e-d4202fa509e3"
+			"0a3b002b-90cf-48b5-b9e5-37059841f9b9" "16652abf-b945-4e39-9d56-7ea70754346d"
+			"20222321-04f5-48e4-9384-781389b1bc5a" "29beb818-2489-4ab1-9cb7-a6b6d6418d51"
+			"2cf4a841-33ba-4893-9d6d-9c9311da3c6e" "3ee3be73-a80a-4abf-a87e-db0aa8defa38"
+			"4586cdcd-a940-4f13-9f6e-8500f2cfa679" "8e54a3bc-6697-4721-ad93-f30b0cf0d921"
+			"c6b6280f-a6f7-4aa0-bd63-47e858999f74" "d5ffc558-14fc-4cdc-8137-4d105d6175a4"
+			"e5093c2b-cb5d-4757-aeee-f0515dd7fb94" "f254f160-c873-4af4-9e47-360f1536c7c5"
 		)
 	)
 	(group ""
