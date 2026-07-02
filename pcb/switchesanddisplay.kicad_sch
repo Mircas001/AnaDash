@@ -1534,8 +1534,8 @@
 		(uuid "8e54a3bc-6697-4721-ad93-f30b0cf0d921")
 	)
 	(rectangle
-		(start 30.48 149.86)
-		(end 67.31 187.96)
+		(start 40.64 149.86)
+		(end 77.47 187.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -1547,7 +1547,7 @@
 	)
 	(rectangle
 		(start 29.21 58.42)
-		(end 66.04 139.7)
+		(end 71.12 139.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -1567,15 +1567,31 @@
 		)
 		(uuid "2cf4a841-33ba-4893-9d6d-9c9311da3c6e")
 	)
+	(text "Switches\n"
+		(exclude_from_sim no)
+		(at 50.038 141.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4d970385-a6d4-45c5-bce8-758d5ef77403")
+	)
 	(text "Rotary Encoder\n"
 		(exclude_from_sim no)
-		(at 48.895 189.992 0)
+		(at 59.055 189.992 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "5cd430b8-39e5-4203-ab60-bc07ac92c842")
+	)
+	(junction
+		(at 67.31 167.64)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "0c93d3cf-4ac7-4c1b-9ecf-6121d261b0a0")
 	)
 	(junction
 		(at 64.77 77.47)
@@ -1596,16 +1612,28 @@
 		(uuid "4a47362a-3914-4668-b5d0-97cddb4154e1")
 	)
 	(junction
-		(at 64.77 102.87)
+		(at 44.45 31.75)
 		(diameter 0)
 		(color 0 0 0 1)
-		(uuid "54f8a8e8-24af-438b-9c07-7b1f8ddd62fe")
+		(uuid "60b5d69d-16a5-42b4-9cdc-eff9ba3e4d1e")
+	)
+	(junction
+		(at 54.61 170.18)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "6944a82e-6eee-4cba-a3bd-91a5627442d6")
 	)
 	(junction
 		(at 64.77 118.11)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "74adeddf-653a-49bd-8169-e65ea3b58e3c")
+	)
+	(junction
+		(at 64.77 102.87)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "82a4f154-0084-47f2-9926-66f9e8a9a354")
 	)
 	(junction
 		(at 64.77 87.63)
@@ -1618,6 +1646,17 @@
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "fedc77b5-f947-4e21-88da-d4d9f2c7ad54")
+	)
+	(wire
+		(pts
+			(xy 44.45 31.75) (xy 44.45 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "0064d7c6-e046-4c47-a5b5-392c3f332a7c")
 	)
 	(wire
 		(pts
@@ -1653,7 +1692,18 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 66.04 173.99)
+			(xy 45.72 113.03) (xy 45.72 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "0a8500fc-6589-43fb-8212-7356f259839b")
+	)
+	(wire
+		(pts
+			(xy 76.2 158.75) (xy 76.2 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1715,6 +1765,28 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 167.64) (xy 67.31 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "20a30d40-31b9-41f9-97d5-cac9ea8bc2d1")
+	)
+	(wire
+		(pts
+			(xy 43.18 92.71) (xy 45.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "20c74efb-b513-4e6d-abbb-322edc480328")
+	)
+	(wire
+		(pts
 			(xy 52.07 110.49) (xy 52.07 118.11)
 		)
 		(stroke
@@ -1757,6 +1829,28 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 102.87) (xy 68.58 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "392a78ef-18bf-45dc-9b77-10a1810020f5")
+	)
+	(wire
+		(pts
+			(xy 54.61 170.18) (xy 67.31 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "3e14f0ca-26e3-4cbe-a38c-b95ea58e117b")
+	)
+	(wire
+		(pts
 			(xy 41.91 38.1) (xy 41.91 39.37)
 		)
 		(stroke
@@ -1787,23 +1881,46 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 161.29) (xy 40.64 161.29)
+			(xy 67.31 163.83) (xy 67.31 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 0 1)
 		)
-		(uuid "588ef8ce-2d23-49e0-955e-6a2b2a0d9b7b")
+		(uuid "5d4d9102-3df9-4af8-ade1-ce36bb3858e0")
 	)
 	(wire
 		(pts
-			(xy 46.99 167.64) (xy 41.91 167.64)
+			(xy 43.18 113.03) (xy 45.72 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "5fdd5a67-b4e6-44ca-ac9d-31fbc05cd773")
+	)
+	(wire
+		(pts
+			(xy 57.15 167.64) (xy 52.07 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "717c2a8f-7eb3-4cfa-87b8-1c3b7c4bd13c")
+	)
+	(wire
+		(pts
+			(xy 63.5 25.4) (xy 44.45 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "751a88b8-34d3-4f93-b03f-b32010e8649c")
 	)
 	(wire
 		(pts
@@ -1828,7 +1945,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 173.99) (xy 49.53 173.99)
+			(xy 76.2 173.99) (xy 59.69 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1859,7 +1976,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 158.75) (xy 66.04 158.75)
+			(xy 67.31 158.75) (xy 76.2 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1876,6 +1993,17 @@
 			(type default)
 		)
 		(uuid "956953d2-da6b-4bdf-ba07-7f3c9ac92b8c")
+	)
+	(wire
+		(pts
+			(xy 44.45 25.4) (xy 44.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "963121e6-6af2-40a0-9830-aad8664735e3")
 	)
 	(wire
 		(pts
@@ -1900,6 +2028,17 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 92.71) (xy 45.72 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "a68beb85-9bdb-451b-9d0c-7c0068349bcf")
+	)
+	(wire
+		(pts
 			(xy 64.77 67.31) (xy 64.77 77.47)
 		)
 		(stroke
@@ -1908,6 +2047,17 @@
 			(color 0 0 0 1)
 		)
 		(uuid "a86034ca-e85f-4cd7-a3ff-43e61ad3f93a")
+	)
+	(wire
+		(pts
+			(xy 41.91 31.75) (xy 44.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "a97de467-418d-49db-bb2b-4b7c4b629ba3")
 	)
 	(wire
 		(pts
@@ -1921,14 +2071,14 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 102.87) (xy 64.77 107.95)
+			(xy 54.61 170.18) (xy 54.61 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 0 0 0 1)
 		)
-		(uuid "b1fc39f3-7b26-4cb1-ae42-0ef110a3ff68")
+		(uuid "b587d5e3-9d8f-4d6d-a76c-7cdd90ba88fd")
 	)
 	(wire
 		(pts
@@ -1942,7 +2092,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 173.99) (xy 46.99 167.64)
+			(xy 57.15 173.99) (xy 57.15 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1962,7 +2112,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 158.75) (xy 31.75 173.99)
+			(xy 41.91 158.75) (xy 41.91 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2002,7 +2152,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 167.64) (xy 41.91 163.83)
+			(xy 52.07 167.64) (xy 52.07 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2012,13 +2162,24 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 158.75) (xy 31.75 158.75)
+			(xy 52.07 158.75) (xy 41.91 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "de3675d7-7612-45e3-a8fb-2ac4d6a3aee2")
+	)
+	(wire
+		(pts
+			(xy 52.07 161.29) (xy 46.99 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "dee4d5e0-4068-4b21-a055-40e8ef194475")
 	)
 	(wire
 		(pts
@@ -2039,6 +2200,28 @@
 			(type default)
 		)
 		(uuid "e6c636ba-8dcf-4bf9-9f9a-ec5d25018191")
+	)
+	(wire
+		(pts
+			(xy 46.99 170.18) (xy 54.61 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "e9e259da-78bb-4722-9c5b-3daa4a6d7fe4")
+	)
+	(wire
+		(pts
+			(xy 67.31 167.64) (xy 69.85 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "ea86dba5-49a3-4279-a8e7-117053ad7d88")
 	)
 	(wire
 		(pts
@@ -2072,7 +2255,18 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 173.99) (xy 41.91 173.99)
+			(xy 64.77 102.87) (xy 64.77 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "f7603fec-f98b-40c6-8d90-d5276705f319")
+	)
+	(wire
+		(pts
+			(xy 41.91 173.99) (xy 52.07 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2090,6 +2284,17 @@
 		)
 		(uuid "fc5e139f-f0ef-4fd6-87f2-a92574916ddb")
 	)
+	(wire
+		(pts
+			(xy 46.99 161.29) (xy 46.99 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "ffccb0a1-c659-4132-9334-28c771149775")
+	)
 	(symbol
 		(lib_id "Connectors:Connector 4 Female")
 		(at 36.83 29.21 0)
@@ -2102,7 +2307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02a54c9f-2276-4902-b5b8-2338b72eaf2f")
-		(property "Reference" "J9"
+		(property "Reference" "J6"
 			(at 27.94 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2124,7 +2329,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 36.83 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -2185,6 +2390,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 59.69 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "069bd499-f1b7-47e3-a48c-c076a8087fcf")
+		(property "Reference" "SW9"
+			(at 59.69 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 59.69 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_MountingHoles"
+			(at 55.88 157.226 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 59.69 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "S1"
+			(uuid "3c0d2523-6580-4958-bba8-8261215fde77")
+		)
+		(pin "B"
+			(uuid "38958ca5-e8b7-4ed0-8560-2c995c17a91f")
+		)
+		(pin "MP"
+			(uuid "8985f425-519e-4130-b78b-9655d21629b0")
+		)
+		(pin "C"
+			(uuid "e636b66a-75b9-4010-9159-d02772c2150d")
+		)
+		(pin "A"
+			(uuid "c178aaef-e783-44d4-bfe3-99da92c373db")
+		)
+		(pin "S2"
+			(uuid "c099fe33-8dc5-44f3-9f62-e69f26b1c82f")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+			(project "switchesanddisplay"
+				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 59.69 107.95 0)
 		(unit 1)
@@ -2216,7 +2519,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2258,7 +2561,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW6")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -2302,7 +2605,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2344,13 +2647,97 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW8")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17ea5e97-26a3-4f3d-8ecd-44cf0f235801")
+		(property "Reference" "#PWR020"
+			(at 45.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98a5bbc6-dc69-4d35-9bd2-91de01fac59d")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+			(project "switchesanddisplay"
+				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -2369,7 +2756,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2119164a-a83a-40ef-b327-ce9bac507413")
-		(property "Reference" "J10"
+		(property "Reference" "J1"
 			(at 34.29 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2390,7 +2777,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 38.1 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2447,7 +2834,7 @@
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J?")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -2485,7 +2872,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2527,7 +2914,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW9")
+					(reference "SW8")
 					(unit 1)
 				)
 			)
@@ -2573,7 +2960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 81.534 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -2634,6 +3021,90 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 68.58 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41bb160d-7d2a-4ae0-83f9-dd020e0f6621")
+		(property "Reference" "#PWR017"
+			(at 68.58 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "225e739e-7a07-40ff-8258-2582c80b6d27")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+			(project "switchesanddisplay"
+				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 59.69 97.79 0)
 		(unit 1)
@@ -2665,7 +3136,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2707,111 +3178,13 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW5")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:RotaryEncoder_Switch_MP")
-		(at 49.53 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ff66cb6-cfed-49d0-af0f-ac7401b3e8bb")
-		(property "Reference" "SW1"
-			(at 49.53 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RotaryEncoder_Switch_MP"
-			(at 49.53 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 157.226 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
-			(at 49.53 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "B"
-			(uuid "fc8d5f1a-02d8-4a19-b621-a00b8fd74e33")
-		)
-		(pin "C"
-			(uuid "f4980e50-f45f-45be-ba09-b032e765037e")
-		)
-		(pin "S2"
-			(uuid "0c0acc68-10b3-48cc-872e-fd9d07e97df6")
-		)
-		(pin "A"
-			(uuid "8e421615-f7bd-4648-b909-e72bc0028c76")
-		)
-		(pin "S1"
-			(uuid "f63281ad-367e-4f68-a332-5270fbb50a13")
-		)
-		(pin "MP"
-			(uuid "9bcaea53-abe6-4859-9dc3-fec110f62f8a")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW?")
 					(unit 1)
 				)
 			)
@@ -2849,7 +3222,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2891,97 +3264,13 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW4")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 44.45 173.99 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "531a0da4-79fe-417d-9e32-6dae160505a4")
-		(property "Reference" "#PWR022"
-			(at 44.45 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 44.45 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b4cd6bde-3bce-4498-a0ac-c0e2caf047d5")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3019,7 +3308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3061,98 +3350,13 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW7")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 92.71 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "626bb2c0-00fb-41c3-8a60-01a43f9fd102")
-		(property "Reference" "#PWR020"
-			(at 49.53 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 46.99 92.7099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c4a282fb-f280-42ca-bfde-41fdaaa13c6d")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3190,7 +3394,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3232,13 +3436,97 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91352852-a16f-49ca-bfa8-8c28f91d19c7")
+		(property "Reference" "#PWR019"
+			(at 45.72 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6316d5fa-50b6-4225-884d-e1c29501bcc9")
+		)
+		(instances
+			(project "anadash_pcb"
+				(path "/356b9cf0-7532-4174-862f-41594407df39"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+			(project "switchesanddisplay"
+				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -3257,7 +3545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "931cc359-a9fe-4c74-959a-645a3200c9c2")
-		(property "Reference" "J11"
+		(property "Reference" "J2"
 			(at 34.29 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3278,7 +3566,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 38.1 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3335,177 +3623,7 @@
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 113.03 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95f418da-9e07-447a-bd4d-057fb77e1d69")
-		(property "Reference" "#PWR021"
-			(at 49.53 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 46.99 113.0299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1c246f5-2bea-42c8-a620-e3e485be5bb1")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 102.87 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a83f059-522e-41a9-b9ea-4e5f747bf3bc")
-		(property "Reference" "#PWR025"
-			(at 71.12 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 102.8699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e30e4525-4087-40c3-954f-1509bd39ece8")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-			(project "switchesanddisplay"
-				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR02")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3513,7 +3631,7 @@
 	)
 	(symbol
 		(lib_id "Connectors:Connector 4 Female")
-		(at 39.37 179.07 90)
+		(at 49.53 179.07 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3525,7 +3643,7 @@
 		(fields_autoplaced yes)
 		(uuid "c39bd453-b1d7-4319-9ad5-bc8c84f9648c")
 		(property "Reference" "J12"
-			(at 53.34 182.8799 90)
+			(at 63.5 182.8799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3536,7 +3654,7 @@
 			)
 		)
 		(property "Value" "${FAMILY}"
-			(at 40.132 182.88 0)
+			(at 50.292 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3546,8 +3664,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 39.37 179.07 0)
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(at 49.53 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3558,7 +3676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 179.07 0)
+			(at 49.53 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3569,7 +3687,7 @@
 			)
 		)
 		(property "Description" "Connector 4 Female"
-			(at 39.37 179.07 0)
+			(at 49.53 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3598,88 +3716,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 57.15 163.83 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4b7081d-b40a-4224-a389-a718c0c2b955")
-		(property "Reference" "#PWR023"
-			(at 63.5 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 163.8299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.15 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a61800bd-7558-4efb-95f7-dfb8516c3808")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR04")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -3717,7 +3756,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -3759,7 +3798,7 @@
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -3773,7 +3812,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 161.29 270)
+		(at 69.85 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3782,9 +3821,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "deb7c043-9255-4bd8-8e3a-95287cd6bdb5")
+		(uuid "dae223fe-f4ed-4659-89a4-24f3d96c5962")
 		(property "Reference" "#PWR018"
-			(at 34.29 161.29 0)
+			(at 69.85 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3795,18 +3834,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 161.2899 90)
+			(at 69.85 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 161.29 0)
+			(at 69.85 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3817,7 +3855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 161.29 0)
+			(at 69.85 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3828,7 +3866,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 161.29 0)
+			(at 69.85 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3839,7 +3877,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2c2bc8b2-4c03-41d0-baa5-9ac12bc5b0f9")
+			(uuid "7295980d-9e7b-40b8-be07-371a5cf9f2a2")
 		)
 		(instances
 			(project "anadash_pcb"
@@ -3850,7 +3888,7 @@
 			)
 			(project "switchesanddisplay"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR03")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -3858,7 +3896,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 41.91 31.75 90)
+		(at 44.45 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3867,9 +3905,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e5093c2b-cb5d-4757-aeee-f0515dd7fb94")
-		(property "Reference" "#PWR019"
-			(at 48.26 31.75 0)
+		(uuid "e0d0aa10-5de3-4217-bd80-47c58969e6aa")
+		(property "Reference" "#PWR016"
+			(at 44.45 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3880,18 +3918,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 31.7499 90)
+			(at 44.45 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 31.75 0)
+			(at 44.45 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3902,7 +3939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 31.75 0)
+			(at 44.45 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3913,7 +3950,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 31.75 0)
+			(at 44.45 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3924,139 +3961,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "577bb563-89e3-4bb4-9b36-019ee9e83eb5")
+			(uuid "e1e7237e-be59-48f3-b2eb-574a3b0e145e")
 		)
 		(instances
 			(project "anadash_pcb"
 				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR019")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 25.4 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f254f160-c873-4af4-9e47-360f1536c7c5")
-		(property "Reference" "#PWR024"
-			(at 63.5 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 20.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "54c5a93d-fcfc-46d5-8b65-165d3c005b46")
-		)
-		(instances
-			(project "anadash_pcb"
-				(path "/356b9cf0-7532-4174-862f-41594407df39"
-					(reference "#PWR024")
+			(project "switchesanddisplay"
+				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(group ""
-		(uuid "12663318-4868-46b2-9deb-6e9f81d1a799")
-		(members "02a54c9f-2276-4902-b5b8-2338b72eaf2f" "09aaa21b-430c-4b2f-9d1e-d4202fa509e3"
-			"0a3b002b-90cf-48b5-b9e5-37059841f9b9" "16652abf-b945-4e39-9d56-7ea70754346d"
-			"20222321-04f5-48e4-9384-781389b1bc5a" "29beb818-2489-4ab1-9cb7-a6b6d6418d51"
-			"2cf4a841-33ba-4893-9d6d-9c9311da3c6e" "3ee3be73-a80a-4abf-a87e-db0aa8defa38"
-			"4586cdcd-a940-4f13-9f6e-8500f2cfa679" "8e54a3bc-6697-4721-ad93-f30b0cf0d921"
-			"c6b6280f-a6f7-4aa0-bd63-47e858999f74" "d5ffc558-14fc-4cdc-8137-4d105d6175a4"
-			"e5093c2b-cb5d-4757-aeee-f0515dd7fb94" "f254f160-c873-4af4-9e47-360f1536c7c5"
-		)
-	)
-	(group ""
-		(uuid "e76fd323-65d2-40e9-8685-c7b79229cf94")
-		(members "089a6f87-a710-4716-9910-0a11b2cfb5bf" "0b0df901-061b-4218-b52e-25667a65e5b9"
-			"0eea6b0e-7190-4f9c-8999-b2095e40df13" "0f258bf1-05c1-49a3-8a1b-b3b0c1f4180a"
-			"12313de1-f228-40a9-9bd4-d543de4307c1" "13940596-6900-4b27-9ef2-ca794ce9d423"
-			"152c93e2-414b-4e80-8ade-5621592ad9f6" "2119164a-a83a-40ef-b327-ce9bac507413"
-			"231de2c9-654a-4edd-a193-c1413bd89a44" "26a720f7-0476-45d0-9dad-97d19e3ec4f5"
-			"2756b7e8-0a4b-4dd8-9ff6-8c3144e4786a" "283c101c-d361-47c6-9e6a-e2e12a2979ae"
-			"2b9e4de6-f77f-48a2-89ef-0c38508d51e7" "34d959cb-f540-4969-bc19-07d724078294"
-			"4757db7a-747f-4d72-8ef2-800885fda8d3" "4a47362a-3914-4668-b5d0-97cddb4154e1"
+		(uuid "41e1fdfd-23ec-40a2-b68f-0e6ca9b8898b")
+		(members "089a6f87-a710-4716-9910-0a11b2cfb5bf" "0a8500fc-6589-43fb-8212-7356f259839b"
+			"0b0df901-061b-4218-b52e-25667a65e5b9" "0eea6b0e-7190-4f9c-8999-b2095e40df13"
+			"0f258bf1-05c1-49a3-8a1b-b3b0c1f4180a" "12313de1-f228-40a9-9bd4-d543de4307c1"
+			"13940596-6900-4b27-9ef2-ca794ce9d423" "152c93e2-414b-4e80-8ade-5621592ad9f6"
+			"17ea5e97-26a3-4f3d-8ecd-44cf0f235801" "20c74efb-b513-4e6d-abbb-322edc480328"
+			"2119164a-a83a-40ef-b327-ce9bac507413" "231de2c9-654a-4edd-a193-c1413bd89a44"
+			"26a720f7-0476-45d0-9dad-97d19e3ec4f5" "2756b7e8-0a4b-4dd8-9ff6-8c3144e4786a"
+			"283c101c-d361-47c6-9e6a-e2e12a2979ae" "2b9e4de6-f77f-48a2-89ef-0c38508d51e7"
+			"34d959cb-f540-4969-bc19-07d724078294" "392a78ef-18bf-45dc-9b77-10a1810020f5"
+			"41bb160d-7d2a-4ae0-83f9-dd020e0f6621" "4757db7a-747f-4d72-8ef2-800885fda8d3"
+			"4a47362a-3914-4668-b5d0-97cddb4154e1" "4d970385-a6d4-45c5-bce8-758d5ef77403"
 			"4e96ec5a-32dd-492b-b10b-d750f415f902" "52ccd59e-4435-4e1b-bbb7-dd40657fb69a"
-			"54f8a8e8-24af-438b-9c07-7b1f8ddd62fe" "61968322-069b-423f-90aa-b90b9647f3c2"
-			"626bb2c0-00fb-41c3-8a60-01a43f9fd102" "74adeddf-653a-49bd-8169-e65ea3b58e3c"
-			"81e5ab9a-19f3-42ee-92cf-9b47a55806a9" "85c269b0-7029-4270-83d0-ad590e70d163"
+			"5fdd5a67-b4e6-44ca-ac9d-31fbc05cd773" "61968322-069b-423f-90aa-b90b9647f3c2"
+			"74adeddf-653a-49bd-8169-e65ea3b58e3c" "81e5ab9a-19f3-42ee-92cf-9b47a55806a9"
+			"82a4f154-0084-47f2-9926-66f9e8a9a354" "85c269b0-7029-4270-83d0-ad590e70d163"
 			"8af48f0a-e9e5-4dd0-bc7e-9dcf5f60151d" "8bb65c33-d230-4896-a946-391a22d9052a"
-			"90520134-2bca-4f23-b7e1-29898e29f211" "931cc359-a9fe-4c74-959a-645a3200c9c2"
-			"956953d2-da6b-4bdf-ba07-7f3c9ac92b8c" "95f418da-9e07-447a-bd4d-057fb77e1d69"
-			"9a83f059-522e-41a9-b9ea-4e5f747bf3bc" "9aef0d54-6e06-4817-818d-d0bfc7d067aa"
-			"9e431c6d-72bd-46ef-8072-d697b18fa92b" "a86034ca-e85f-4cd7-a3ff-43e61ad3f93a"
-			"ae63227d-f6a2-4d50-920c-899a59a6daf9" "b1fc39f3-7b26-4cb1-ae42-0ef110a3ff68"
-			"b6d3cd43-d76f-4409-af01-03eb3c9d137a" "b7c99222-cbcc-40a7-8b8b-da3a6c8e6ac5"
-			"d508690c-db6c-4f02-82be-69228ef05c9b" "d64f32d4-1527-45bc-b1cf-983a21c4ef9a"
-			"d9434aad-83e8-444d-8704-7ea1334fbdc9" "e49b587c-604a-4783-8383-b5cb08e7fa0b"
-			"e6c636ba-8dcf-4bf9-9f9a-ec5d25018191" "ea007a81-816b-4cad-a699-19d883552955"
-			"f2f686d6-5c81-4017-8456-e77c03c2c39a" "f55f9568-c014-4d41-9900-c4627b930347"
-			"f755185d-9ed4-49c8-a503-a588047490ea" "fc5e139f-f0ef-4fd6-87f2-a92574916ddb"
+			"90520134-2bca-4f23-b7e1-29898e29f211" "91352852-a16f-49ca-bfa8-8c28f91d19c7"
+			"931cc359-a9fe-4c74-959a-645a3200c9c2" "956953d2-da6b-4bdf-ba07-7f3c9ac92b8c"
+			"9aef0d54-6e06-4817-818d-d0bfc7d067aa" "9e431c6d-72bd-46ef-8072-d697b18fa92b"
+			"a68beb85-9bdb-451b-9d0c-7c0068349bcf" "a86034ca-e85f-4cd7-a3ff-43e61ad3f93a"
+			"ae63227d-f6a2-4d50-920c-899a59a6daf9" "b6d3cd43-d76f-4409-af01-03eb3c9d137a"
+			"b7c99222-cbcc-40a7-8b8b-da3a6c8e6ac5" "d508690c-db6c-4f02-82be-69228ef05c9b"
+			"d64f32d4-1527-45bc-b1cf-983a21c4ef9a" "d9434aad-83e8-444d-8704-7ea1334fbdc9"
+			"e49b587c-604a-4783-8383-b5cb08e7fa0b" "e6c636ba-8dcf-4bf9-9f9a-ec5d25018191"
+			"ea007a81-816b-4cad-a699-19d883552955" "f2f686d6-5c81-4017-8456-e77c03c2c39a"
+			"f55f9568-c014-4d41-9900-c4627b930347" "f755185d-9ed4-49c8-a503-a588047490ea"
+			"f7603fec-f98b-40c6-8d90-d5276705f319" "fc5e139f-f0ef-4fd6-87f2-a92574916ddb"
 			"fedc77b5-f947-4e21-88da-d4d9f2c7ad54"
 		)
+	)
+	(group ""
+		(uuid "d0701eef-b94b-48d9-945f-efdc79587be1")
+		(members "069bd499-f1b7-47e3-a48c-c076a8087fcf" "0c93d3cf-4ac7-4c1b-9ecf-6121d261b0a0"
+			"0d6c1e75-6865-4678-a830-a5a47004e69c" "20a30d40-31b9-41f9-97d5-cac9ea8bc2d1"
+			"3e14f0ca-26e3-4cbe-a38c-b95ea58e117b" "5d4d9102-3df9-4af8-ade1-ce36bb3858e0"
+			"6944a82e-6eee-4cba-a3bd-91a5627442d6" "717c2a8f-7eb3-4cfa-87b8-1c3b7c4bd13c"
+			"8960acff-a9b3-4c84-a5f7-896bff9a3a0c" "93a362a9-ea8c-42c8-8d06-69c219f336a3"
+			"b587d5e3-9d8f-4d6d-a76c-7cdd90ba88fd" "b82df318-c542-4484-b3e6-de13d2cb4fd7"
+			"c39bd453-b1d7-4319-9ad5-bc8c84f9648c" "cd3cd42f-87d0-4d43-9c40-2d4a38fa7598"
+			"da51135c-1e34-473c-a899-9e14792c23ca" "dae223fe-f4ed-4659-89a4-24f3d96c5962"
+			"dd9729c5-818e-46ff-ae4c-23beaf2744b9" "de3675d7-7612-45e3-a8fb-2ac4d6a3aee2"
+			"dee4d5e0-4068-4b21-a055-40e8ef194475" "e9e259da-78bb-4722-9c5b-3daa4a6d7fe4"
+			"ea86dba5-49a3-4279-a8e7-117053ad7d88" "f7ce8dc2-3273-4b85-a0f5-59405ec2d53f"
+			"ffccb0a1-c659-4132-9334-28c771149775"
+		)
+	)
+	(group ""
+		(uuid "e4e328cc-acf1-4327-b661-8b291a2e997e")
+		(members "5cd430b8-39e5-4203-ab60-bc07ac92c842" "d0701eef-b94b-48d9-945f-efdc79587be1")
 	)
 	(sheet_instances
 		(path "/"
 			(page "2")
 		)
 	)
+	(embedded_fonts no)
 )
