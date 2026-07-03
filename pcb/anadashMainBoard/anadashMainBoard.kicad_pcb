@@ -43976,7 +43976,7 @@
 		(embedded_fonts no)
 		(model "../3dshapes/Adafruit_MCP4728.STEP"
 			(offset
-				(xyz -0.7 -21 0)
+				(xyz -0.7 -21 2.562)
 			)
 			(scale
 				(xyz 1 1 1)
