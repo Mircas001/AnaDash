@@ -18,6 +18,10 @@ The PCB was split in two, to allow the dashboard to sit at an angle, it has been
 This is the main PCB, which takes care of the DAC and the Pico, it also has the display output:
 ![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardSchematic.png)
 ![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardPCB.png)
+![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/pcb/assets/MainBoard3DModel.png)
+
+You MUST connect them together, making sure the pins are aligned
+
 This is the secondary/auxiliary board, which has the switches as well the encoder.
 (insert schematic and pcb)
 
