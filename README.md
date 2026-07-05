@@ -1,38 +1,36 @@
-# AnaDash
-See the main PCB:
-(insert pcb viewer 1 here) 
-See the secondary PCB:
+# AnaDash - An dashboard for your PC
+This is an dashboard for your PC that allows you to get a complete breakdown on the PC at an quick glance. 
 
-An cool looking dashboard for your PC!
 ## Features:
 - 4x Analog Gauges showing CPU usage, CPU temperature, RAM usage and Swap usage, driven by an Adafruit MCP4728 module.
 - 8x Cherry MX keys for any macro your heart wishes.
 - An OLED display that can show animations, time, notification and current song. 
 - An rotary encoder for UI navigation and changing your volume (including a switch).
 
-## Cad Model:
+## Cad Model
 (insert cad here)
 
-## PCB:
-The PCB was split in two, to allow the dashboard to sit at an angle, it has been made fully in KiCad.
-This is the main PCB, which takes care of the DAC and the Pico, it also has the display output:
+## PCB
+This project uses two 2 layer PCBs, it was designed in KiCa
+
+### Main PCB
 ![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardSchematic.png)
 ![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardPCB.png)
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/pcb/assets/MainBoard3DModel.png)
 
-You MUST connect them together, making sure the pins are aligned
-
-This is the secondary/auxiliary board, which has the switches as well the encoder.
-(insert schematic and pcb)
+### Auxiliary PCB
+![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxSchematic.png)
+![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxBoardPCB.png)
+![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxBoard3DModel.)
 
 ## Drivers
-This board requires drivers to be installed, I have written them on rust (maybe I should something more well-know or begginer friendly).
-It only supports Linux, but I would be glad to help you out if you want to port to other systems.
+You need to install drivers for this
+(insert instruction here)
 
 ## Firmware
 It has been written with MicroPython (should consider changing that)
 
-## BOM:
+## BOM
 1x Raspberry Pi Pico
 2x JST-XH 5P Male to Male Cables
 4x JST-XH 5P Female Vertical Through Hole Sockets
@@ -47,7 +45,14 @@ It has been written with MicroPython (should consider changing that)
 ?x M3 6mm Phillip Screws 
 1x Case (x 3d printed parts)
 
-## Credits:
+## Software
+This project was designed in:
+![KiCad](https://www.kicad.org) (for the PCB)
+![Onshape](https://onshape.com) (for the 3D Model)
+
+## Credits
+![Computing: The Details, for giving me the inspiration to start this project a few yeaars ago](https://www.youtube.com/watch?v=4J-DTbZlJ5I)
+![Hack Club Macondo program, for the funding:](https://www.youtube.com/watch?v=4J-DTbZlJ5I)
 ![OrpheusPad, for serving as reference as to how should the git repo and README look like](https://github.com/qcoral/orpheuspad/tree/main)
 ![HackPad program, which, despite not participating in it, guided me through this](https://hackpad.hackclub.com/)
 

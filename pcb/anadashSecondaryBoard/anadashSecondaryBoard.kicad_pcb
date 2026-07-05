@@ -87,7 +87,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "281b8d39-f4c1-4964-bbd5-4d3fb87b324d")
 		(at 135.733572 90.56)
@@ -390,7 +390,7 @@
 			)
 		)
 	)
-	(footprint "Library:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+	(footprint "footprints:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 		(layer "F.Cu")
 		(uuid "32ac82a4-0260-4cdf-bf04-31f05ff12d7d")
 		(at 149.178572 93.14)
@@ -820,7 +820,7 @@
 		)
 		(model "../3dmodels/EC11.STEP"
 			(offset
-				(xyz 7.25 -2.5 0)
+				(xyz 7.5 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -830,7 +830,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "3bbb6232-8fb3-41cd-aa61-988be3443e9f")
 		(at 92.723572 90.56)
@@ -1133,7 +1133,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "4131cef5-4ebf-41fe-8300-4e1b26b1f060")
 		(at 203.708572 90.56)
@@ -1436,7 +1436,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "4465f784-3e10-444c-a3af-c4948929c6f3")
 		(at 182.203572 90.56)
@@ -1739,7 +1739,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "83c737a8-43e3-4f41-b59b-709531aff39a")
 		(at 225.213572 90.56)
@@ -2042,7 +2042,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "9a71fbdc-f945-41be-9da8-3076dc4176ea")
 		(at 114.228572 90.56)
@@ -2345,7 +2345,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "d7aea59e-14c1-4e6e-b328-f864be5f81d2")
 		(at 71.218572 90.56)
@@ -2648,7 +2648,7 @@
 			)
 		)
 	)
-	(footprint "Library:SW_Cherry_MX_1.00u_PCB"
+	(footprint "footprints:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "eb428ab5-ca8e-4d74-a038-ee8c859b7257")
 		(at 246.718572 90.56)

@@ -1817,7 +1817,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+		(property "Footprint" "footprints:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 			(at 55.88 157.226 0)
 			(hide yes)
 			(show_name no)
@@ -1915,7 +1915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2001,7 +2001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2087,7 +2087,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2349,7 +2349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2435,7 +2435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2521,7 +2521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2857,7 +2857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3021,7 +3021,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
 			(at 59.69 72.39 0)
 			(hide yes)
 			(show_name no)
