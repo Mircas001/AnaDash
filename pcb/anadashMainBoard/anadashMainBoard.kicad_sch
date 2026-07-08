@@ -3386,6 +3386,17 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 78.74) (xy 81.28 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "6118c805-3729-4f16-b06f-67f56a4d4a50")
+	)
+	(wire
+		(pts
 			(xy 148.59 88.9) (xy 144.78 88.9)
 		)
 		(stroke
@@ -3406,17 +3417,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 91.44) (xy 72.39 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "6af72b81-f296-4091-b7b6-479e0b477d9e")
-	)
-	(wire
-		(pts
 			(xy 238.76 63.5) (xy 240.03 63.5)
 		)
 		(stroke
@@ -3427,14 +3427,14 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 93.98) (xy 73.66 91.44)
+			(xy 81.28 78.74) (xy 72.39 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 0 0 0 1)
 		)
-		(uuid "7a0805d2-fd65-4c84-812d-f52a892962b6")
+		(uuid "7cdebc45-6022-47dc-8317-4f9bcd18308a")
 	)
 	(wire
 		(pts
@@ -5097,6 +5097,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 67.31 83.82 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c4015d8-6d31-405c-bbef-903c44954be8")
+		(property "Reference" "J2"
+			(at 67.31 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LeftKeyConnector"
+			(at 67.31 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 67.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11c1a284-2708-4da2-92fb-c6cb844a7ca1")
+		)
+		(pin "3"
+			(uuid "97e111db-2124-4785-8b7a-cce2c1040113")
+		)
+		(pin "4"
+			(uuid "31ec96d4-cfb9-4a16-b4c4-882c92fccf34")
+		)
+		(pin "5"
+			(uuid "2a98952d-a406-4369-b78d-7c74ee44fcef")
+		)
+		(pin "2"
+			(uuid "efb7e060-116c-48af-863e-e3282eb96d86")
+		)
+		(instances
+			(project "anadashMainBoard"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 247.65 73.66 0)
 		(unit 1)
@@ -5824,96 +5913,6 @@
 			(project "anadashMainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 67.31 86.36 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7b00b8a-ef95-433b-8e38-eda716e97531")
-		(property "Reference" "J2"
-			(at 67.31 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LeftKeyConnector"
-			(at 67.31 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
-			(at 67.31 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 67.31 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "e789ac00-2e7f-4eaa-80e4-7911e277e9cd")
-		)
-		(pin "5"
-			(uuid "4d55320d-16ec-422b-85df-7ac61d607165")
-		)
-		(pin "2"
-			(uuid "928392ee-191c-4ce8-98b7-784a2dd34041")
-		)
-		(pin "3"
-			(uuid "823b0953-571d-4c7a-80ab-0edb7d71c802")
-		)
-		(pin "1"
-			(uuid "98622575-0fea-4b82-b72a-4e9365cb3c30")
-		)
-		(instances
-			(project "anadashMainBoard"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -6750,7 +6749,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 93.98 0)
+		(at 81.28 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6761,7 +6760,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0a788b7-43b4-44b7-af9f-d54daad24f4d")
 		(property "Reference" "#PWR02"
-			(at 73.66 100.33 0)
+			(at 81.28 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6772,7 +6771,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 95.2499 0)
+			(at 83.82 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6783,7 +6782,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 93.98 0)
+			(at 81.28 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6794,7 +6793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 93.98 0)
+			(at 81.28 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6805,7 +6804,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 93.98 0)
+			(at 81.28 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
