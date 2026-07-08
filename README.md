@@ -14,14 +14,14 @@ This is an dashboard for your PC that allows you to get a complete breakdown on 
 This project uses two 2 layer PCBs, it was designed in KiCa
 
 ### Main PCB
-![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardSchematic.png)
-![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/MainBoardPCB.png)
-![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/pcb/assets/MainBoard3DModel.png)
+![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/mainBoardSchematic.png)
+![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/mainBoardPCB.png)
+![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/pcb/assets/mainBoard3Dmodel.png)
 
 ### Auxiliary PCB
-![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxSchematic.png)
-![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxBoardPCB.png)
-![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/AuxBoard3DModel.)
+![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardSchematic.png)
+![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardPCB.png)
+![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoard3Dmodel.)
 
 ## Drivers
 You need to install drivers for this
