@@ -21,7 +21,7 @@ This project uses two 2 layer PCBs, it was designed in KiCa
 ### Auxiliary PCB
 ![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardSchematic.png)
 ![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardPCB.png)
-![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoard3Dmodel.)
+![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoard3Dmodel.png)
 
 ## Drivers
 You need to install drivers for this
