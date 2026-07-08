@@ -14,17 +14,15 @@ This is an dashboard for your PC that allows you to get a complete breakdown on 
 This project uses two 2 layer PCBs, it was designed in KiCa
 
 ### Main PCB
-![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/mainBoardSchematic.png)
-![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/mainBoardPCB.png)
+![Check out an interactive version of it here!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fpcb%2FanadashMainBoard)
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/pcb/assets/mainBoard3Dmodel.png)
 
 ### Auxiliary PCB
-![Schematic](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardSchematic.png)
-![PCB](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoardPCB.png)
+![Check out the schematic and PCB on the KiCanvas link!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fpcb%2FanadashSecondaryBoard)
 ![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoard3Dmodel.png)
 
 ## Drivers
-You need to install drivers for this
+You need to install drivers for this, it only supports Linux but I will gladly provide support for anyone who tries making drivers to other systems!
 (insert instruction here)
 
 ## Firmware
