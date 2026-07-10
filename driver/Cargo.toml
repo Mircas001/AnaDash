@@ -1,0 +1,9 @@
+[package]
+name = "driver"
+version = "0.0.1-alpha"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.45"
+serialport = "4.9.0"
+sysinfo = "0.39.6"
