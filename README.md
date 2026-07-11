@@ -28,7 +28,7 @@ You must make the following connections: (Pinouts are in right to left, GND will
 ![3D Model](https://github.com/Mircas001/AnaDash/blob/main/pcb/assets/auxBoard3Dmodel.png)
 
 ## Drivers
-You need to install drivers for this, only linux support for now, but will gladly give support to anyone making drivers to other systems!
+You need to install drivers for this, I only support Linux for now, but will gladly give support to anyone making drivers to other systems!
 (insert instruction here)
 
 ## Firmware
@@ -43,10 +43,12 @@ It has been written with MicroPython (should consider changing that)
 4x 85C1 Ammeter
 4x 680Ω Resistors
 1x EC11 Rotary Encoder
-8x Cherry MX Compatible Switches
-1x I2C SSD1306 0.96inch 128x64 White OLED Display
+8x Cherry MX Compatible Switches 
+1x ST7735 1.8 inch LCD Display
+8x Dupont Socket
+8x Female-to-Male Dupont cables
 ?x M3x5x4 Heatset Inserts
-?x M3 6mm Phillip Screws 
+?x M3 6mm Machine Screws (I used Phillips but I believe Torx could be a better fit if you have the tip)
 1x Case (x 3d printed parts)
 
 ## Software
