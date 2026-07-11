@@ -14,7 +14,7 @@ This is an dashboard for your PC that allows you to get a complete breakdown on 
 This project was designed in KiCad, it uses a pair of 2 layer PCBs, the PCBs were split because the switches had to be at an angle while the pico had to sit straight.
 For this to work, you must connect the following, all of the cables are JST-XH, as it features an locking mechanism.
 You must make the following connections: (Pinouts are in right to left, GND will always be the rounded rectangle!) (All connections are in the main board)
-- DisplayConnector (SCL, SDA, 3V3, GND) - connect this to the matching pins on the display.
+- DisplayConnector (insert connections here) - connect this to the matching pins on the display.
 - LeftKeyConnector (Switch1, Switch2, Switch3, Switch4, GND) - connect this to the matching connector in the auxiliary board (in the same pinout order) 
 - RightKeyConnector (Switch5, Switch6, Switch7, Switch8, GND) - connect this to the matching connector in the auxiliary board (in the same pinout order)
 - EncoderConnector (B, A, Switch, GND) - connect this to the matching connector in the axuiliary board (in the same pinout order)
