@@ -4,6 +4,7 @@ use sysinfo::{CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
 
 use crate::sensor_utils::live_clock;
 
+mod hardware_info;
 mod sensor_utils;
 
 fn main() {
@@ -13,18 +14,7 @@ fn main() {
     #[cfg(not(target_os = "linux"))]
     println("A non-linux Unix system has been detected, this might not work!");
 
-    let one_second = Duration::new(1, 0); // * Thread requires the duration type for some reason
-
-    let refresh_kind = RefreshKind::nothing()
-        .with_memory(MemoryRefreshKind::everything())
-        .with_cpu(CpuRefreshKind::nothing().with_cpu_usage());
-
-    let mut sys: System = System::new_with_specifics(refresh_kind);
-
-    sys.refresh_specifics(refresh_kind);
-
-    let total_memory_float: f32 = sys.total_memory() as f32;
-    let total_swap_float: f32 = sys.total_swap() as f32;
+    let mut hwinfo = HardwareInfo::new();
 
     loop {
         println!("{}", sensor_utils::live_clock());

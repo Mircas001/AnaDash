@@ -1,2 +1,5 @@
 {
+    "rust-analyzer.linkedProjects": [
+        "./firmware/driver/Cargo.toml"
+    ]
 }
