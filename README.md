@@ -21,13 +21,15 @@ You must make the following connections: (Pinouts are in left to right in the ma
 
 ### Main PCB
 This Board features the Pico, the DAC, the outputs for the ammeters, the display connector and the connections to the input board
-[You can check out the PCB and schematic on KiCanvas!](FIXME)
-[3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/hardwa/images/mainBoard3Dmodel.png)
+
+[You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FmainBoard)
+[3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/hardware/images/mainBoardModel.png)
 
 ### Input PCB
 This PCB has all the keys and the encoder and serves to take inputs
-[You can check out the PCB and schematic on KiCanvas!](FIXME)
-![3D Model](https://github.com/Mircas001/AnaDash/blob/main/hardware/images/inputBoard3Dmodel.png)
+
+[You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FinputBoard)
+![3D Model](https://github.com/Mircas001/AnaDash/blob/main/hardware/images/inputBoardModel.png)
 
 ## Drivers
 You need to install drivers for this, I only support Linux for now, but will gladly give support to anyone making drivers to other systems!
