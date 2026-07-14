@@ -1501,6 +1501,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 124.46) (xy 43.18 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853d2074-690a-426a-90a3-ee5aaf97b33b")
+	)
+	(wire
+		(pts
 			(xy 64.77 77.47) (xy 64.77 87.63)
 		)
 		(stroke
@@ -1875,7 +1885,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW9")
 					(unit 1)
@@ -1961,7 +1971,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW5")
 					(unit 1)
@@ -2047,7 +2057,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW7")
 					(unit 1)
@@ -2133,7 +2143,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW8")
 					(unit 1)
@@ -2225,7 +2235,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "J4")
 					(unit 1)
@@ -2309,7 +2319,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR06")
 					(unit 1)
@@ -2395,7 +2405,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW4")
 					(unit 1)
@@ -2481,7 +2491,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW3")
 					(unit 1)
@@ -2567,7 +2577,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW6")
 					(unit 1)
@@ -2661,7 +2671,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "J2")
 					(unit 1)
@@ -2739,7 +2749,7 @@
 			(uuid "2c7f4818-7aae-435b-94c5-b815e92a4a96")
 		)
 		(instances
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR03")
 					(unit 1)
@@ -2817,7 +2827,7 @@
 			(uuid "d55083b9-8489-49ad-9cf2-99754774fe15")
 		)
 		(instances
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR02")
 					(unit 1)
@@ -2903,7 +2913,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW1")
 					(unit 1)
@@ -2913,7 +2923,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 118.11 0)
+		(at 43.18 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2924,7 +2934,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae18dccd-5bf1-4889-9603-33b0c7934004")
 		(property "Reference" "#PWR01"
-			(at 43.18 124.46 0)
+			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2935,7 +2945,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 123.19 0)
+			(at 43.18 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2945,7 +2955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 118.11 0)
+			(at 43.18 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2956,7 +2966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 118.11 0)
+			(at 43.18 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +2977,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 118.11 0)
+			(at 43.18 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +2991,7 @@
 			(uuid "c4d8330d-0590-4311-a617-73ef61560d5c")
 		)
 		(instances
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "#PWR01")
 					(unit 1)
@@ -3067,7 +3077,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "SW2")
 					(unit 1)
@@ -3161,7 +3171,7 @@
 					(unit 1)
 				)
 			)
-			(project "anadashSecondaryBoard"
+			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
 					(reference "J3")
 					(unit 1)
