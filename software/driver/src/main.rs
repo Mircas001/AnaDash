@@ -18,15 +18,18 @@ fn main() {
     let one_second = Duration::new(1, 0);
 
     loop {
-        println!("{}", sensor_utils::live_clock());
         // this will send the current time every second to the resource monitor
 
         let hw_stats = hwinfo.get_data();
 
         // * For now, we are just printing the data we get, but I'll have to figure out how to send it over usb, later.
         println!(
-            "Memory:{:.2} | Swap:{:.2} | Cpu Load:{:.2} | Cpu Temp:{}C",
-            hw_stats.mem_used, hw_stats.swap_used, hw_stats.cpu_load, hw_stats.cpu_temp
+            "{} Memory:{:.2} | Swap:{:.2} | Cpu Load:{:.2} | Cpu Temp:{}C ",
+            sensor_utils::live_clock(),
+            hw_stats.mem_used,
+            hw_stats.swap_used,
+            hw_stats.cpu_load,
+            hw_stats.cpu_temp
         );
         thread::sleep(one_second);
     }
