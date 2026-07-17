@@ -28,7 +28,7 @@ impl HardwareInfo {
         let total_memory: f32 = sys.total_memory() as f32;
         let total_swap: f32 = sys.total_swap() as f32;
 
-        let mut last_reading = Instant::now();
+        let last_reading = Instant::now();
 
         Self {
             refresh_kind,
@@ -47,11 +47,11 @@ impl HardwareInfo {
     }
 
     pub fn get_data(&mut self) -> Stats {
+        let one_second: Duration = Duration::new(1, 0);
         self.sys.refresh_specifics(self.refresh_kind);
 
-        let mut cpu_load: f32;
+        let cpu_load: f32;
 
-        let one_second: Duration = Duration::new(1, 0);
         if self.last_reading.elapsed() < one_second {
             cpu_load = 0.0;
         } else {
