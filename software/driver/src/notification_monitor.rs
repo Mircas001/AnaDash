@@ -29,6 +29,7 @@ pub fn spawn_notification_monitor() -> mpsc::Receiver<Notification> {
     rx
 }
 
+#[cfg(target_family = "unix")]
 async fn monitor(tx: mpsc::Sender<Notification>) -> Result<()> {
     let connection = Connection::session().await?;
 
