@@ -6,7 +6,9 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.103"
 chrono = "0.4.45"
+clearscreen = "4.0.6"
 futures-util = "0.3.32"
+mpris = "2.1.0"
 sysinfo = "0.39.6"
 tokio = {version = "1.38.0", features = ["full"] }
 tokio-serial = "5.5.0"
