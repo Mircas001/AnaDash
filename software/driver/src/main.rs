@@ -36,7 +36,7 @@ async fn main() -> Result<()> {
         tokio::select! {
             Some(noti) = notifications_rx.recv() => {
                 let mut buf = [0u8; 256];
-                let bytes = postcard::to_slice(&noti, &mut buf)?;
+                let bytes = postcard::to_slice_cobs(&noti, &mut buf)?;
                 port.write_all(bytes)?;
             }
             _ = tokio::signal::ctrl_c() => {
@@ -61,7 +61,7 @@ async fn main() -> Result<()> {
                 };
 
                 let mut buf = [0u8; 256];
-                let bytes = postcard::to_slice(&data, &mut buf)?;
+                let bytes = postcard::to_slice_cobs(&data, &mut buf)?;
                 port.write_all(bytes)?;
             }
         }

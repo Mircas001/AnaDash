@@ -6,7 +6,6 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.103"
 chrono = "0.4.45"
-clearscreen = "4.0.6"
 futures-util = "0.3.32"
 heapless = "0.9.3"
 mpris = "2.1.0"

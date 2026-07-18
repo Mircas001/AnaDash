@@ -29,10 +29,17 @@ embassy-time = { version = "0.5", features = ["defmt", "defmt-timestamp-uptime"]
 cortex-m = { version = "0.7.7" }
 embassy-rp = { version = "0.9", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl", "rp2040"] }
 embassy-embedded-hal = "0.6.0"
+
+embedded-graphics = "0.8.2"
+st7735-lcd = "0.10.0"
+
+usb-device = "0.3.2"
 embassy-usb = "0.6.0"
-static_cell = "2.1.1"
 usbd-hid = "0.10.0"
+
+static_cell = "2.1.1"
 portable-atomic = { version = "1.14.0", features = ["critical-section"] }
+
 [profile.release]
 debug = 2
 lto = true
