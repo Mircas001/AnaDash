@@ -32,6 +32,7 @@ pub fn duration_to_string(secs: u64) -> String<16> {
     buf
 }
 
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Notification {
     pub app: String<16>,
     pub summary: String<128>,
