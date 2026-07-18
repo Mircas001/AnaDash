@@ -1,3 +1,5 @@
+use std::io::Write;
+
 use anyhow::Result;
 use shared;
 use tokio::time::{Duration, interval};
@@ -16,7 +18,9 @@ async fn main() -> Result<()> {
     #[cfg(not(target_os = "linux"))]
     println!("A non-linux Unix system has been detected, this might not work!");
 
-    let mut port = tokio_serial::new("/dev/ttyUSB0", 115200).open_native_async();
+    let mut port = tokio_serial::new("/dev/ttyUSB0", 115200)
+        .open_native_async()
+        .expect("Error opening serial port!");
 
     let mut hwinfo = hardware_info::HardwareInfo::new();
 
@@ -31,9 +35,9 @@ async fn main() -> Result<()> {
         // this will send the current time every second to the resource monitor
         tokio::select! {
             Some(noti) = notifications_rx.recv() => {
-                println!("Notification by {}", noti.app);
-                println!("Summary: {}", noti.summary);
-                println!("Body: {}", noti.body);
+                let mut buf = [0u8; 256];
+                let bytes = postcard::to_slice(&noti, &mut buf)?;
+                port.write_all(bytes)?;
             }
             _ = tokio::signal::ctrl_c() => {
                 println!("Goodbye ;)");
@@ -44,6 +48,7 @@ async fn main() -> Result<()> {
                 mpris_player.update();
 
                 let data  = shared::DashboardData {
+                    time: utils::live_clock(),
                     mem_used: hw_stats.mem_used,
                     swap_used: hw_stats.swap_used,
                     cpu_load: hw_stats.cpu_load,
@@ -55,20 +60,9 @@ async fn main() -> Result<()> {
                     duration: mpris_player.duration,
                 };
 
-                let progress_string = shared::duration_to_string(data.progress);
-                let duration_string = shared::duration_to_string(data.duration);
-
-                clearscreen::clear().expect("failed to clear screen");
-                // * For now, we are just printing the data we get, but I'll have to figure out how to send it over usb, later.
-                println!(
-                    "{} Memory:{:.2} | Swap:{:.2} | Cpu Load:{:.2} | Cpu Temp:{}C ",
-                    utils::live_clock(),
-                    data.mem_used,
-                    data.swap_used,
-                    data.cpu_load,
-                    data.cpu_temp
-                );
-                println!("{} | {} - {} [{}/{}]", data.player_status, data.title, data.artist, progress_string, duration_string);
+                let mut buf = [0u8; 256];
+                let bytes = postcard::to_slice(&data, &mut buf)?;
+                port.write_all(bytes)?;
             }
         }
     }

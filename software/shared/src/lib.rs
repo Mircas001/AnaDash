@@ -10,6 +10,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct DashboardData {
+    pub time: String<10>,
     pub mem_used: f32,
     pub swap_used: f32,
     pub cpu_load: f32,
