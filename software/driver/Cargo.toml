@@ -15,3 +15,4 @@ tokio = {version = "1.38.0", features = ["full"] }
 tokio-serial = "5.5.0"
 zbus = "5.17.0"
 shared = { path = "../shared" }
+postcard = "1.1.3"

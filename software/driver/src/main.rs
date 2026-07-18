@@ -1,6 +1,7 @@
 use anyhow::Result;
 use shared;
 use tokio::time::{Duration, interval};
+use tokio_serial::SerialPortBuilderExt;
 
 mod hardware_info;
 mod mpris_monitor;
@@ -14,6 +15,8 @@ async fn main() -> Result<()> {
 
     #[cfg(not(target_os = "linux"))]
     println!("A non-linux Unix system has been detected, this might not work!");
+
+    let mut port = tokio_serial::new("/dev/ttyUSB0", 115200).open_native_async();
 
     let mut hwinfo = hardware_info::HardwareInfo::new();
 
@@ -29,7 +32,6 @@ async fn main() -> Result<()> {
         tokio::select! {
             Some(noti) = notifications_rx.recv() => {
                 println!("Notification by {}", noti.app);
-                println!("Notification icon: {}", noti.notification_icon);
                 println!("Summary: {}", noti.summary);
                 println!("Body: {}", noti.body);
             }

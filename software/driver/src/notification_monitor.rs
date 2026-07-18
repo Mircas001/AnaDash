@@ -1,16 +1,10 @@
 use anyhow::Result;
 use futures_util::stream::StreamExt;
+use shared::Notification;
 use std::collections::HashMap;
 use tokio::sync::mpsc;
 use zbus::zvariant::Value;
 use zbus::{Connection, MessageStream};
-
-pub struct Notification {
-    pub app: String,
-    pub notification_icon: String, // * I should consider not using strings
-    pub summary: String,
-    pub body: String,
-}
 
 /*
  * My understanding of this:
@@ -61,7 +55,7 @@ async fn monitor(tx: mpsc::Sender<Notification>) -> Result<()> {
          *     DICT of {STRING, VARIANT} hints, INT32 expire_timeout)
          */
 
-        let (app, _, notification_icon, summary, body, _, _, _): (
+        let (app, _, _, summary, body, _, _, _): (
             String,
             u32,
             String,
@@ -72,17 +66,15 @@ async fn monitor(tx: mpsc::Sender<Notification>) -> Result<()> {
             i32,
         ) = msg.body().deserialize()?;
 
+        let app: heapless::String<16> =
+            heapless::String::try_from(app.as_str()).unwrap_or_default();
+        let summary: heapless::String<128> =
+            heapless::String::try_from(summary.as_str()).unwrap_or_default();
+        let body: heapless::String<256> =
+            heapless::String::try_from(body.as_str()).unwrap_or_default();
+
         // * Kill itself if main dies
-        if tx
-            .send(Notification {
-                app,
-                notification_icon,
-                summary,
-                body,
-            })
-            .await
-            .is_err()
-        {
+        if tx.send(Notification { app, summary, body }).await.is_err() {
             break;
         }
     }

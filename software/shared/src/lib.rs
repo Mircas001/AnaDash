@@ -5,7 +5,7 @@
 */
 
 use core::fmt::Write;
-use heapless::{String, string};
+use heapless::String;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -30,4 +30,10 @@ pub fn duration_to_string(secs: u64) -> String<16> {
     let mut buf: String<16> = String::new();
     write!(buf, "{:02}:{:02}:{:02}", whole_hours, whole_minutes, secs).unwrap();
     buf
+}
+
+pub struct Notification {
+    pub app: String<16>,
+    pub summary: String<128>,
+    pub body: String<256>,
 }
