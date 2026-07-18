@@ -2,7 +2,7 @@ use mpris::{Metadata, PlaybackStatus, Player, PlayerFinder};
 use std::time::Duration;
 
 pub struct MprisPlayer {
-    player: Player,
+    player: Option<Player>,
     pub artist: String,
     pub duration: u64,
     pub progress: u64,
@@ -12,7 +12,9 @@ pub struct MprisPlayer {
 
 impl MprisPlayer {
     pub fn new() -> Self {
-        let player = PlayerFinder::new().unwrap().find_active().unwrap();
+        let player = PlayerFinder::new()
+            .ok()
+            .and_then(|finder| finder.find_active().ok());
 
         Self {
             player,
@@ -20,7 +22,17 @@ impl MprisPlayer {
             duration: 0,
             progress: 0,
             title: String::new(),
-            status: String::new(),
+            status: "◼".to_string(),
+        }
+    }
+
+    fn try_reconnection(&mut self) {
+        if let Ok(finder) = PlayerFinder::new() {
+            // if this goes ok, get on the block
+            if let Ok(player) = finder.find_active() {
+                // if he gets an active player
+                self.player = Some(player); // make new player
+            }
         }
     }
 
@@ -51,14 +63,34 @@ impl MprisPlayer {
     }
 
     pub fn update(&mut self) {
-        let metadata = match self.player.get_metadata() {
-            Ok(m) => m,
-            Err(_) => return, // player fechou/desapareceu, não atualiza
+        let player = match &self.player {
+            Some(player) => player,
+            None => {
+                self.try_reconnection();
+                match &self.player {
+                    Some(player) => player,
+                    None => {
+                        self.artist.clear();
+                        self.title = "No media".to_string();
+                        self.duration = 0;
+                        self.progress = 0;
+                        self.status = "◼".to_string();
+                        return;
+                    }
+                }
+            }
         };
 
-        let position = self.player.get_position().ok();
-        let status = self
-            .player
+        let metadata = match player.get_metadata() {
+            Ok(metadata) => metadata,
+            Err(_) => {
+                self.player = None;
+                return;
+            }
+        };
+
+        let position = player.get_position().ok();
+        let status = player
             .get_playback_status()
             .unwrap_or(PlaybackStatus::Stopped);
 
