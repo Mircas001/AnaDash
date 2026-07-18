@@ -4,8 +4,8 @@ use std::time::Duration;
 pub struct MprisPlayer {
     player: Player,
     pub artist: String,
-    pub duration: String,
-    pub progress: String,
+    pub duration: u64,
+    pub progress: u64,
     pub title: String,
     pub status: String,
 }
@@ -17,27 +17,17 @@ impl MprisPlayer {
         Self {
             player,
             artist: String::new(),
-            duration: String::new(),
-            progress: String::new(),
+            duration: 0,
+            progress: 0,
             title: String::new(),
             status: String::new(),
         }
     }
 
-    fn duration_to_string(duration: Duration) -> String {
-        let secs = duration.as_secs();
-        let whole_hours = secs / (60 * 60);
-        let secs = secs - whole_hours * 60 * 60;
-        let whole_minutes = secs / 60;
-        let secs = secs - whole_minutes * 60;
-
-        format!("{:02}:{:02}:{:02}", whole_hours, whole_minutes, secs)
-    }
-
-    fn get_time(duration: Option<Duration>) -> String {
+    fn get_time(duration: Option<Duration>) -> u64 {
         match duration {
-            Some(duration) => Self::duration_to_string(duration),
-            None => "??:??:??".to_string(),
+            Some(duration) => duration.as_secs(),
+            None => 0,
         }
     }
 

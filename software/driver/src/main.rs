@@ -1,5 +1,5 @@
 use anyhow::Result;
-use std::io::{Write, stdout};
+use shared;
 use tokio::time::{Duration, interval};
 
 mod hardware_info;
@@ -41,20 +41,38 @@ async fn main() -> Result<()> {
                 let hw_stats = hwinfo.get_data();
                 mpris_player.update();
 
+                let data  = shared::DashboardData {
+                    mem_used: hw_stats.mem_used,
+                    swap_used: hw_stats.swap_used,
+                    cpu_load: hw_stats.cpu_load,
+                    cpu_temp: hw_stats.cpu_temp,
+                    player_status: heapless::String::try_from(mpris_player.status.as_str()).unwrap_or_default(),
+                    artist: heapless::String::try_from(mpris_player.artist.as_str()).unwrap_or_default(),
+                    title: heapless::String::try_from(mpris_player.title.as_str()).unwrap_or_default(),
+                    progress: mpris_player.progress,
+                    duration: mpris_player.duration,
+                };
+
+                let progress_string = shared::duration_to_string(data.progress);
+                let duration_string = shared::duration_to_string(data.duration);
+
                 clearscreen::clear().expect("failed to clear screen");
                 // * For now, we are just printing the data we get, but I'll have to figure out how to send it over usb, later.
                 println!(
                     "{} Memory:{:.2} | Swap:{:.2} | Cpu Load:{:.2} | Cpu Temp:{}C ",
                     utils::live_clock(),
-                    hw_stats.mem_used,
-                    hw_stats.swap_used,
-                    hw_stats.cpu_load,
-                    hw_stats.cpu_temp
+                    data.mem_used,
+                    data.swap_used,
+                    data.cpu_load,
+                    data.cpu_temp
                 );
-                println!("{} | {} - {} [{}/{}]", mpris_player.status, mpris_player.title, mpris_player.artist, mpris_player.progress, mpris_player.duration);
+                println!("{} | {} - {} [{}/{}]", data.player_status, data.title, data.artist, progress_string, duration_string);
             }
         }
     }
 
     Ok(())
 }
+/*
+    FIXME: It crashes on the lack of an player
+*/
