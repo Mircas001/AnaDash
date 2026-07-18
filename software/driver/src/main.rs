@@ -69,6 +69,3 @@ async fn main() -> Result<()> {
 
     Ok(())
 }
-/*
-    FIXME: It crashes on the lack of an player
-*/
