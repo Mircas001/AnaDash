@@ -1,7 +1,8 @@
 use std::io::Write;
 
 use anyhow::Result;
-use shared;
+use shared::DashboardData;
+use shared::HostTransmission;
 use tokio::time::{Duration, interval};
 use tokio_serial::SerialPortBuilderExt;
 
@@ -18,9 +19,9 @@ async fn main() -> Result<()> {
     #[cfg(not(target_os = "linux"))]
     println!("A non-linux Unix system has been detected, this might not work!");
 
-    let mut port = tokio_serial::new("/dev/ttyUSB0", 115200)
+    let mut keyboard_cdc = tokio_serial::new("/dev/ttyUSB0", 115200)
         .open_native_async()
-        .expect("Error opening serial port!");
+        .expect("Error opening CDC port!");
 
     let mut hwinfo = hardware_info::HardwareInfo::new();
 
@@ -37,7 +38,7 @@ async fn main() -> Result<()> {
             Some(noti) = notifications_rx.recv() => {
                 let mut buf = [0u8; 256];
                 let bytes = postcard::to_slice_cobs(&noti, &mut buf)?;
-                port.write_all(bytes)?;
+                keyboard_cdc.write_all(bytes)?;
             }
             _ = tokio::signal::ctrl_c() => {
                 println!("Goodbye ;)");
@@ -47,7 +48,7 @@ async fn main() -> Result<()> {
                 let hw_stats = hwinfo.get_data();
                 mpris_player.update();
 
-                let data  = shared::DashboardData {
+                let data  = HostTransmission::Dashboard(DashboardData {
                     time: utils::live_clock(),
                     mem_used: hw_stats.mem_used,
                     swap_used: hw_stats.swap_used,
@@ -58,11 +59,11 @@ async fn main() -> Result<()> {
                     title: heapless::String::try_from(mpris_player.title.as_str()).unwrap_or_default(),
                     progress: mpris_player.progress,
                     duration: mpris_player.duration,
-                };
+                });
 
                 let mut buf = [0u8; 256];
                 let bytes = postcard::to_slice_cobs(&data, &mut buf)?;
-                port.write_all(bytes)?;
+                keyboard_cdc.write_all(bytes)?;
             }
         }
     }

@@ -9,6 +9,12 @@ use heapless::String;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
+pub enum HostTransmission {
+    Notification(NotificationData),
+    Dashboard(DashboardData),
+}
+
+#[derive(Serialize, Deserialize, Debug)]
 pub struct DashboardData {
     pub time: String<10>,
     pub mem_used: f32,
@@ -34,7 +40,7 @@ pub fn duration_to_string(secs: u64) -> String<16> {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Notification {
+pub struct NotificationData {
     pub app: String<16>,
     pub summary: String<128>,
     pub body: String<256>,

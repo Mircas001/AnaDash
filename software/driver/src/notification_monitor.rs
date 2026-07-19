@@ -1,6 +1,7 @@
 use anyhow::Result;
 use futures_util::stream::StreamExt;
-use shared::Notification;
+use shared::HostTransmission;
+use shared::NotificationData;
 use std::collections::HashMap;
 use tokio::sync::mpsc;
 use zbus::zvariant::Value;
@@ -11,7 +12,7 @@ use zbus::{Connection, MessageStream};
  * tx does nothing, rx is a yapping notifications thing
 */
 
-pub fn spawn_notification_monitor() -> mpsc::Receiver<Notification> {
+pub fn spawn_notification_monitor() -> mpsc::Receiver<HostTransmission> {
     let (tx, rx) = mpsc::channel(32); // * Serial is not something i was expecting
 
     tokio::spawn(async move {
@@ -24,7 +25,7 @@ pub fn spawn_notification_monitor() -> mpsc::Receiver<Notification> {
 }
 
 #[cfg(target_family = "unix")]
-async fn monitor(tx: mpsc::Sender<Notification>) -> Result<()> {
+async fn monitor(tx: mpsc::Sender<HostTransmission>) -> Result<()> {
     let connection = Connection::session().await?;
 
     connection
@@ -74,7 +75,15 @@ async fn monitor(tx: mpsc::Sender<Notification>) -> Result<()> {
             heapless::String::try_from(body.as_str()).unwrap_or_default();
 
         // * Kill itself if main dies
-        if tx.send(Notification { app, summary, body }).await.is_err() {
+        if tx
+            .send(HostTransmission::Notification(NotificationData {
+                app,
+                summary,
+                body,
+            }))
+            .await
+            .is_err()
+        {
             break;
         }
     }
