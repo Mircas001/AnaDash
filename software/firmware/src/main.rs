@@ -8,6 +8,7 @@ use embassy_rp::peripherals::USB;
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
 use {defmt_rtt as _, panic_probe as _};
 
+mod hardware;
 mod usb_handler;
 
 bind_interrupts!(struct Irqs {
@@ -20,7 +21,7 @@ async fn main(_spawner: Spawner) {
 
     info!("Hello!");
 
-    usb_handler::begin_usb_handler(&_spawner, p.USB);
+    usb_handler::begin_usb_handler(&_spawner);
 
     loop {}
 }

@@ -1,4 +1,4 @@
-use crate::IntRq;
+use crate::{Irqs, hardware};
 use embassy_executor::Spawner;
 use embassy_rp::Peri;
 use embassy_rp::gpio::{Input, Pull};
@@ -11,7 +11,7 @@ use static_cell::StaticCell;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
 use {defmt_rtt as _, panic_probe as _};
 
-mod input_handler;
+use crate::hardware::Hardware;
 
 /*
  * This is quite new territory for me, so i'm commenting everything so I remember and understand it later
@@ -21,9 +21,10 @@ mod input_handler;
  * Meanwhile the dashboard data will be sent over CDC, as an shared struct with postcard sliced with COBS
 */
 
-pub fn begin_usb_handler(spawner: &Spawner, usb: Peri<'static, USB>) {
+pub fn begin_usb_handler(spawner: &Spawner) {
+    let hardware = Hardware::default();
     // * This creates the driver, and configurates the information, such as who made it, the product name, the power etc
-    let driver = Driver::new(usb, IntRq);
+    let driver = Driver::new(hardware.usb, Irqs);
     let mut config = embassy_usb::Config::new(0x1209, 0x4da5); // TODO: Figure out new VID and PID
     config.manufacturer = Some("MatheusM");
     config.product = Some("AnaDash");
@@ -112,8 +113,13 @@ pub fn begin_usb_handler(spawner: &Spawner, usb: Peri<'static, USB>) {
 async fn input_task(
     macro_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
     media_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
-    mut inputs: KeyInputs,
 ) {
+    let hardware = Hardware::default();
+    let key_inputs = hardware.inputs;
+
+    loop {
+        
+    }
 }
 
 #[embassy_executor::task]
