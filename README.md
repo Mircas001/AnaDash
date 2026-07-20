@@ -8,7 +8,7 @@ This is an dashboard that aims to have all the important functions and informati
 - An rotary encoder for UI navigation and changing your volume! Including a switch for mute!
 
 ## Cad Model
-(insert cad here)
+(insert cad here) FIXME
 
 ## PCB
 This project was designed in KiCad, it uses a pair of 2 layer PCBs, the PCBs were split because the switches had to be at an angle while the pico had to sit straight.
