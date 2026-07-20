@@ -1,21 +1,18 @@
 use crate::Irqs;
-use core::future;
+use crate::hardware::input_handler::KeyInputs;
 use embassy_executor::Spawner;
-use embassy_futures::select::{Either, select, select_array};
 use embassy_rp::Peri;
-use embassy_rp::gpio::{Input, Pull};
 use embassy_rp::pac::usb::Usb;
 use embassy_rp::peripherals::USB;
 use embassy_rp::usb::{Driver, InterruptHandler as UsbIrqs};
-use embassy_time::{Duration, Timer};
 use embassy_usb::class::cdc_acm::{CdcAcmClass, State as CdcState};
 use embassy_usb::class::hid::{HidBootProtocol, HidReaderWriter, HidSubclass, State as HidState};
-
 use static_cell::StaticCell;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
 use {defmt_rtt as _, panic_probe as _};
 
-use crate::hardware::input_handler::{self, KeyInputs};
+mod input_task;
+mod cdc_task;
 
 /*
  * This is quite new territory for me, so i'm commenting everything so I remember and understand it later
@@ -73,7 +70,7 @@ pub fn begin_usb_handler(
      * This creates the builder object, I imagine it as this sheet of paper that's getting all the USB configurations and classes
      * Written down on it, and then passed to the USB object
      */
-    let mut builder: embassy_usb::Builder<'_, Driver<'_, USB>> = embassy_usb::Builder::new(
+    let mut builder = embassy_usb::Builder::new(
         driver,
         config,
         config_desc,
@@ -96,11 +93,15 @@ pub fn begin_usb_handler(
     };
     let macro_hid =
         HidReaderWriter::<_, 1, 8>::new(&mut builder, macro_kbd_state, macro_kbd_config);
+
+    let (macro_reader, macro_writer) = macro_hid.split();
+    drop(macro_reader); // * trying to save up RAM
     /*
      * This line creates the HID object, with the USB driver (inferred by rust), with a 1 byte large read buffer,
      * and an 8 byte large writer buffer. Passing the builder object, the state struct and the configuration
      * I wish there was a better way to break this down but I'm limited by formatting
      */
+
     // * For this one you get the idea
     let media_kbd_config = embassy_usb::class::hid::Config {
         report_descriptor: MediaKeyboardReport::desc(), // * Only note that this time, we are using an media descriptor, the one your keyboard uses to raise the volume!
@@ -112,47 +113,11 @@ pub fn begin_usb_handler(
     };
     let media_hid =
         HidReaderWriter::<_, 1, 8>::new(&mut builder, media_kbd_state, media_kbd_config);
+    let (media_reader, media_writer) = media_hid.split();
+    drop(media_reader); // * trying to save up RAM
 
     let usb = builder.build(); // * Finally, we make the usb device
 
-    spawner.spawn(input_task(macro_hid, media_hid, input_keys).unwrap());
-}
-
-const DEBOUNCE_TIME: Duration = Duration::from_millis(10);
-
-#[embassy_executor::task]
-async fn input_task(
-    macro_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
-    media_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
-    mut inputs: KeyInputs<'static>,
-) {
-    let mut key_pressed_fut = select_array([
-        inputs.key1.wait_for_falling_edge(),
-        inputs.key2.wait_for_falling_edge(),
-        inputs.key3.wait_for_falling_edge(),
-        inputs.key4.wait_for_falling_edge(),
-        inputs.key5.wait_for_falling_edge(),
-        inputs.key6.wait_for_falling_edge(),
-        inputs.key7.wait_for_falling_edge(),
-        inputs.key8.wait_for_falling_edge(),
-        inputs.enc_sw.wait_for_falling_edge(),
-    ]);
-    let encoder_turned = future::pending(); // Encoder not implemented, this is an 
-
-    loop {
-        match select(key_pressed_fut, encoder_turned).await {
-            Either::First(_) => {
-                Timer::after(DEBOUNCE_TIME).await;
-            }
-            Either::Second(_) => {
-                unreachable!();
-                // * This is an placeholder for now
-            }
-        }
-    }
-}
-
-#[embassy_executor::task]
-async fn cdc_task(mut cdc: CdcAcmClass<'static, Driver<'static, USB>>) {
-    // it gets data from the host and sends them over to main, either being an ST7735 or mcp4728, probably main?
+    spawner.spawn(input_task::input_task(macro_writer, media_writer, input_keys).unwrap());
+    spawner.spawn(cdc_task::cdc_task(host_cdc).unwrap());
 }

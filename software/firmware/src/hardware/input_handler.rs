@@ -7,6 +7,7 @@ use embassy_rp::pio_programs::rotary_encoder::{Direction, PioEncoder};
 use embassy_sync::signal::Signal;
 
 // * <'a> is an argument about what lifetime does the struct have
+// TODO: Figure out a way to get if the encoder is turning
 pub struct KeyInputs<'a> {
     pub key1: Input<'a>,
     pub key2: Input<'a>,
@@ -16,7 +17,7 @@ pub struct KeyInputs<'a> {
     pub key6: Input<'a>,
     pub key7: Input<'a>,
     pub key8: Input<'a>,
-    // pub encoder: PioEncoder<'a>,
+    // pub encoder: something,
     pub enc_sw: Input<'a>,
 }
 impl<'a> KeyInputs<'a> {
@@ -43,7 +44,7 @@ impl<'a> KeyInputs<'a> {
             key6: key6,
             key7: key7,
             key8: key8,
-            //  encoder: PioEncoder(&mut common, None, enc_a, enc_a),
+            //  encoder: something,
             enc_sw: enc_sw,
         }
     }
