@@ -1,10 +1,4 @@
-use crate::Irqs;
-use embassy_executor::Spawner;
-use embassy_rp::gpio::{Input, Pin, Pull};
-use embassy_rp::peripherals::PIO0;
-use embassy_rp::pio::{InterruptHandler, Pio};
-use embassy_rp::pio_programs::rotary_encoder::{Direction, PioEncoder};
-use embassy_sync::signal::Signal;
+use embassy_rp::gpio::Input;
 
 // * <'a> is an argument about what lifetime does the struct have
 // TODO: Figure out a way to get if the encoder is turning
@@ -17,7 +11,8 @@ pub struct KeyInputs<'a> {
     pub key6: Input<'a>,
     pub key7: Input<'a>,
     pub key8: Input<'a>,
-    // pub encoder: something,
+    pub enc_a: Input<'a>,
+    pub enc_b: Input<'a>,
     pub enc_sw: Input<'a>,
 }
 impl<'a> KeyInputs<'a> {
@@ -30,10 +25,9 @@ impl<'a> KeyInputs<'a> {
         key6: Input<'a>,
         key7: Input<'a>,
         key8: Input<'a>,
-        // enc_a: Input<'a>,
-        // enc_b: Input<'a>,
+        enc_a: Input<'a>,
+        enc_b: Input<'a>,
         enc_sw: Input<'a>,
-        //  pio: Pio<'a, PIO0>,
     ) -> Self {
         KeyInputs {
             key1: key1,
@@ -44,7 +38,8 @@ impl<'a> KeyInputs<'a> {
             key6: key6,
             key7: key7,
             key8: key8,
-            //  encoder: something,
+            enc_a: enc_a,
+            enc_b: enc_b,
             enc_sw: enc_sw,
         }
     }

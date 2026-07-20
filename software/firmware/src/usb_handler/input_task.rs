@@ -1,13 +1,11 @@
 use crate::hardware::input_handler::KeyInputs;
-use core::future;
 use defmt::warn;
 use embassy_futures::select::{Either, select, select_array};
-use embassy_rp::gpio::{Input, Pull};
 use embassy_rp::peripherals::USB;
-use embassy_rp::pio_programs::rotary_encoder::Direction;
 use embassy_rp::usb::Driver;
 use embassy_time::{Duration, Timer};
 use embassy_usb::class::hid::HidWriter;
+use rotary_encoder_hal::Rotary;
 use usbd_hid::descriptor::{KeyboardReport, KeyboardUsage, MediaKey, MediaKeyboardReport};
 
 const DEBOUNCE_TIME: Duration = Duration::from_millis(10);
@@ -38,8 +36,10 @@ pub async fn input_task(
     mut media_w: HidWriter<'static, Driver<'static, USB>, 8>,
     mut inputs: KeyInputs<'static>,
 ) {
+    let mut enc = Rotary::new(inputs.enc_a, inputs.enc_b);
+
     loop {
-        let mut key_pressed_fut = select_array([
+        let key_pressed_fut = select_array([
             inputs.key1.wait_for_falling_edge(),
             inputs.key2.wait_for_falling_edge(),
             inputs.key3.wait_for_falling_edge(),
@@ -50,7 +50,10 @@ pub async fn input_task(
             inputs.key8.wait_for_falling_edge(),
             inputs.enc_sw.wait_for_falling_edge(),
         ]); // * We wait for any falling edge, or basically, it going LOW
-        let encoder_turned = future::pending::<Direction>(); // * Encoder not implemented, this is an placeholder
+
+        let (enc_a, enc_b) = enc.pins();
+        let encoder_turned =
+            select_array([enc_a.wait_for_falling_edge(), enc_b.wait_for_falling_edge()]);
 
         match select(key_pressed_fut, encoder_turned).await {
             Either::First(_) => {
@@ -65,6 +68,12 @@ pub async fn input_task(
                     | (inputs.key8.is_low() as u8) << 7;
 
                 let is_encoder_pressed: bool = inputs.enc_sw.is_low();
+                if is_encoder_pressed {
+                    match media_w.write_serialize(&MUTE_REPORT).await {
+                        Ok(()) => continue, // * There's no reason for you to press the encoder switch and another key
+                        Err(e) => warn!("Error sending media report!: {}", e),
+                    }
+                }
                 {
                     // * Putting it on it's own scope so it can be quickly dropped
                     let mut keycodes: [u8; 6] = [0; 6];
@@ -92,15 +101,21 @@ pub async fn input_task(
                         Err(e) => warn!("Error sending macro report!: {}", e),
                     }
                 }
-                if is_encoder_pressed {
-                    match media_w.write_serialize(&MUTE_REPORT).await {
-                        Ok(()) => {}
-                        Err(e) => warn!("Error sending media report!: {}", e),
-                    }
-                }
             }
-            Either::Second(direction) => {
-                unreachable!();
+            Either::Second(_) => {
+                let direction = enc.update().unwrap();
+                let encoder_report: MediaKeyboardReport;
+                match direction {
+                    rotary_encoder_hal::Direction::Clockwise => encoder_report = VOLUME_UP_REPORT,
+                    rotary_encoder_hal::Direction::CounterClockwise => {
+                        encoder_report = VOLUME_DOWN_REPORT // * VS CODE WONT LET ME TAKE OUT OF THE CURLY BRACES
+                    }
+                    rotary_encoder_hal::Direction::None => continue,
+                };
+                match media_w.write_serialize(&encoder_report).await {
+                    Ok(()) => {}
+                    Err(e) => warn!("Error sending encoder report! {}", e),
+                }
                 // * This is an placeholder for now
             }
         }
