@@ -1,5 +1,6 @@
 use crate::hardware::input_handler::KeyInputs;
-use core::{array, future};
+use core::future;
+use defmt::warn;
 use embassy_futures::select::{Either, select, select_array};
 use embassy_rp::gpio::{Input, Pull};
 use embassy_rp::peripherals::USB;
@@ -7,7 +8,7 @@ use embassy_rp::pio_programs::rotary_encoder::Direction;
 use embassy_rp::usb::Driver;
 use embassy_time::{Duration, Timer};
 use embassy_usb::class::hid::HidWriter;
-use usbd_hid::descriptor::{KeyboardReport, KeyboardUsage};
+use usbd_hid::descriptor::{KeyboardReport, KeyboardUsage, MediaKey, MediaKeyboardReport};
 
 const DEBOUNCE_TIME: Duration = Duration::from_millis(10);
 
@@ -21,11 +22,20 @@ const KEYCODES: [u8; 8] = [
     KeyboardUsage::KeyboardF20 as u8,
     KeyboardUsage::KeyboardF21 as u8,
 ];
+const MUTE_REPORT: MediaKeyboardReport = MediaKeyboardReport {
+    usage_id: MediaKey::Mute as u16,
+};
+const VOLUME_UP_REPORT: MediaKeyboardReport = MediaKeyboardReport {
+    usage_id: MediaKey::VolumeIncrement as u16,
+};
+const VOLUME_DOWN_REPORT: MediaKeyboardReport = MediaKeyboardReport {
+    usage_id: MediaKey::VolumeDecrement as u16,
+};
 
 #[embassy_executor::task]
 pub async fn input_task(
-    macro_w: HidWriter<'static, Driver<'static, USB>, 8>,
-    media_w: HidWriter<'static, Driver<'static, USB>, 8>,
+    mut macro_w: HidWriter<'static, Driver<'static, USB>, 8>,
+    mut media_w: HidWriter<'static, Driver<'static, USB>, 8>,
     mut inputs: KeyInputs<'static>,
 ) {
     loop {
@@ -71,12 +81,22 @@ pub async fn input_task(
                             }
                         }
                     }
-                    let report_keys = KeyboardReport {
+                    let keys_report = KeyboardReport {
                         modifier: 0,
                         reserved: 0,
                         leds: 0,
                         keycodes: keycodes,
                     };
+                    match macro_w.write_serialize(&keys_report).await {
+                        Ok(()) => {}
+                        Err(e) => warn!("Error sending macro report!: {}", e),
+                    }
+                }
+                if is_encoder_pressed {
+                    match media_w.write_serialize(&MUTE_REPORT).await {
+                        Ok(()) => {}
+                        Err(e) => warn!("Error sending media report!: {}", e),
+                    }
                 }
             }
             Either::Second(direction) => {
