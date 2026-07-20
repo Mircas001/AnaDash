@@ -17,11 +17,11 @@ bind_interrupts!(struct Irqs {
 
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
-    let p = embassy_rp::init(Default::default());
+    let mut hardware = hardware::Hardware::default();
 
     info!("Hello!");
 
-    usb_handler::begin_usb_handler(&_spawner);
+    usb_handler::begin_usb_handler(&_spawner, hardware.usb, hardware.inputs);
 
     loop {}
 }

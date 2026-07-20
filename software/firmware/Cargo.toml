@@ -39,6 +39,7 @@ usbd-hid = "0.10.0"
 
 static_cell = "2.1.1"
 portable-atomic = { version = "1.14.0", features = ["critical-section"] }
+embassy-futures = "0.1.2"
 
 [profile.release]
 debug = 2

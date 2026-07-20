@@ -6,6 +6,7 @@ use embassy_rp::pio::{InterruptHandler, Pio};
 use embassy_rp::pio_programs::rotary_encoder::{Direction, PioEncoder};
 use embassy_sync::signal::Signal;
 
+// * <'a> is an argument about what lifetime does the struct have
 pub struct KeyInputs<'a> {
     pub key1: Input<'a>,
     pub key2: Input<'a>,
@@ -16,7 +17,7 @@ pub struct KeyInputs<'a> {
     pub key7: Input<'a>,
     pub key8: Input<'a>,
     // pub encoder: PioEncoder<'a>,
-    encoder_sw: Input<'a>,
+    pub enc_sw: Input<'a>,
 }
 impl<'a> KeyInputs<'a> {
     pub fn new(
@@ -43,7 +44,7 @@ impl<'a> KeyInputs<'a> {
             key7: key7,
             key8: key8,
             //  encoder: PioEncoder(&mut common, None, enc_a, enc_a),
-            encoder_sw: enc_sw,
+            enc_sw: enc_sw,
         }
     }
 }

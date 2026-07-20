@@ -1,9 +1,13 @@
-use crate::{Irqs, hardware};
+use crate::Irqs;
+use core::future;
 use embassy_executor::Spawner;
+use embassy_futures::select::{Either, select, select_array};
 use embassy_rp::Peri;
 use embassy_rp::gpio::{Input, Pull};
+use embassy_rp::pac::usb::Usb;
 use embassy_rp::peripherals::USB;
 use embassy_rp::usb::{Driver, InterruptHandler as UsbIrqs};
+use embassy_time::{Duration, Timer};
 use embassy_usb::class::cdc_acm::{CdcAcmClass, State as CdcState};
 use embassy_usb::class::hid::{HidBootProtocol, HidReaderWriter, HidSubclass, State as HidState};
 
@@ -11,7 +15,7 @@ use static_cell::StaticCell;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
 use {defmt_rtt as _, panic_probe as _};
 
-use crate::hardware::Hardware;
+use crate::hardware::input_handler::{self, KeyInputs};
 
 /*
  * This is quite new territory for me, so i'm commenting everything so I remember and understand it later
@@ -21,10 +25,13 @@ use crate::hardware::Hardware;
  * Meanwhile the dashboard data will be sent over CDC, as an shared struct with postcard sliced with COBS
 */
 
-pub fn begin_usb_handler(spawner: &Spawner) {
-    let hardware = Hardware::default();
+pub fn begin_usb_handler(
+    spawner: &Spawner,
+    usb: Peri<'static, USB>,
+    input_keys: KeyInputs<'static>,
+) {
     // * This creates the driver, and configurates the information, such as who made it, the product name, the power etc
-    let driver = Driver::new(hardware.usb, Irqs);
+    let driver = Driver::new(usb, Irqs);
     let mut config = embassy_usb::Config::new(0x1209, 0x4da5); // TODO: Figure out new VID and PID
     config.manufacturer = Some("MatheusM");
     config.product = Some("AnaDash");
@@ -107,18 +114,41 @@ pub fn begin_usb_handler(spawner: &Spawner) {
         HidReaderWriter::<_, 1, 8>::new(&mut builder, media_kbd_state, media_kbd_config);
 
     let usb = builder.build(); // * Finally, we make the usb device
+
+    spawner.spawn(input_task(macro_hid, media_hid, input_keys).unwrap());
 }
+
+const DEBOUNCE_TIME: Duration = Duration::from_millis(10);
 
 #[embassy_executor::task]
 async fn input_task(
     macro_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
     media_hid: HidReaderWriter<'static, Driver<'static, USB>, 1, 8>,
+    mut inputs: KeyInputs<'static>,
 ) {
-    let hardware = Hardware::default();
-    let key_inputs = hardware.inputs;
+    let mut key_pressed_fut = select_array([
+        inputs.key1.wait_for_falling_edge(),
+        inputs.key2.wait_for_falling_edge(),
+        inputs.key3.wait_for_falling_edge(),
+        inputs.key4.wait_for_falling_edge(),
+        inputs.key5.wait_for_falling_edge(),
+        inputs.key6.wait_for_falling_edge(),
+        inputs.key7.wait_for_falling_edge(),
+        inputs.key8.wait_for_falling_edge(),
+        inputs.enc_sw.wait_for_falling_edge(),
+    ]);
+    let encoder_turned = future::pending(); // Encoder not implemented, this is an 
 
     loop {
-        
+        match select(key_pressed_fut, encoder_turned).await {
+            Either::First(_) => {
+                Timer::after(DEBOUNCE_TIME).await;
+            }
+            Either::Second(_) => {
+                unreachable!();
+                // * This is an placeholder for now
+            }
+        }
     }
 }
 

@@ -1,7 +1,5 @@
-use embassy_rp::gpio::{Input, Pin, Pull};
-use embassy_rp::init;
+use embassy_rp::gpio::{Input, Pull};
 use embassy_rp::peripherals::USB;
-use embassy_rp::pio::{InterruptHandler, Pio};
 
 pub mod input_handler;
 
