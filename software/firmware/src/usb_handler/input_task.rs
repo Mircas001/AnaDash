@@ -1,6 +1,6 @@
 use crate::hardware::input_handler::KeyInputs;
 use cortex_m::peripheral::SCB;
-use defmt::warn;
+use defmt::*;
 use embassy_futures::select::{Either, select, select_array};
 use embassy_rp::peripherals::USB;
 use embassy_rp::rom_data::reset_to_usb_boot;
@@ -40,6 +40,7 @@ pub async fn input_task(
     mut media_w: HidWriter<'static, Driver<'static, USB>, 8>,
     mut inputs: KeyInputs<'static>,
 ) {
+    info!("Starting input task");
     let mut enc = Rotary::new(inputs.enc_a, inputs.enc_b);
 
     loop {
@@ -86,9 +87,11 @@ pub async fn input_task(
                         | (inputs.key8.is_low() as u8) << 7;
 
                     if is_k_pressed & RESET_COMBO == RESET_COMBO {
+                        info!("Reset requested!");
                         SCB::sys_reset();
                     } // * lowk wish there was a way that didnt involve it being inside the input_task
                     if is_k_pressed & BOOT_COMBO == BOOT_COMBO {
+                        info!("Boot mode requested!");
                         reset_to_usb_boot(0, 0);
                     }
 

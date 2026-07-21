@@ -7,7 +7,7 @@ use embassy_rp::bind_interrupts;
 use embassy_rp::peripherals::{PIO0, USB};
 use embassy_rp::pio::InterruptHandler;
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
-use {defmt_rtt as _, panic_probe as _};
+use {defmt as _, panic_probe as _};
 
 mod hardware;
 mod usb_handler;

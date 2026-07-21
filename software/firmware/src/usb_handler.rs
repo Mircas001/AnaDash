@@ -1,5 +1,6 @@
 use crate::Irqs;
 use crate::hardware::input_handler::KeyInputs;
+use defmt::info;
 use embassy_executor::Spawner;
 use embassy_rp::Peri;
 use embassy_rp::peripherals::USB;
@@ -26,6 +27,7 @@ pub fn begin_usb_handler(
     usb: Peri<'static, USB>,
     input_keys: KeyInputs<'static>,
 ) {
+    info!("Creating USB driver...");
     // * This creates the driver, and configurates the information, such as who made it, the product name, the power etc
     let driver = Driver::new(usb, Irqs);
     let mut config = embassy_usb::Config::new(0x1209, 0x4da5); // TODO: Figure out new VID and PID
@@ -48,6 +50,7 @@ pub fn begin_usb_handler(
         * On [u8, 256]:
         * This is basically an array of 256 8-bit integers
     */
+
     static CONFIG_DESC: StaticCell<[u8; 256]> = StaticCell::new(); // * The builder sets up an USB descriptor, basically the resumé of the USB device
     static BOS_DESC: StaticCell<[u8; 256]> = StaticCell::new(); // * Binary Object Descriptor, sets up extra resources used by USB 2.1+, won't be used but builder require sit 
     static MSOS_DESC: StaticCell<[u8; 256]> = StaticCell::new(); // * This one is an special thing for the Windows to recognize the usb device, i'm only putting because it's required
@@ -115,6 +118,7 @@ pub fn begin_usb_handler(
     let (media_reader, media_writer) = media_hid.split();
     drop(media_reader); // * trying to save up RAM
 
+    info!("Building the USB device");
     let usb = builder.build(); // * Finally, we make the usb device
 
     spawner.spawn(input_task::input_task(macro_writer, media_writer, input_keys).unwrap());

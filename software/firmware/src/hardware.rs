@@ -1,3 +1,4 @@
+use defmt::*;
 use embassy_rp::gpio::{Input, Pull};
 use embassy_rp::peripherals::USB;
 
@@ -11,6 +12,8 @@ pub struct Hardware {
 impl Default for Hardware {
     fn default() -> Self {
         let p = embassy_rp::init(Default::default());
+
+        info!("Starting hardware!");
 
         let usb = p.USB;
 
