@@ -8,8 +8,11 @@ use embassy_rp::usb::Driver;
 use embassy_usb::class::cdc_acm::{CdcAcmClass, State as CdcState};
 use embassy_usb::class::hid::{HidBootProtocol, HidReaderWriter, HidSubclass, State as HidState};
 use static_cell::StaticCell;
+use embassy_sync::channel::Channel;
+use embassy_sync::blocking_mutex::raw::ThreadModeRawMutex;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
 use {defmt_rtt as _, panic_probe as _};
+use shared::HostTransmission;
 
 mod input_task;
 mod cdc_task;
@@ -21,6 +24,8 @@ mod cdc_task;
  * and an media key descriptor to send volume commands...
  * Meanwhile the dashboard data will be sent over CDC, as an shared struct with postcard sliced with COBS
 */
+
+pub static CDC_CHANNEL: Channel<ThreadModeRawMutex, HostTransmission, 4> = Channel::new();
 
 pub fn begin_usb_handler(
     spawner: &Spawner,
