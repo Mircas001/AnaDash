@@ -1466,7 +1466,7 @@
 		(at 138.305 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW4"
+		(property "Reference" "SW104"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "b6f39328-abfd-4aaa-ba97-ac1e5fc893c5")
@@ -1516,7 +1516,13 @@
 		)
 		(path "/4e96ec5a-32dd-492b-b10b-d750f415f902")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1717,7 +1723,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_2)")
+			(net "Net-(J101-Pin_2)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "59a0906e-9b67-44af-ac53-fc8c51bf6d18")
@@ -1774,7 +1780,7 @@
 		(at 151.75 91.019125)
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
-		(property "Reference" "SW9"
+		(property "Reference" "SW109"
 			(at 2.8 -4.7 0)
 			(layer "F.SilkS")
 			(uuid "a64dca87-b7b7-475a-b5b3-59c649808fc1")
@@ -1825,7 +1831,13 @@
 		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/069bd499-f1b7-47e3-a48c-c076a8087fcf")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "A" "C" "B" "MP" "S1" "S2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2107,7 +2119,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_4)")
+			(net "Net-(J103-Pin_4)")
 			(pinfunction "A_A")
 			(pintype "passive")
 			(uuid "7ab0fdd2-b817-44e3-ba2e-e44f50d65e83")
@@ -2118,7 +2130,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_3)")
+			(net "Net-(J103-Pin_3)")
 			(pinfunction "B_B")
 			(pintype "passive")
 			(uuid "1b35a6a3-9f66-447a-8948-b5adc48e16bd")
@@ -2140,7 +2152,7 @@
 			(drill oval 2.8 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW9-PadMP)_1")
+			(net "unconnected-(SW109-PadMP)_1")
 			(pinfunction "MP_MP")
 			(pintype "passive+no_connect")
 			(uuid "8790b319-a850-4a16-bcde-4dc40de25979")
@@ -2151,7 +2163,7 @@
 			(drill oval 2.8 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW9-PadMP)")
+			(net "unconnected-(SW109-PadMP)")
 			(pinfunction "MP_MP")
 			(pintype "passive+no_connect")
 			(uuid "532cd144-7410-40ec-9f87-b7267a49735c")
@@ -2173,7 +2185,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_2)")
+			(net "Net-(J103-Pin_2)")
 			(pinfunction "S2_S2")
 			(pintype "passive")
 			(uuid "ed0f6576-0d4d-41c5-bba6-e67072383c27")
@@ -2208,7 +2220,7 @@
 		(at 95.295 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW2"
+		(property "Reference" "SW102"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "bbbd6538-a1df-449c-9bc8-48f02de4e1b7")
@@ -2258,7 +2270,13 @@
 		)
 		(path "/d508690c-db6c-4f02-82be-69228ef05c9b")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2459,7 +2477,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_4)")
+			(net "Net-(J101-Pin_4)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "410c8c64-ab7d-43e9-bb99-c98bbeff64ce")
@@ -2516,7 +2534,7 @@
 		(at 206.28 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW6"
+		(property "Reference" "SW106"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "2833033e-5483-4576-b1bf-3443576b356c")
@@ -2566,7 +2584,13 @@
 		)
 		(path "/61968322-069b-423f-90aa-b90b9647f3c2")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2767,7 +2791,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_4)")
+			(net "Net-(J102-Pin_4)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "addc7172-5f18-420b-a719-6f71c77594fc")
@@ -2824,7 +2848,7 @@
 		(at 184.775 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW5"
+		(property "Reference" "SW105"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "a51e982f-e59c-4b35-ab1d-62c0e7cf4586")
@@ -2874,7 +2898,13 @@
 		)
 		(path "/0b0df901-061b-4218-b52e-25667a65e5b9")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3075,7 +3105,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_5)")
+			(net "Net-(J102-Pin_5)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "d8aa7d20-71ba-4481-ba4b-3c435b5587d0")
@@ -3132,7 +3162,7 @@
 		(at 227.785 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW7"
+		(property "Reference" "SW107"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "98762b66-ff8a-42d9-b778-45f938ddd7ed")
@@ -3182,7 +3212,13 @@
 		)
 		(path "/0f258bf1-05c1-49a3-8a1b-b3b0c1f4180a")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3383,7 +3419,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_3)")
+			(net "Net-(J102-Pin_3)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "38f21602-23e3-47a9-991a-ffc9cdbd8d55")
@@ -3440,7 +3476,7 @@
 		(at 116.8 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW3"
+		(property "Reference" "SW103"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "c75a5b90-8f4c-485c-8278-f56ab8354651")
@@ -3490,7 +3526,13 @@
 		)
 		(path "/52ccd59e-4435-4e1b-bbb7-dd40657fb69a")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3691,7 +3733,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_3)")
+			(net "Net-(J101-Pin_3)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "a3423dde-4943-4c0e-9b7f-459ada194e6b")
@@ -3962,7 +4004,7 @@
 		(at 73.79 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW1"
+		(property "Reference" "SW101"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0da53f97-d30e-46cf-b57c-8c5ff234ec03")
@@ -4012,7 +4054,13 @@
 		)
 		(path "/90520134-2bca-4f23-b7e1-29898e29f211")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4213,7 +4261,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_5)")
+			(net "Net-(J101-Pin_5)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "3ffbd4d7-f3ea-41be-b47f-4fe1a90810db")
@@ -4377,7 +4425,7 @@
 		(at 249.29 88.439125)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW8"
+		(property "Reference" "SW108"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "a679e8b7-d650-4a44-bb4b-fc4c5e5a24ed")
@@ -4427,7 +4475,13 @@
 		)
 		(path "/231de2c9-654a-4edd-a193-c1413bd89a44")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4628,7 +4682,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_2)")
+			(net "Net-(J102-Pin_2)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "226e8d38-d899-478f-a630-5ead29e8b210")
@@ -4792,7 +4846,7 @@
 		(at 225.04 76.279125 180)
 		(descr "JST XH series connector, B5B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
-		(property "Reference" "J3"
+		(property "Reference" "J102"
 			(at 5.04 -6.120875 0)
 			(layer "B.SilkS")
 			(uuid "6a710577-00f9-4cb1-9c13-42e38f38d601")
@@ -4856,7 +4910,13 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ea8d3e9f-516b-46db-8044-2964619ebeef")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5055,7 +5115,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_2)")
+			(net "Net-(J102-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "0ec8a5d8-7da7-481e-8825-0ee1e88367e2")
@@ -5066,7 +5126,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_3)")
+			(net "Net-(J102-Pin_3)")
 			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "3a14951b-15a8-488f-8f5c-e76e040a7582")
@@ -5077,7 +5137,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_4)")
+			(net "Net-(J102-Pin_4)")
 			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "f53a1007-be5b-4f2a-a0d0-8224d6e963e6")
@@ -5088,7 +5148,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_5)")
+			(net "Net-(J102-Pin_5)")
 			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "9a7d8552-f1c8-4c32-afe2-f97d85fd67b7")
@@ -5107,13 +5167,12 @@
 		)
 	)
 	(footprint "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
-		(locked yes)
 		(layer "B.Cu")
 		(uuid "30ab3fb7-b894-4934-804c-56a624411aeb")
 		(at 111.74 76.279125 180)
 		(descr "JST XH series connector, B5B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
-		(property "Reference" "J2"
+		(property "Reference" "J101"
 			(at 5 -5.920875 0)
 			(layer "B.SilkS")
 			(uuid "11702190-d5f7-4c9b-a7a0-62cf73af1d21")
@@ -5177,7 +5236,13 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/69b5d6b3-3780-46e8-bd56-8bca16fb8dd4")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5376,7 +5441,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_2)")
+			(net "Net-(J101-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "25865a84-0cbf-4d14-b87d-dc52a15b354d")
@@ -5387,7 +5452,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_3)")
+			(net "Net-(J101-Pin_3)")
 			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "d34e74a0-ec6f-4bcf-9fe8-de40b7178e4a")
@@ -5398,7 +5463,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_4)")
+			(net "Net-(J101-Pin_4)")
 			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "fa71ad6b-e590-4094-a8a1-28e466e03f58")
@@ -5409,7 +5474,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_5)")
+			(net "Net-(J101-Pin_5)")
 			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "fbd8a293-5492-4484-b4fe-0efb5ec7c406")
@@ -5428,13 +5493,12 @@
 		)
 	)
 	(footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-		(locked yes)
 		(layer "B.Cu")
 		(uuid "4a68688f-2d7d-4942-b52d-e872fb8eeac9")
 		(at 162.34 76.279125 180)
 		(descr "JST XH series connector, B4B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
-		(property "Reference" "J4"
+		(property "Reference" "J103"
 			(at 3.75 -6.720875 0)
 			(layer "B.SilkS")
 			(uuid "f97eab4f-f929-4cee-aa38-e4322364fad0")
@@ -5498,7 +5562,13 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/24f0fc2e-95d6-4982-8db3-97d82c788cc5")
 		(sheetname "/")
-		(sheetfile "anadashSecondaryBoard.kicad_sch")
+		(sheetfile "inputBoard.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5697,7 +5767,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_2)")
+			(net "Net-(J103-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "a635bc1a-fb03-4820-baa1-6610ee540457")
@@ -5708,7 +5778,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_3)")
+			(net "Net-(J103-Pin_3)")
 			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "dad60569-0873-444c-8de4-39fd8230ebf5")
@@ -5719,7 +5789,7 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J4-Pin_4)")
+			(net "Net-(J103-Pin_4)")
 			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "fc9d1dad-06ce-4e5d-9869-a75e2eaee05b")
@@ -6101,7 +6171,7 @@
 		(end 138.305 88.439125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_2)")
+		(net "Net-(J101-Pin_2)")
 		(uuid "306e651c-ac4a-4698-9a9a-f56862870678")
 	)
 	(segment
@@ -6109,7 +6179,7 @@
 		(end 121.4 88.439125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_2)")
+		(net "Net-(J101-Pin_2)")
 		(uuid "d0950714-24c7-4e71-99c8-6cd782e1f66e")
 	)
 	(segment
@@ -6117,7 +6187,7 @@
 		(end 154.84 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J4-Pin_4)")
+		(net "Net-(J103-Pin_4)")
 		(uuid "2de5b0a6-cd0f-4b76-96dd-e0fdb3ede1ed")
 	)
 	(segment
@@ -6125,7 +6195,7 @@
 		(end 151.75 79.369125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J4-Pin_4)")
+		(net "Net-(J103-Pin_4)")
 		(uuid "33c49a1f-6165-45a7-8cfa-0ead94ac7a19")
 	)
 	(segment
@@ -6133,7 +6203,7 @@
 		(end 154.671428 94.979125)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "07d4c75e-97c2-4d47-afc3-c98cf2a9add2")
 	)
 	(segment
@@ -6141,7 +6211,7 @@
 		(end 155.671428 85.579125)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "2a99811d-5f22-4bcb-8180-c50cc8c3fb6a")
 	)
 	(segment
@@ -6149,7 +6219,7 @@
 		(end 157.34 83.910553)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "50406ce9-fee6-423e-9cc2-dd80fb066a55")
 	)
 	(segment
@@ -6157,7 +6227,7 @@
 		(end 157.34 76.279125)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "51bdb909-d9ac-47e9-8f67-9edb2ca2b948")
 	)
 	(segment
@@ -6165,7 +6235,7 @@
 		(end 155.671428 93.979125)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "8398e629-1fd5-4065-b07e-d714a43897bd")
 	)
 	(segment
@@ -6173,7 +6243,7 @@
 		(end 152.79 94.979125)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J4-Pin_3)")
+		(net "Net-(J103-Pin_3)")
 		(uuid "b5679426-7120-44f5-8f71-cc2387d3909b")
 	)
 	(segment
@@ -6181,7 +6251,7 @@
 		(end 159.84 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J4-Pin_2)")
+		(net "Net-(J103-Pin_2)")
 		(uuid "9df4c17d-7be7-4ac3-957f-47c9a74937f9")
 	)
 	(segment
@@ -6189,7 +6259,7 @@
 		(end 159.84 84.609125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J4-Pin_2)")
+		(net "Net-(J103-Pin_2)")
 		(uuid "ad9881e5-1c06-47a8-bbcb-b57efef70b94")
 	)
 	(segment
@@ -6197,7 +6267,7 @@
 		(end 104.24 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_4)")
+		(net "Net-(J101-Pin_4)")
 		(uuid "99416bc7-77ac-4d4f-8369-b6dc2d0a14d0")
 	)
 	(segment
@@ -6205,7 +6275,7 @@
 		(end 95.295 85.224125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_4)")
+		(net "Net-(J101-Pin_4)")
 		(uuid "d8574bb3-1ac7-4304-8644-7f9b52ac90fe")
 	)
 	(segment
@@ -6213,7 +6283,7 @@
 		(end 217.54 77.179125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_4)")
+		(net "Net-(J102-Pin_4)")
 		(uuid "16d72e7f-2332-48fe-9537-ea62faaf0efb")
 	)
 	(segment
@@ -6221,7 +6291,7 @@
 		(end 217.54 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_4)")
+		(net "Net-(J102-Pin_4)")
 		(uuid "a13f49d3-85d9-4ebb-beb6-5224363cae6d")
 	)
 	(segment
@@ -6229,7 +6299,7 @@
 		(end 202.88 88.439125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_5)")
+		(net "Net-(J102-Pin_5)")
 		(uuid "242a41c4-eef6-46ef-b2dc-b1d552c45234")
 	)
 	(segment
@@ -6237,7 +6307,7 @@
 		(end 215.04 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_5)")
+		(net "Net-(J102-Pin_5)")
 		(uuid "7101ce4e-c384-4663-bcec-ca7b873b4472")
 	)
 	(segment
@@ -6245,7 +6315,7 @@
 		(end 227.785 84.024125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_3)")
+		(net "Net-(J102-Pin_3)")
 		(uuid "3f76182d-60ac-4dad-bcb7-cb203dbfb77a")
 	)
 	(segment
@@ -6253,7 +6323,7 @@
 		(end 220.04 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_3)")
+		(net "Net-(J102-Pin_3)")
 		(uuid "f0d50f6a-931b-45fa-8a8b-5cc49fbcc519")
 	)
 	(segment
@@ -6261,7 +6331,7 @@
 		(end 116.8 86.339125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_3)")
+		(net "Net-(J101-Pin_3)")
 		(uuid "1c8ed136-85dc-439a-8579-073cd71f1154")
 	)
 	(segment
@@ -6269,7 +6339,7 @@
 		(end 106.74 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_3)")
+		(net "Net-(J101-Pin_3)")
 		(uuid "39b09e6b-5a9f-46d6-9884-2452578d9518")
 	)
 	(segment
@@ -6277,7 +6347,7 @@
 		(end 101.74 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_5)")
+		(net "Net-(J101-Pin_5)")
 		(uuid "76892e68-83dc-4447-a6d1-31658ae6cd1e")
 	)
 	(segment
@@ -6285,7 +6355,7 @@
 		(end 89.58 88.439125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_5)")
+		(net "Net-(J101-Pin_5)")
 		(uuid "ef372221-cd30-4211-a66d-6fcc45894a11")
 	)
 	(segment
@@ -6293,7 +6363,7 @@
 		(end 234.7 88.439125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J102-Pin_2)")
 		(uuid "50e80096-2b7e-425e-a61d-9414ecfcdc7f")
 	)
 	(segment
@@ -6301,7 +6371,7 @@
 		(end 222.54 76.279125)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J102-Pin_2)")
 		(uuid "99d19ec8-dcc7-4a67-aef2-219197568392")
 	)
 	(zone

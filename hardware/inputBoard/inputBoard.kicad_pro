@@ -526,6 +526,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -533,7 +534,7 @@
   "schematic": {
     "annotate_start_num": 0,
     "annotation": {
-      "method": 0,
+      "method": 1,
       "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
@@ -648,7 +649,7 @@
         "uuid": "4afd32ea-561a-4b0e-b8bd-b5545b1531de"
       }
     ],
-    "used_designators": "U1,SW1-9,J1-4,#PWR1-7",
+    "used_designators": "U1,SW1-9,SW101-109,J1-4,J101-103,#PWR1-7,#PWR101-104",
     "variants": []
   },
   "sheets": [

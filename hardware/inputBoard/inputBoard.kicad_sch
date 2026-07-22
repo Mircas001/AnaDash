@@ -1807,7 +1807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "069bd499-f1b7-47e3-a48c-c076a8087fcf")
-		(property "Reference" "SW9"
+		(property "Reference" "SW109"
 			(at 59.69 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1887,7 +1887,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW9")
+					(reference "SW109")
 					(unit 1)
 				)
 			)
@@ -1905,7 +1905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b0df901-061b-4218-b52e-25667a65e5b9")
-		(property "Reference" "SW5"
+		(property "Reference" "SW105"
 			(at 59.69 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1973,7 +1973,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW5")
+					(reference "SW105")
 					(unit 1)
 				)
 			)
@@ -1991,7 +1991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f258bf1-05c1-49a3-8a1b-b3b0c1f4180a")
-		(property "Reference" "SW7"
+		(property "Reference" "SW107"
 			(at 59.69 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2059,7 +2059,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW7")
+					(reference "SW107")
 					(unit 1)
 				)
 			)
@@ -2077,7 +2077,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "231de2c9-654a-4edd-a193-c1413bd89a44")
-		(property "Reference" "SW8"
+		(property "Reference" "SW108"
 			(at 59.69 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2145,7 +2145,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW8")
+					(reference "SW108")
 					(unit 1)
 				)
 			)
@@ -2163,7 +2163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24f0fc2e-95d6-4982-8db3-97d82c788cc5")
-		(property "Reference" "J4"
+		(property "Reference" "J103"
 			(at 55.88 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2237,7 +2237,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J4")
+					(reference "J103")
 					(unit 1)
 				)
 			)
@@ -2255,7 +2255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41bb160d-7d2a-4ae0-83f9-dd020e0f6621")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0103"
 			(at 68.58 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2321,7 +2321,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR06")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -2339,7 +2339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e96ec5a-32dd-492b-b10b-d750f415f902")
-		(property "Reference" "SW4"
+		(property "Reference" "SW104"
 			(at 59.69 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2407,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW4")
+					(reference "SW104")
 					(unit 1)
 				)
 			)
@@ -2425,7 +2425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52ccd59e-4435-4e1b-bbb7-dd40657fb69a")
-		(property "Reference" "SW3"
+		(property "Reference" "SW103"
 			(at 59.69 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2493,7 +2493,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW3")
+					(reference "SW103")
 					(unit 1)
 				)
 			)
@@ -2511,7 +2511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61968322-069b-423f-90aa-b90b9647f3c2")
-		(property "Reference" "SW6"
+		(property "Reference" "SW106"
 			(at 59.69 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2579,7 +2579,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW6")
+					(reference "SW106")
 					(unit 1)
 				)
 			)
@@ -2596,7 +2596,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69b5d6b3-3780-46e8-bd56-8bca16fb8dd4")
-		(property "Reference" "J2"
+		(property "Reference" "J101"
 			(at 38.1 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2673,7 +2673,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J2")
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -2691,7 +2691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e136c50-4cdf-4f0a-aaa7-0c12fb0dae65")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0104"
 			(at 69.85 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -2751,7 +2751,7 @@
 		(instances
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR03")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -2769,7 +2769,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a62a404-9edb-4734-91b5-3998ed90b0f9")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0102"
 			(at 50.8 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2829,7 +2829,7 @@
 		(instances
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR02")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -2847,7 +2847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90520134-2bca-4f23-b7e1-29898e29f211")
-		(property "Reference" "SW1"
+		(property "Reference" "SW101"
 			(at 59.69 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,7 +2915,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW1")
+					(reference "SW101")
 					(unit 1)
 				)
 			)
@@ -2933,7 +2933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae18dccd-5bf1-4889-9603-33b0c7934004")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0101"
 			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -2993,7 +2993,7 @@
 		(instances
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "#PWR01")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -3011,7 +3011,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d508690c-db6c-4f02-82be-69228ef05c9b")
-		(property "Reference" "SW2"
+		(property "Reference" "SW102"
 			(at 59.69 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3079,7 +3079,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "SW2")
+					(reference "SW102")
 					(unit 1)
 				)
 			)
@@ -3096,7 +3096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea8d3e9f-516b-46db-8044-2964619ebeef")
-		(property "Reference" "J3"
+		(property "Reference" "J102"
 			(at 38.1 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3173,7 +3173,7 @@
 			)
 			(project "inputBoard"
 				(path "/4afd32ea-561a-4b0e-b8bd-b5545b1531de"
-					(reference "J3")
+					(reference "J102")
 					(unit 1)
 				)
 			)
