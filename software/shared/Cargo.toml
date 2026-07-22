@@ -9,5 +9,5 @@ name = "shared"
 path = "src/lib.rs"
 
 [dependencies]
-heapless = {version = "0.9.3", features = ["serde"]}
+heapless = {version = "0.9.3", features = ["serde", "heapless"]}
 serde = {version = "1.0.228", default-features = false, features = ["derive"]}
