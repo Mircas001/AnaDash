@@ -14,7 +14,7 @@ This is an dashboard that aims to have all the important functions and informati
 This project was designed in KiCad, it uses a pair of 2 layer PCBs, the PCBs were split because the switches had to be at an angle while the pico had to sit straight.
 For this to work, you must connect the following, all of the cables are JST-XH, as it features an locking mechanism.
 You must make the following connections: (Pinouts are in left to right, when viewed from abovee!, GND will always be the rounded rectangle!) 
-- DisplayConnector (LED, SCK, SDA, AO, RESET, CS, GND, VCC) - connect this to the matching pins on the display.
+- DisplayConnector (BL, SCK, SDA, CS, RESET, CS, VCC, GND) - connect this to the matching pins on the display.
 - LeftKeyConnector (Switch1, Switch2, Switch3, Switch4, GND) - connect this to the matching connector in the auxiliary board 
 - RightKeyConnector (Switch5, Switch6, Switch7, Switch8, GND) - Connect this to the right connector in the auxiliary board
 - EncoderConnector (B, A, Switch, GND) - Connect this to the center connector in the input board!
@@ -25,7 +25,7 @@ This Board features the Pico, the DAC, the outputs for the ammeters, the display
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/hardware/images/mainBoardModel.png)
 
 ### Input PCB
-This PCB has all the keys and the encoder and serves to take inputs, it is angled at 45 degrees for ergonomics!
+This PCB has all the keys and the encoder and serves to take inputs, it is angled together with the display and gauges at 45 degrees for ergonomics!
 
 [You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FinputBoard)
 ![3D Model](https://github.com/Mircas001/AnaDash/blob/main/hardware/images/inputBoardModel.png)
