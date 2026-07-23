@@ -48,3 +48,4 @@ pub struct NotificationData {
 
 pub const DEVICE_VID: u16 = 0x1209;
 pub const DEVICE_PID: u16 = 0x4da5;
+pub const CDC_INTERFACE: u8 = 0x0;

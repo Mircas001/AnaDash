@@ -118,3 +118,5 @@ This project was designed in:
 [OrpheusPad, for serving as reference as to how should the git repo and README look like](https://github.com/qcoral/orpheuspad/tree/main)
 [HackPad program, which, despite not participating in it, guided me through this](https://hackpad.hackclub.com/)
 [CarlKCarlK's clock project which I'm using as inspiration as well as some of his code](https://github.com/CarlKCarlK/clock)
+[Cescentro guide on how to write an driver!](https://crescentro.se/posts/writing-drivers/)
+[Siliconwit's guide on embassy-usb](https://siliconwit.com/education/embedded-rust-rp2040/usb-device-embassy/)

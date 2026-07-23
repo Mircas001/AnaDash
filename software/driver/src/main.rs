@@ -1,8 +1,7 @@
 use std::io::Write;
 
 use anyhow::Result;
-use shared::DashboardData;
-use shared::HostTransmission;
+use shared::{DEVICE_PID, DEVICE_VID, DashboardData, HostTransmission};
 use tokio::time::{Duration, interval};
 use tokio_serial::SerialPortBuilderExt;
 
@@ -19,9 +18,18 @@ async fn main() -> Result<()> {
     #[cfg(not(target_os = "linux"))]
     println!("A non-linux Unix system has been detected, this might not work!");
 
-    let mut keyboard_cdc = tokio_serial::new("/dev/ttyUSB0", 115200)
-        .open_native_async()
-        .expect("Error opening CDC port!");
+    let keyboard_port = match utils::get_serial_with_vid_pid(DEVICE_VID, DEVICE_PID) {
+        Ok(port_info) => port_info,
+        Err(e) => {
+            panic!("Error getting serial port! {}", e.description);
+        }
+    };
+
+    let mut keyboard_cdc =
+        match tokio_serial::new(keyboard_port.port_name, 115200).open_native_async() {
+            Ok(port) => port,
+            Err(e) => panic!("Error opening serial port! {}", e),
+        };
 
     let mut hwinfo = hardware_info::HardwareInfo::new();
 
