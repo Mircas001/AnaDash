@@ -528,7 +528,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "mainBoard.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
