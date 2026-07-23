@@ -45,3 +45,6 @@ pub struct NotificationData {
     pub summary: String<128>,
     pub body: String<256>,
 }
+
+pub const DEVICE_VID: u16 = 0x1209;
+pub const DEVICE_PID: u16 = 0x4da5;

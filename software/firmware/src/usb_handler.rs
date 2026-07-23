@@ -12,7 +12,7 @@ use embassy_sync::channel::Channel;
 use embassy_sync::blocking_mutex::raw::ThreadModeRawMutex;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
 use {defmt_rtt as _, panic_probe as _};
-use shared::HostTransmission;
+use shared::{HostTransmission, DEVICE_PID, DEVICE_VID};
 
 mod input_task;
 mod cdc_task;
@@ -35,7 +35,7 @@ pub fn begin_usb_handler(
     info!("Creating USB driver...");
     // * This creates the driver, and configurates the information, such as who made it, the product name, the power etc
     let driver = Driver::new(usb, Irqs);
-    let mut config = embassy_usb::Config::new(0x1209, 0x4da5); // TODO: Figure out new VID and PID
+    let mut config = embassy_usb::Config::new(DEVICE_VID, DEVICE_PID); // TODO: Figure out new VID and PID
     config.manufacturer = Some("MatheusM");
     config.product = Some("AnaDash");
     config.serial_number = Some("001");
