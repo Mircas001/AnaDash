@@ -1,5 +1,9 @@
-[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+[target.'cfg(all(target_arch = "arm", target_os = "none", feature="probe-deploy"))']
 runner = "probe-rs run --chip RP2040"
+
+[target.'cfg(all(target_arch = "arm", target_os = "none", feature="usb-deploy"))']
+runner = "picotool load --update --verify --execute -t elf"
+
 [build]
 target = "thumbv6m-none-eabi"
 
