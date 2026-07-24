@@ -20,12 +20,12 @@ You must make the following connections: (Pinouts are in left to right, when vie
 - EncoderConnector (B, A, Switch, GND) - Connect this to the center connector in the input board!
 
 ### Main PCB
-This Board features the Pico, the DAC, the outputs for the ammeters, the display connector and the connections to the input board
+This Board features the Pico, the DAC, the outputs for the ammeters, the display connector and the connections to the input board                               
 [You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FmainBoard)
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/hardware/images/mainBoardModel.png)
 
 ### Input PCB
-This PCB has all the keys and the encoder and serves to take inputs, it is angled together with the display and gauges at 45 degrees for ergonomics!
+This PCB has all the keys and the encoder and serves to take inputs, it is angled together with the display and gauges at 45 degrees for ergonomics!                 
 [You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FinputBoard)
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/hardware/images/inputBoardModel.png)
 
