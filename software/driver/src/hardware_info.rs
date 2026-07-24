@@ -1,4 +1,4 @@
-use shared::{map_f32, map_u64};
+use map_arduino::{map_f32, map_u64};
 use std::fs;
 use std::time::{Duration, Instant};
 use sysinfo::{CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
