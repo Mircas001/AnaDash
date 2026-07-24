@@ -7,7 +7,7 @@ pub struct Stats {
     pub cpu_load: u16,
     pub mem_used: u16,
     pub swap_used: u16,
-    pub cpu_temp: u8,
+    pub cpu_temp: u16,
 }
 pub struct HardwareInfo {
     refresh_kind: RefreshKind,
@@ -40,11 +40,11 @@ impl HardwareInfo {
         }
     }
 
-    pub fn read_cpu_temp(&self) -> u8 {
+    pub fn read_cpu_temp(&self) -> u16 {
         let raw_cpu_temp: String = fs::read_to_string("/sys/class/thermal/thermal_zone1/temp")
             .expect("Failed to read the cpu_thermal_zone");
         let millis_cpu_temp: u16 = raw_cpu_temp.trim().parse().unwrap();
-        (millis_cpu_temp / 1000) as u8
+        millis_cpu_temp / 1000
     }
 
     pub fn get_data(&mut self) -> Stats {
@@ -63,7 +63,7 @@ impl HardwareInfo {
 
         let mem_used = map_u64(self.sys.used_memory(), 0, self.total_memory, 0, 4096) as u16;
         let swap_used = map_u64(self.sys.used_swap(), 0, self.total_swap, 0, 4096) as u16;
-        let cpu_temp: u8 = self.read_cpu_temp();
+        let cpu_temp: u16 = self.read_cpu_temp();
 
         Stats {
             cpu_load,

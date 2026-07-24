@@ -34,9 +34,7 @@ async fn main(_spawner: Spawner) {
             HostTransmission::Notification(noti) => {
                 // * blank for now
             }
-            HostTransmission::Dashboard(dash) => {
-                
-            }
+            HostTransmission::Dashboard(dash) => {}
         }
     }
 }
