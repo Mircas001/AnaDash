@@ -1,18 +1,19 @@
+use shared::{map_f32, map_u64};
 use std::fs;
 use std::time::{Duration, Instant};
 use sysinfo::{CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
 
 pub struct Stats {
-    pub cpu_load: f32,
-    pub mem_used: f32,
-    pub swap_used: f32,
+    pub cpu_load: u16,
+    pub mem_used: u16,
+    pub swap_used: u16,
     pub cpu_temp: u8,
 }
 pub struct HardwareInfo {
     refresh_kind: RefreshKind,
     sys: System,
-    total_memory: f32,
-    total_swap: f32,
+    total_memory: u64,
+    total_swap: u64,
     last_reading: Instant,
 }
 
@@ -25,8 +26,8 @@ impl HardwareInfo {
         let mut sys: System = System::new_with_specifics(refresh_kind);
         sys.refresh_specifics(refresh_kind);
 
-        let total_memory: f32 = sys.total_memory() as f32;
-        let total_swap: f32 = sys.total_swap() as f32;
+        let total_memory = sys.total_memory();
+        let total_swap = sys.total_swap();
 
         let last_reading = Instant::now();
 
@@ -50,18 +51,18 @@ impl HardwareInfo {
         let one_second: Duration = Duration::new(1, 0);
         self.sys.refresh_specifics(self.refresh_kind);
 
-        let cpu_load: f32;
+        let cpu_load: u16;
 
         if self.last_reading.elapsed() < one_second {
-            cpu_load = 0.0;
+            cpu_load = 0;
         } else {
             self.sys.refresh_cpu_usage();
-            cpu_load = self.sys.global_cpu_usage() / 100.0;
+            cpu_load = map_f32(self.sys.global_cpu_usage(), 0.0, 100.0, 0.0, 4096.0) as u16;
             self.last_reading = Instant::now();
         }
 
-        let mem_used: f32 = self.sys.used_memory() as f32 / self.total_memory;
-        let swap_used: f32 = self.sys.used_swap() as f32 / self.total_swap;
+        let mem_used = map_u64(self.sys.used_memory(), 0, self.total_memory, 0, 4096) as u16;
+        let swap_used = map_u64(self.sys.used_swap(), 0, self.total_swap, 0, 4096) as u16;
         let cpu_temp: u8 = self.read_cpu_temp();
 
         Stats {
