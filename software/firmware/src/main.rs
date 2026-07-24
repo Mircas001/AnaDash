@@ -5,11 +5,11 @@ use crate::usb_handler::CDC_CHANNEL;
 use defmt::*;
 use embassy_executor::Spawner;
 use embassy_rp::bind_interrupts;
-use embassy_rp::peripherals::{PIO0, USB};
-use embassy_rp::pio::InterruptHandler;
+use embassy_rp::i2c::InterruptHandler as i2cIrqs;
+use embassy_rp::peripherals::{I2C1, USB};
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
+use mcp4728::MCP4728Async;
 use shared::HostTransmission;
-
 use {defmt as _, panic_probe as _};
 
 mod hardware;
@@ -17,14 +17,16 @@ mod usb_handler;
 
 bind_interrupts!(struct Irqs {
     USBCTRL_IRQ => UsbIrqs<USB>;
-    PIO0_IRQ_0 => InterruptHandler<PIO0>;
+    I2C1_IRQ => i2cIrqs<I2C1>;
 });
 
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
-    let hardware = hardware::Hardware::default();
+    let mut hardware = hardware::Hardware::default();
 
     info!("Hello!");
+
+    let mut meters = MCP4728Async::new(&mut hardware.i2c, 0x60);
 
     usb_handler::begin_usb_handler(&_spawner, hardware.usb, hardware.inputs);
 
@@ -34,7 +36,13 @@ async fn main(_spawner: Spawner) {
             HostTransmission::Notification(noti) => {
                 // * blank for now
             }
-            HostTransmission::Dashboard(dash) => {}
+            HostTransmission::Dashboard(dash) => {
+                meters
+                    .fast_write(dash.cpu_load, dash.cpu_temp, dash.mem_used, dash.swap_used)
+                    .await
+                    .unwrap();
+                hardware.ldac.set_high();
+            }
         }
     }
 }
