@@ -24,7 +24,6 @@ async fn main() -> Result<()> {
             panic!("Error getting serial port! {}", e.description);
         }
     };
-
     let mut keyboard_cdc =
         match tokio_serial::new(keyboard_port.port_name, 115200).open_native_async() {
             Ok(port) => port,
