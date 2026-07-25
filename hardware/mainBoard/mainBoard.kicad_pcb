@@ -6850,9 +6850,9 @@
 			(size 3.2 1.6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.5)
-			(net "Net-(A1-GPIO12)")
+			(net "unconnected-(A1-GPIO12-Pad16)")
 			(pinfunction "GPIO12_16")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "266ab552-4a73-4cfe-86d2-4971af438211")
 		)
 		(pad "16" thru_hole circle
@@ -6861,9 +6861,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(A1-GPIO12)")
+			(net "unconnected-(A1-GPIO12-Pad16)_1")
 			(pinfunction "GPIO12_16")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b1233cce-3ba3-472b-8591-cad5454dfd84")
 		)
 		(pad "17" smd roundrect
@@ -6871,9 +6871,9 @@
 			(size 3.2 1.6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.5)
-			(net "/LDAC")
+			(net "unconnected-(A1-GPIO13-Pad17)_1")
 			(pinfunction "GPIO13_17")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "35138391-db5b-4b40-a618-62a2409a81e7")
 		)
 		(pad "17" thru_hole circle
@@ -6882,9 +6882,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/LDAC")
+			(net "unconnected-(A1-GPIO13-Pad17)")
 			(pinfunction "GPIO13_17")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "02c5985e-29fa-4787-9494-99bbbdfab962")
 		)
 		(pad "18" smd custom
@@ -6968,9 +6968,9 @@
 			(size 3.2 1.6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.5)
-			(net "unconnected-(A1-GPIO14-Pad19)")
+			(net "Net-(A1-GPIO14)")
 			(pinfunction "GPIO14_19")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "163d6694-b688-4a00-84f3-20b565cdd9bb")
 		)
 		(pad "19" thru_hole circle
@@ -6979,9 +6979,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(A1-GPIO14-Pad19)_1")
+			(net "Net-(A1-GPIO14)")
 			(pinfunction "GPIO14_19")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "bcd806d6-cbfb-4535-a4c3-15c5d3933a77")
 		)
 		(pad "20" smd roundrect
@@ -6989,9 +6989,9 @@
 			(size 3.2 1.6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.5)
-			(net "unconnected-(A1-GPIO15-Pad20)_1")
+			(net "/LDAC")
 			(pinfunction "GPIO15_20")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "d1846525-2dd8-4db3-a9ef-275a77639280")
 		)
 		(pad "20" thru_hole circle
@@ -7000,9 +7000,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(A1-GPIO15-Pad20)")
+			(net "/LDAC")
 			(pinfunction "GPIO15_20")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "3d6fa01f-8da9-433c-994e-3403c874de74")
 		)
 		(pad "21" thru_hole circle
@@ -10925,6 +10925,7 @@
 		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "cb279323-85bd-4415-b16b-4e40d7a52e7c")
 		(at 167.62 75.4 -90)
@@ -10933,7 +10934,7 @@
 		(property "Reference" "J3"
 			(at 0 -2.38 90)
 			(layer "F.SilkS")
-			(uuid "8cf60057-d3dc-4f6c-9e03-986c3f9bfc61")
+			(uuid "3631d251-0ab5-419b-8131-1a090aee0a2d")
 			(effects
 				(font
 					(size 1 1)
@@ -10944,7 +10945,7 @@
 		(property "Value" "DisplayConnector"
 			(at -2.5 9.16 0)
 			(layer "F.Fab")
-			(uuid "745bdcfc-ec83-4be2-a6dc-9f53b099294c")
+			(uuid "4790e6f9-891b-43eb-a3ed-97840014be0a")
 			(effects
 				(font
 					(size 1 1)
@@ -10956,7 +10957,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "59e28d5e-75cb-4c39-b4b2-c0780804eef0")
+			(uuid "dd750ec2-a866-42ef-b536-b8af0ed5781c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10967,7 +10968,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b593686b-379d-4fd8-9e7d-ace5ad88681d")
+			(uuid "eb92979b-5d01-41bf-9d80-55aa171a10f8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11203,7 +11204,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(A1-GPIO12)")
+			(net "Net-(A1-GPIO14)")
 			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "2a94e04e-393e-4cb0-815b-866cc96de8aa")
@@ -12202,6 +12203,7 @@
 		)
 	)
 	(gr_text "CS"
+		(locked yes)
 		(at 163.110625 78.995238 90)
 		(layer "F.SilkS")
 		(uuid "11bbb813-9752-44e3-981b-6f4fe73a9bd1")
@@ -12225,10 +12227,10 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "GND"
-		(at 165.650625 80.090476 90)
+	(gr_text "VCC"
+		(at 165.650625 79.9 90)
 		(layer "F.SilkS")
-		(uuid "0fc2bcc4-15dd-4103-9267-f9a03ede0c2a")
+		(uuid "d7694b96-c90b-497a-9b14-be06532885e0")
 		(effects
 			(font
 				(size 1 1)
@@ -12249,10 +12251,10 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "VCC"
-		(at 168.190625 79.9 90)
+	(gr_text "GND"
+		(at 168.190625 80.090476 90)
 		(layer "F.SilkS")
-		(uuid "d7694b96-c90b-497a-9b14-be06532885e0")
+		(uuid "0fc2bcc4-15dd-4103-9267-f9a03ede0c2a")
 		(effects
 			(font
 				(size 1 1)
@@ -12474,6 +12476,14 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(segment
+		(start 167.4925 85.31)
+		(end 167.4925 86.11)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "")
+		(uuid "fd17b9a0-3b24-465a-80c9-c12c48670ea6")
 	)
 	(segment
 		(start 147.65 95.5)
@@ -13124,28 +13134,28 @@
 		(uuid "f9e4b9b2-9a4c-4eca-8fdb-3cc3155ea5f7")
 	)
 	(segment
-		(start 169.4125 82.95)
-		(end 165.01 82.95)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO10)")
-		(uuid "b078a4a4-2a20-4b3d-bab7-837a0f9cbb97")
-	)
-	(segment
-		(start 172.5725 86.11)
-		(end 169.4125 82.95)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO10)")
-		(uuid "ff9bb3c0-95ec-480b-ab5b-0fa10fbf4dd1")
-	)
-	(segment
-		(start 165.01 82.95)
+		(start 164.51 82.45)
 		(end 157.46 75.4)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(A1-GPIO10)")
-		(uuid "ffd982ad-b09e-4d17-8e90-78d2cc73869a")
+		(uuid "7ff39df3-22cc-4e0d-a43e-a5b6127ba08a")
+	)
+	(segment
+		(start 168.9125 82.45)
+		(end 164.51 82.45)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(A1-GPIO10)")
+		(uuid "a856762b-b0a8-4356-8d91-ad7fccc6d640")
+	)
+	(segment
+		(start 172.5725 86.11)
+		(end 168.9125 82.45)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(A1-GPIO10)")
+		(uuid "efa8daff-bfa5-4bb3-b745-a33b5285167c")
 	)
 	(segment
 		(start 170.0325 85.31)
@@ -13156,68 +13166,28 @@
 		(uuid "7d2a531d-6a5b-481b-b591-e2237c8f1dfa")
 	)
 	(segment
-		(start 167.9225 84)
-		(end 163.52 84)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO11)")
-		(uuid "05e1185d-a485-4872-8899-721c4a576d27")
-	)
-	(segment
 		(start 170.0325 86.11)
-		(end 167.9225 84)
+		(end 167.4225 83.5)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(A1-GPIO11)")
-		(uuid "4ab3574b-bed2-42be-b3a3-147cb7a54f46")
+		(uuid "56ad105b-08db-4672-930e-d1fea23fa465")
 	)
 	(segment
-		(start 154.92 75.4)
-		(end 161.45 81.93)
+		(start 167.4225 83.5)
+		(end 163.02 83.5)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(A1-GPIO11)")
-		(uuid "a8908416-9262-4b9f-bc57-7f3d8af5cd19")
+		(uuid "bfbbe678-d671-42d7-85eb-c5b84ad21802")
 	)
 	(segment
-		(start 163.52 84)
-		(end 161.45 81.93)
+		(start 163.02 83.5)
+		(end 154.92 75.4)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(A1-GPIO11)")
-		(uuid "c999870c-8f8a-4926-b607-0de54160f8e8")
-	)
-	(segment
-		(start 167.4925 85.31)
-		(end 167.4925 86.11)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "Net-(A1-GPIO12)")
-		(uuid "fd17b9a0-3b24-465a-80c9-c12c48670ea6")
-	)
-	(segment
-		(start 167.4925 86.11)
-		(end 166.3875 85.005)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO12)")
-		(uuid "afbf6ea1-e12a-4544-b468-4625ff9c484f")
-	)
-	(segment
-		(start 161.985 85.005)
-		(end 152.38 75.4)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO12)")
-		(uuid "d9efad8f-928e-4e43-97d4-71282508c6b5")
-	)
-	(segment
-		(start 166.3875 85.005)
-		(end 161.985 85.005)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(A1-GPIO12)")
-		(uuid "f2ffbefe-1617-4b40-afb8-217a23f0393d")
+		(uuid "da996656-5928-4aa8-ac31-7254efed27cd")
 	)
 	(segment
 		(start 157.3325 112.0825)
@@ -13418,6 +13388,22 @@
 		(layer "F.Cu")
 		(net "Net-(MES4-+)")
 		(uuid "ad5cbd8e-36e7-4b1c-bb26-65b6c563c6cb")
+	)
+	(segment
+		(start 159.8725 82.8925)
+		(end 159.8725 86.11)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(A1-GPIO14)")
+		(uuid "3fc0789b-ffb7-42a0-916a-c6f2656ef76c")
+	)
+	(segment
+		(start 152.38 75.4)
+		(end 159.8725 82.8925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(A1-GPIO14)")
+		(uuid "c1568baf-5c36-47c6-8b32-d4ea6c58e609")
 	)
 	(zone
 		(net "GND")
