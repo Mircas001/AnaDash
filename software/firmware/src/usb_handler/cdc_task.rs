@@ -6,7 +6,7 @@ use embassy_usb::class::cdc_acm::CdcAcmClass;
 use postcard::accumulator::{CobsAccumulator, FeedResult};
 use shared::HostTransmission;
 
-const MAX_MSG_SIZE: usize = 256; // * Just to prevent in case someone injects garbage or something;
+const MAX_MSG_SIZE: usize = 1024; // * Just to prevent in case someone injects garbage or something;
 
 #[embassy_executor::task]
 pub async fn cdc_task(mut cdc: CdcAcmClass<'static, Driver<'static, USB>>) {

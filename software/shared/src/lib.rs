@@ -53,6 +53,19 @@ pub struct NotificationData {
     pub body: String<256>,
 }
 
+impl NotificationData {
+    pub fn new() -> Self {
+        let app: String<16> = String::new();
+        let summary: String<128> = String::new();
+        let body: String<256> = String::new();
+        Self {
+            app: app,
+            summary: summary,
+            body: body,
+        }
+    }
+}
+
 pub const DEVICE_VID: u16 = 0x1209;
 pub const DEVICE_PID: u16 = 0x4da5;
 pub const CDC_INTERFACE: u8 = 0x0;
