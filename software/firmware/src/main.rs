@@ -8,10 +8,13 @@ use embassy_rp::bind_interrupts;
 use embassy_rp::i2c::InterruptHandler as i2cIrqs;
 use embassy_rp::peripherals::{I2C1, USB};
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
+use embedded_hal::spi;
 use mcp4728::MCP4728Async;
 use shared::HostTransmission;
+use st7735_lcd;
 use {defmt as _, panic_probe as _};
 
+mod display;
 mod hardware;
 mod usb_handler;
 
@@ -27,8 +30,14 @@ async fn main(_spawner: Spawner) {
     info!("Hello!");
 
     let mut meters = MCP4728Async::new(&mut hardware.i2c, 0x60);
+    meters.fast_write(4096, 4096, 4096, 4096).await.unwrap();
+    hardware.ldac.set_high();
 
     usb_handler::begin_usb_handler(&_spawner, hardware.usb, hardware.inputs);
+
+    hardware.ldac.set_low();
+
+    let display = display::Display::new(hardware.spi);
 
     loop {
         let incoming_data = CDC_CHANNEL.receive().await;

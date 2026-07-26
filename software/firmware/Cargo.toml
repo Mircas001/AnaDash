@@ -33,6 +33,7 @@ embassy-futures = "0.1.2"
 
 embedded-graphics = "0.8.2"
 st7735-lcd = "0.10.0"
+embedded-hal-bus = {version = "0.3.0", feature = "defmt-03"}
 
 usb-device = "0.3.2"
 embassy-usb = "0.6.0"
