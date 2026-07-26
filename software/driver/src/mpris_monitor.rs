@@ -1,4 +1,5 @@
 use mpris::{Metadata, PlaybackStatus, Player, PlayerFinder};
+use shared::PlayerStatus;
 use std::time::Duration;
 
 pub struct MprisPlayer {
@@ -7,7 +8,7 @@ pub struct MprisPlayer {
     pub duration: u64,
     pub progress: u64,
     pub title: String,
-    pub status: String,
+    pub status: PlayerStatus,
 }
 
 impl MprisPlayer {
@@ -22,7 +23,7 @@ impl MprisPlayer {
             duration: 0,
             progress: 0,
             title: String::new(),
-            status: "◼".to_string(),
+            status: PlayerStatus::Stopped,
         }
     }
 
@@ -54,11 +55,11 @@ impl MprisPlayer {
         metadata.title().unwrap_or("Unknown title").to_string()
     }
 
-    fn get_playback_status(status: PlaybackStatus) -> String {
+    fn get_playback_status(status: PlaybackStatus) -> PlayerStatus {
         match status {
-            PlaybackStatus::Playing => "▶".to_string(),
-            PlaybackStatus::Paused => "▮▮".to_string(),
-            PlaybackStatus::Stopped => "◼".to_string(),
+            PlaybackStatus::Playing => PlayerStatus::Playing,
+            PlaybackStatus::Paused => PlayerStatus::Paused,
+            PlaybackStatus::Stopped => PlayerStatus::Stopped,
         }
     }
 
@@ -74,7 +75,7 @@ impl MprisPlayer {
                         self.title = "No media".to_string();
                         self.duration = 0;
                         self.progress = 0;
-                        self.status = "◼".to_string();
+                        self.status = PlayerStatus::Stopped;
                         return;
                     }
                 }

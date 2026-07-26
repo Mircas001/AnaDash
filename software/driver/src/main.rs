@@ -61,7 +61,7 @@ async fn main() -> Result<()> {
                     swap_used: hw_stats.swap_used,
                     cpu_load: hw_stats.cpu_load,
                     cpu_temp: hw_stats.cpu_temp,
-                    player_status: heapless::String::try_from(mpris_player.status.as_str()).unwrap_or_default(),
+                    player_status: mpris_player.status,
                     artist: heapless::String::try_from(mpris_player.artist.as_str()).unwrap_or_default(),
                     title: heapless::String::try_from(mpris_player.title.as_str()).unwrap_or_default(),
                     progress: mpris_player.progress,

@@ -14,6 +14,13 @@ pub enum HostTransmission {
     Dashboard(DashboardData),
 }
 
+#[derive(Serialize, Deserialize, Debug, Copy, Clone)]
+pub enum PlayerStatus {
+    Playing,
+    Paused,
+    Stopped,
+}
+
 #[derive(Serialize, Deserialize, Debug)]
 pub struct DashboardData {
     pub time: String<10>,
@@ -21,7 +28,7 @@ pub struct DashboardData {
     pub swap_used: u16,
     pub cpu_load: u16,
     pub cpu_temp: u16,
-    pub player_status: String<8>,
+    pub player_status: PlayerStatus,
     pub title: String<64>,
     pub artist: String<64>,
     pub progress: u64,
