@@ -28,13 +28,13 @@ pub struct DashboardData {
     pub duration: u64,
 }
 
-pub fn duration_to_string(secs: u64) -> String<16> {
+pub fn duration_to_string(secs: u64) -> String<10> {
     let whole_hours = secs / (60 * 60);
     let secs = secs - whole_hours * 60 * 60;
     let whole_minutes = secs / 60;
     let secs = secs - whole_minutes * 60;
 
-    let mut buf: String<16> = String::new();
+    let mut buf: String<10> = String::new();
     write!(buf, "{:02}:{:02}:{:02}", whole_hours, whole_minutes, secs).unwrap();
     buf
 }
