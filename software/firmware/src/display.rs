@@ -49,7 +49,7 @@ impl Display {
             }
         }
 
-        let time: String<10> = String::try_from("??:??:??").unwrap();
+        let time: String<10> = String::try_from("??:??:??").unwrap_or_default();
 
         let noti_cooldown = Instant::now();
 
@@ -76,7 +76,7 @@ impl Display {
                     };
                     self.draw_status_bar();
                     let hello_text = Text::new("Hello", self.display_area.center(), BOLD_STYLE);
-                    hello_text.draw(&mut self.display).unwrap();
+                    hello_text.draw(&mut self.display).unwrap_or_default();
                 }
                 _ => self.draw_music_player(dash),
             }
@@ -103,9 +103,9 @@ impl Display {
         )
         .into_styled(PrimitiveStyle::with_stroke(Rgb565::WHITE, 1))
         .draw(&mut self.display)
-        .unwrap();
+        .unwrap_or_default();
 
-        clock.draw(&mut self.display).unwrap();
+        clock.draw(&mut self.display).unwrap_or_default();
     }
 
     pub fn show_notification(&mut self, noti: NotificationData) {
@@ -134,7 +134,7 @@ impl Display {
             .arrange()
             .align_to(&self.display_area, horizontal::Center, vertical::Center)
             .draw(&mut self.display)
-            .unwrap();
+            .unwrap_or_default();
     }
 
     fn draw_music_player(&mut self, dash: DashboardData) {
