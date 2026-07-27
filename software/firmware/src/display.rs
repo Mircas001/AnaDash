@@ -17,7 +17,7 @@ use embedded_iconoir::prelude::*;
 use embedded_layout::View;
 use embedded_layout::{layout::linear::LinearLayout, prelude::*};
 use heapless::String;
-use shared::{DashboardData, NotificationData};
+use shared::{DashboardData, NotificationData, PlayerStatus};
 use st7735_lcd::ST7735;
 
 pub struct Display {
@@ -32,8 +32,8 @@ pub struct Display {
     display_area: Rectangle,
 }
 
-static standard_style: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
-static bold_style: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_8X13_BOLD, Rgb565::WHITE);
+static StandardStyle: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
+static BoldStyle: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_8X13_BOLD, Rgb565::WHITE);
 
 impl Display {
     pub fn new(
@@ -60,19 +60,29 @@ impl Display {
             display_area: display_area,
         }
     }
-    fn update_screen(&mut self, dash: DashboardData) {
-        self.time = dash.time;
+
+    pub fn update_screen(&mut self, dash: DashboardData) {
+        self.time = dash.time.clone();
         if Instant::now() > self.noti_cooldown {
-            // * do something
+            match dash.player_status {
+                PlayerStatus::Stopped => {
+                    self.display.clear(Rgb565::BLACK);
+                    self.draw_status_bar();
+                    let hello_text = Text::new("Hello", self.display_area.center(), BoldStyle);
+                    hello_text.draw(&mut self.display);
+                }
+                _ => self.draw_music_player(dash),
+            }
         } else {
             self.draw_notification();
         }
     }
+
     fn draw_status_bar(&mut self) {
-        let mut clock = Text::with_alignment(
+        let clock = Text::with_alignment(
             self.time.as_str(),
             Point::new(self.display_area.center().x, 0),
-            standard_style,
+            StandardStyle,
             Alignment::Center,
         );
 
@@ -89,27 +99,29 @@ impl Display {
 
         clock.draw(&mut self.display);
     }
+
     pub fn show_notification(&mut self, noti: NotificationData) {
         self.noti_buffer = noti;
         self.noti_cooldown = Instant::from_secs(5);
         self.draw_notification();
     }
+
     fn draw_notification(&mut self) {
         self.display.clear(Rgb565::BLACK);
         self.draw_status_bar();
         let icon = icons::size24px::communication::BellNotification::new(Rgb565::WHITE);
         let noti_icon = Image::new(&icon, Point::zero());
-        let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), bold_style);
-        let body = Text::new(
-            self.noti_buffer.body.as_str(),
-            Point::zero(),
-            standard_style,
-        );
+        let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), BoldStyle);
+        let body = Text::new(self.noti_buffer.body.as_str(), Point::zero(), StandardStyle);
         LinearLayout::vertical(Chain::new(noti_icon).append(summary).append(body))
             .with_alignment(horizontal::Center)
             .arrange()
             .align_to(&self.display_area, horizontal::Center, vertical::Center)
             .draw(&mut self.display)
             .unwrap();
+    }
+
+    fn draw_music_player(&mut self, dash: DashboardData) {
+        todo!();
     }
 }

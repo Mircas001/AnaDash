@@ -37,13 +37,13 @@ async fn main(_spawner: Spawner) {
 
     hardware.ldac.set_low();
 
-    let display = display::Display::new(hardware.spi);
+    let mut display = display::Display::new(hardware.spi, hardware.cs, hardware.rst, hardware.dc);
 
     loop {
         let incoming_data = CDC_CHANNEL.receive().await;
         match incoming_data {
             HostTransmission::Notification(noti) => {
-                // * blank for now
+                display.show_notification(noti);
             }
             HostTransmission::Dashboard(dash) => {
                 meters
@@ -51,6 +51,7 @@ async fn main(_spawner: Spawner) {
                     .await
                     .unwrap();
                 hardware.ldac.set_high();
+                display.update_screen(dash);
             }
         }
     }
