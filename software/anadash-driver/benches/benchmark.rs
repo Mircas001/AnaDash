@@ -13,5 +13,6 @@ async fn bench_mpris_performance(c: &mut Criterion) {
     c.bench_function("mpris_monitor", mpris_monitor.update());
 }
 
-criterion_group!(benches, bench_hwinfo_performance, bench_mpris_performance);
+criterion_group!(benches, bench_hwinfo_performance);
+criterion_group!(benches, bench_mpris_performance);
 criterion_main!(benches);
