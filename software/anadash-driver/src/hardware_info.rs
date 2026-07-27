@@ -1,10 +1,6 @@
-use log::error;
 use map_arduino::{map_f32, map_u64};
-use std::fs;
 use std::time::{Duration, Instant};
 use sysinfo::{Components, CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
-
-pub const CPU_TEMP_PATH: &str = "/sys/class/thermal/thermal_zone1/temp";
 
 pub struct Stats {
     pub cpu_load: u16,
@@ -35,7 +31,7 @@ impl HardwareInfo {
         let total_swap: u64 = sys.total_swap();
 
         let last_reading = Instant::now();
-        let mut components = Components::new_with_refreshed_list();
+        let components = Components::new_with_refreshed_list();
 
         // acha o índice do componente de CPU uma única vez
         let cpu_idx = components.iter().position(|c| {

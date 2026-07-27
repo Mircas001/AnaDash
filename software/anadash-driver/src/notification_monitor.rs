@@ -1,6 +1,6 @@
 use anyhow::Result;
 use futures_util::stream::StreamExt;
-use log::{error, info, warn};
+use log::error;
 use shared::HostTransmission;
 use shared::NotificationData;
 use std::collections::HashMap;
