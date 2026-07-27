@@ -52,7 +52,7 @@ embedded-layout = "0.4.2"
 embedded-text = "0.7.3"
 heapless = "0.9.3"
 map-arduino = "0.1.4"
-embedded-icon = {version = "0.0.1", features = ["24px", "iconoir"]}
+embedded-icon = {version = "0.0.1", features = ["32px", "iconoir"]}
 
 [profile.release]
 RUST_LOG = "error"

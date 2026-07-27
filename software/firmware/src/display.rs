@@ -118,7 +118,7 @@ impl Display {
             };
         };
         self.draw_status_bar();
-        let icon = icons::iconoir::size24px::BellNotification::new(Rgb565::WHITE);
+        let icon = icons::iconoir::size32px::BellNotification::new(Rgb565::WHITE);
         let noti_icon = Image::new(&icon, Point::zero());
         let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), BOLD_STYLE);
         let body = Text::new(
