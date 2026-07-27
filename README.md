@@ -71,8 +71,9 @@ If you run Arch Linux, you can use this to install! For now you have to manually
 ```bash 
 git clone https://github.com/Mircas001/anadash-driver.git
 cd anadash-driver
-yay -Bi ./
+makepkg -si
 ```
+
 #### Compile it yourself
 This is more complicated! But it should work!
 1. Make sure you are in the dialout group to get serial perms!
