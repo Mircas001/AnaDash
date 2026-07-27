@@ -2,9 +2,9 @@ use log::error;
 use map_arduino::{map_f32, map_u64};
 use std::fs;
 use std::time::{Duration, Instant};
-use sysinfo::{CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
+use sysinfo::{Components, CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
 
-const CPU_TEMP_PATH: &str = "/sys/class/thermal/thermal_zone1/temp";
+pub const CPU_TEMP_PATH: &str = "/sys/class/thermal/thermal_zone1/temp";
 
 pub struct Stats {
     pub cpu_load: u16,
@@ -18,6 +18,8 @@ pub struct HardwareInfo {
     total_memory: u64,
     total_swap: u64,
     last_reading: Instant,
+    components: Components,
+    cpu_idx: Option<usize>,
 }
 
 impl HardwareInfo {
@@ -30,9 +32,16 @@ impl HardwareInfo {
         sys.refresh_specifics(refresh_kind);
 
         let total_memory = sys.total_memory();
-        let total_swap = sys.total_swap();
+        let total_swap: u64 = sys.total_swap();
 
         let last_reading = Instant::now();
+        let mut components = Components::new_with_refreshed_list();
+
+        // acha o índice do componente de CPU uma única vez
+        let cpu_idx = components.iter().position(|c| {
+            let l = c.label().to_lowercase();
+            l.contains("tctl") || l.contains("package")
+        });
 
         Self {
             refresh_kind,
@@ -40,27 +49,21 @@ impl HardwareInfo {
             total_memory,
             total_swap,
             last_reading,
+            components,
+            cpu_idx,
         }
     }
 
-    pub fn read_cpu_temp(&self) -> u16 {
-        let raw_cpu_temp: String = match fs::read_to_string(CPU_TEMP_PATH) {
-            Ok(temp_string) => temp_string,
-            Err(e) => {
-                error!("Error opening cpu temp file! {}", e);
-                return 0;
-            }
-        };
-        let millis_cpu_temp: u16 = match raw_cpu_temp.trim().parse() {
-            Ok(temp) => temp,
-            Err(e) => {
-                error!("Error getting cpu temp from file!: {}", e);
-                return 0;
-            }
-        };
-        millis_cpu_temp / 1000
-    }
+    pub fn read_cpu_temp(&mut self) -> u16 {
+        self.components.refresh(true);
 
+        if let Some(idx) = self.cpu_idx {
+            if let Some(temp) = self.components[idx].temperature() {
+                return temp as u16;
+            }
+        }
+        return 30;
+    }
     pub fn get_data(&mut self) -> Stats {
         let one_second: Duration = Duration::new(1, 0);
         self.sys.refresh_specifics(self.refresh_kind);
