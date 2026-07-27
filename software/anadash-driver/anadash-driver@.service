@@ -1,0 +1,12 @@
+[Unit]
+Description=Driver for sending data to AnaDash %i
+After=dev-%i.device multi-user.target
+BindsTo=dev-%i.device
+
+[Service]
+ExecStart=/usr/local/bin/anadash-driver /dev/%i
+Restart=on-failure
+User=%u
+
+[Install]
+WantedBy=multi-user.target
