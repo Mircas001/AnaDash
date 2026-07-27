@@ -1,0 +1,13 @@
+post_install() {
+    udevadm control --reload-rules
+    systemctl daemon-reload
+}
+
+post_upgrade() {
+    post_install
+}
+
+post_remove() {
+    udevadm control --reload-rules
+    systemctl daemon-reload
+}
