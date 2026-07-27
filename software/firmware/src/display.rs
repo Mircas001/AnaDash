@@ -12,7 +12,7 @@ use embedded_graphics::{
     text::{Alignment, Text},
 };
 use embedded_hal_bus::spi::ExclusiveDevice;
-use embedded_iconoir::prelude::*;
+use embedded_icon::prelude::*;
 use embedded_layout::View;
 use embedded_layout::{layout::linear::LinearLayout, prelude::*};
 use heapless::String;
@@ -118,7 +118,7 @@ impl Display {
             };
         };
         self.draw_status_bar();
-        let icon = icons::size24px::communication::BellNotification::new(Rgb565::WHITE);
+        let icon = icons::iconoir::size24px::BellNotification::new(Rgb565::WHITE);
         let noti_icon = Image::new(&icon, Point::zero());
         let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), BOLD_STYLE);
         let body = Text::new(
