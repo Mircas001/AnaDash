@@ -1,7 +1,10 @@
+use log::error;
 use map_arduino::{map_f32, map_u64};
 use std::fs;
 use std::time::{Duration, Instant};
 use sysinfo::{CpuRefreshKind, MemoryRefreshKind, RefreshKind, System};
+
+const CPU_TEMP_PATH: &str = "/sys/class/thermal/thermal_zone1/temp";
 
 pub struct Stats {
     pub cpu_load: u16,
@@ -41,9 +44,20 @@ impl HardwareInfo {
     }
 
     pub fn read_cpu_temp(&self) -> u16 {
-        let raw_cpu_temp: String = fs::read_to_string("/sys/class/thermal/thermal_zone1/temp")
-            .expect("Failed to read the cpu_thermal_zone");
-        let millis_cpu_temp: u16 = raw_cpu_temp.trim().parse().unwrap();
+        let raw_cpu_temp: String = match fs::read_to_string(CPU_TEMP_PATH) {
+            Ok(temp_string) => temp_string,
+            Err(e) => {
+                error!("Error opening cpu temp file! {}", e);
+                return 0;
+            }
+        };
+        let millis_cpu_temp: u16 = match raw_cpu_temp.trim().parse() {
+            Ok(temp) => temp,
+            Err(e) => {
+                error!("Error getting cpu temp from file!: {}", e);
+                return 0;
+            }
+        };
         millis_cpu_temp / 1000
     }
 

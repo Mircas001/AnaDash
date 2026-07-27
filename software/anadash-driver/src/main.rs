@@ -1,5 +1,5 @@
 use anyhow::Result;
-use log::{error, info, warn};
+use log::info;
 use shared::{DEVICE_PID, DEVICE_VID, DashboardData, HostTransmission};
 use std::io::Write;
 use tokio::time::{Duration, interval};
