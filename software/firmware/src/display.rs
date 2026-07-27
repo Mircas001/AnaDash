@@ -5,7 +5,7 @@ use embassy_time::{Delay, Instant};
 use embedded_graphics::prelude::*;
 use embedded_graphics::{
     image::Image,
-    mono_font::{MonoTextStyle, ascii::FONT_6X13, ascii::FONT_8X13_BOLD},
+    mono_font::{MonoTextStyle, ascii::FONT_6X13, ascii::FONT_9X15_BOLD},
     pixelcolor::Rgb565,
     prelude::*,
     primitives::{Line, PrimitiveStyle, Rectangle},
@@ -32,7 +32,7 @@ pub struct Display {
 }
 
 static STANDARD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
-static BOLD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_8X13_BOLD, Rgb565::WHITE);
+static BOLD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_9X15_BOLD, Rgb565::WHITE);
 
 impl Display {
     pub fn new(
