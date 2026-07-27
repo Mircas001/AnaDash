@@ -52,6 +52,7 @@ embedded-layout = "0.4.2"
 embedded-text = "0.7.3"
 heapless = "0.9.3"
 embedded-iconoir = "0.2.3"
+map-arduino = "0.1.4"
 
 [profile.release]
 RUST_LOG = "error"

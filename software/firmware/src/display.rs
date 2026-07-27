@@ -86,26 +86,23 @@ impl Display {
     }
 
     fn draw_status_bar(&mut self) {
-        let clock = Text::with_alignment(
+        let clock = Text::new(
             self.time.as_str(),
             Point::new(self.display_area.center().x, 0),
             STANDARD_STYLE,
-            Alignment::Center,
         );
-
-        let clock_dimensions = clock.bounding_box();
-        Line::new(
-            Point::new(0, clock_dimensions.size.height as i32),
-            Point::new(
-                self.display_area.size.width as i32,
-                clock_dimensions.size().height as i32,
-            ),
+        let status_line = Line::new(
+            Point::zero(),
+            Point::new(self.display_area.size.width as i32, 0),
         )
-        .into_styled(PrimitiveStyle::with_stroke(Rgb565::WHITE, 1))
-        .draw(&mut self.display)
-        .unwrap_or_default();
+        .into_styled(PrimitiveStyle::with_stroke(Rgb565::WHITE, 1));
 
-        clock.draw(&mut self.display).unwrap_or_default();
+        LinearLayout::vertical(Chain::new(clock).append(status_line))
+            .with_alignment(horizontal::Center)
+            .arrange()
+            .align_to(&self.display_area, horizontal::Center, vertical::Top)
+            .draw(&mut self.display)
+            .unwrap_or_default();
     }
 
     pub fn show_notification(&mut self, noti: NotificationData) {
