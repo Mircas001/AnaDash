@@ -64,6 +64,7 @@ cargo run -F usb-deploy --release
 
 ### Drivers
 This only supports Linux for now! But I can answer questions about the code to help anyone who wants to port it!
+You need to have lm-sensors installed and set up for this to work!
 PKGBUILD method:
 TODO: Insert PKGBUILD or something here
 Compile it yourself:
