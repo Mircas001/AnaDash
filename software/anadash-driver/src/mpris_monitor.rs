@@ -1,3 +1,4 @@
+use log::{info, warn};
 use mpris::{Metadata, PlaybackStatus, Player, PlayerFinder};
 use shared::PlayerStatus;
 use std::time::Duration;
@@ -13,6 +14,7 @@ pub struct MprisPlayer {
 
 impl MprisPlayer {
     pub fn new() -> Self {
+        info!("Looking for mpris player");
         let player = PlayerFinder::new()
             .ok()
             .and_then(|finder| finder.find_active().ok());
@@ -67,6 +69,7 @@ impl MprisPlayer {
         let player = match &self.player {
             Some(player) => player,
             None => {
+                warn!("Lost connection with the player");
                 self.try_reconnection();
                 match &self.player {
                     Some(player) => player,

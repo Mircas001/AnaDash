@@ -1,5 +1,6 @@
 use anyhow::Result;
 use futures_util::stream::StreamExt;
+use log::{error, info, warn};
 use shared::HostTransmission;
 use shared::NotificationData;
 use std::collections::HashMap;
@@ -17,7 +18,7 @@ pub fn spawn_notification_monitor() -> mpsc::Receiver<HostTransmission> {
 
     tokio::spawn(async move {
         if let Err(e) = monitor(tx).await {
-            eprintln!("Error with the notification monitor: {e}");
+            error!("Error with the notification monitor: {e}");
         }
     });
 
@@ -84,6 +85,7 @@ async fn monitor(tx: mpsc::Sender<HostTransmission>) -> Result<()> {
             .await
             .is_err()
         {
+            error!("Sending notification data failed!");
             break;
         }
     }
