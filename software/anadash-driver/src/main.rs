@@ -8,6 +8,7 @@ use tokio_serial::SerialPortBuilderExt;
 mod hardware_info;
 mod mpris_monitor;
 mod notification_monitor;
+mod tests;
 mod utils;
 
 #[tokio::main]
@@ -34,7 +35,7 @@ async fn main() -> Result<()> {
         };
 
     info!("Getting hardware info object");
-    let mut hwinfo = hardware_info::HardwareInfo::new();
+    let mut hwinfo: hardware_info::HardwareInfo = hardware_info::HardwareInfo::new();
 
     let mut timer: tokio::time::Interval = interval(Duration::from_secs(1));
 
