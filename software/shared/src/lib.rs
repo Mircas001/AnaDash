@@ -21,6 +21,16 @@ pub enum PlayerStatus {
     Stopped,
 }
 
+impl PlayerStatus {
+    pub fn as_str(&self) -> &str {
+        match self {
+            PlayerStatus::Playing => "▶",
+            PlayerStatus::Paused => "▮▮",
+            PlayerStatus::Stopped => "■",
+        }
+    }
+}
+
 #[derive(Serialize, Deserialize, Debug)]
 pub struct DashboardData {
     pub time: String<10>,
