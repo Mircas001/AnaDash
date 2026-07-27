@@ -1,4 +1,5 @@
 # AnaDash - An dashboard for your PC
+# THIS IS WIP! NOT TESTED YET!
 This is an dashboard that aims to have all the important functions and information within your arm's reach!
 
 ## Features:
