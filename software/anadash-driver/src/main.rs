@@ -22,17 +22,13 @@ async fn main() -> Result<()> {
     warn!("A non-linux Unix system has been detected, this might not work!");
 
     info!("Opening serial port");
-    let keyboard_port = match utils::get_serial_with_vid_pid(DEVICE_VID, DEVICE_PID) {
-        Ok(port_info) => port_info,
-        Err(e) => {
-            panic!("Error getting serial port! {}", e.description);
-        }
+    let serial_path = std::env::args()
+        .nth(1)
+        .expect("You shouldn't be running this manually! use: anadash-driver <device>");
+    let mut keyboard_cdc = match tokio_serial::new(serial_path, 115200).open_native_async() {
+        Ok(port) => port,
+        Err(e) => panic!("Error opening serial port! {}", e),
     };
-    let mut keyboard_cdc =
-        match tokio_serial::new(keyboard_port.port_name, 115200).open_native_async() {
-            Ok(port) => port,
-            Err(e) => panic!("Error opening serial port! {}", e),
-        };
 
     info!("Getting hardware info object");
     let mut hwinfo: hardware_info::HardwareInfo = hardware_info::HardwareInfo::new();
