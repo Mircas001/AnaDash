@@ -1,6 +1,5 @@
 use embassy_rp::gpio::Output;
 use embassy_rp::peripherals::SPI1;
-use embassy_rp::pio_programs::ws2812::Rgb;
 use embassy_rp::spi::{Blocking as BlockingSpi, Spi};
 use embassy_time::{Delay, Instant};
 use embedded_graphics::prelude::*;
@@ -32,8 +31,8 @@ pub struct Display {
     display_area: Rectangle,
 }
 
-static StandardStyle: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
-static BoldStyle: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_8X13_BOLD, Rgb565::WHITE);
+static STANDARD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
+static BOLD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_8X13_BOLD, Rgb565::WHITE);
 
 impl Display {
     pub fn new(
@@ -44,7 +43,11 @@ impl Display {
     ) -> Self {
         let display_spi = ExclusiveDevice::new(spi, cs, Delay).unwrap();
         let mut display = ST7735::new(display_spi, dc, rst, true, false, 160, 180);
-        display.init(&mut Delay);
+        if display.init(&mut Delay).is_err() {
+            if display.init(&mut Delay).is_err() {
+                defmt::error!("Screen error!");
+            }
+        }
 
         let time: String<10> = String::try_from("??:??:??").unwrap();
 
@@ -66,10 +69,14 @@ impl Display {
         if Instant::now() > self.noti_cooldown {
             match dash.player_status {
                 PlayerStatus::Stopped => {
-                    self.display.clear(Rgb565::BLACK);
+                    if self.display.clear(Rgb565::BLACK).is_err() {
+                        if self.display.clear(Rgb565::BLACK).is_err() {
+                            return;
+                        };
+                    };
                     self.draw_status_bar();
-                    let hello_text = Text::new("Hello", self.display_area.center(), BoldStyle);
-                    hello_text.draw(&mut self.display);
+                    let hello_text = Text::new("Hello", self.display_area.center(), BOLD_STYLE);
+                    hello_text.draw(&mut self.display).unwrap();
                 }
                 _ => self.draw_music_player(dash),
             }
@@ -82,7 +89,7 @@ impl Display {
         let clock = Text::with_alignment(
             self.time.as_str(),
             Point::new(self.display_area.center().x, 0),
-            StandardStyle,
+            STANDARD_STYLE,
             Alignment::Center,
         );
 
@@ -95,9 +102,10 @@ impl Display {
             ),
         )
         .into_styled(PrimitiveStyle::with_stroke(Rgb565::WHITE, 1))
-        .draw(&mut self.display);
+        .draw(&mut self.display)
+        .unwrap();
 
-        clock.draw(&mut self.display);
+        clock.draw(&mut self.display).unwrap();
     }
 
     pub fn show_notification(&mut self, noti: NotificationData) {
@@ -107,12 +115,20 @@ impl Display {
     }
 
     fn draw_notification(&mut self) {
-        self.display.clear(Rgb565::BLACK);
+        if self.display.clear(Rgb565::BLACK).is_err() {
+            if self.display.clear(Rgb565::BLACK).is_err() {
+                return;
+            };
+        };
         self.draw_status_bar();
         let icon = icons::size24px::communication::BellNotification::new(Rgb565::WHITE);
         let noti_icon = Image::new(&icon, Point::zero());
-        let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), BoldStyle);
-        let body = Text::new(self.noti_buffer.body.as_str(), Point::zero(), StandardStyle);
+        let summary = Text::new(self.noti_buffer.summary.as_str(), Point::zero(), BOLD_STYLE);
+        let body = Text::new(
+            self.noti_buffer.body.as_str(),
+            Point::zero(),
+            STANDARD_STYLE,
+        );
         LinearLayout::vertical(Chain::new(noti_icon).append(summary).append(body))
             .with_alignment(horizontal::Center)
             .arrange()

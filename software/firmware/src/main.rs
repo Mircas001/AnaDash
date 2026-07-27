@@ -8,10 +8,8 @@ use embassy_rp::bind_interrupts;
 use embassy_rp::i2c::InterruptHandler as i2cIrqs;
 use embassy_rp::peripherals::{I2C1, USB};
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
-use embedded_hal::spi;
 use mcp4728::MCP4728Async;
 use shared::HostTransmission;
-use st7735_lcd;
 use {defmt as _, panic_probe as _};
 
 mod display;
