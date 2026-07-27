@@ -65,17 +65,48 @@ cargo run -F usb-deploy --release
 ### Drivers
 This only supports Linux for now! But I can answer questions about the code to help anyone who wants to port it!
 You need to have lm-sensors installed and set up for this to work!
-PKGBUILD method:
-TODO: Insert PKGBUILD or something here
-Compile it yourself:
+It works as a systemd service that uses udev rules to start as soon as you plug it in!
+#### PKGBUILD method
+If you run Arch Linux, you can use this to install! For now you have to manually install the PKGBUILD, but it'll get uploaded to the AUR once it's done!
+```bash 
+git clone https://github.com/Mircas001/anadash-driver.git
+cd anadash-driver
+yay -Bi ./
+```
+#### Compile it yourself
+This is more complicated! But it should work!
+1. Make sure you are in the dialout group to get serial perms!
+```bash
+sudo usermod -aG dialout $USER
+```
+2. Install all the files!
 ```bash
 git clone https://github.com/Mircas001/AnaDash.git
 cd AnaDash/software/driver
 cargo build --release
+sudo cp target/release/anadash-driver /usr/local/bin
+sudo chmod 755 /usr/local/bin/anadash-driver 
+sudo cp anadash-driver@.service /etc/systemd/system
+sudo cp 99-anadash.rules /etc/udev/rules.d
 ```
-This is WIP! I'll make an installer later!
+3. Reload everything!
+```bash 
+sudo systemctl daemon-reload
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+It should work as soon as you plug in the device!
 
-### Debugging
+You're also always welcome to implement these steps in an package file, so other people with your distro have it easier!
+
+### Troubleshooting the drivers
+Since it's an systemd service, you can get the logs like this, replacing ```<serialport>``` with the device's serial port! Usually, it's ttyUSB0.
+```bash
+systemctl status anadash-driver@<serialport>.service
+journalctl -u anadash-driver@<serialport>.service
+```
+
+## Debugging the device
 There is an UART port at the main board for debugging!
 Also, there are also some key combinations baked in the firmware:
 - You can press key1 and key8 (the two outhermost keys) to reset the pico!
@@ -110,7 +141,7 @@ This project was designed in:
 - [X] Design the input PCB
 - [X] Design the meters
 - [X] Make the drivers
-- [ ] Make the driver into an actual driver
+- [X] Make the driver into an actual driver
 - [ ] Make the firmware
 - [ ] Make the Case
 
