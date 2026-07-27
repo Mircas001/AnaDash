@@ -1,6 +1,6 @@
 {
     "rust-analyzer.linkedProjects": [
-        "software/driver/Cargo.toml",
+        "software/anadash-driver/Cargo.toml",
         "software/firmware/Cargo.toml"
     ]
 }
