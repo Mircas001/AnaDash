@@ -137,7 +137,6 @@ pub async fn input_task(
                     Ok(()) => {}
                     Err(e) => warn!("Error sending encoder report! {}", e),
                 }
-                // * This is an placeholder for now
             }
         }
     }
