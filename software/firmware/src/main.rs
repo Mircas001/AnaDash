@@ -35,7 +35,9 @@ async fn main(_spawner: Spawner) {
 
     hardware.ldac.set_low();
 
-    let mut display = display::Display::new(hardware.spi, hardware.cs, hardware.rst, hardware.dc);
+    let display_spi = ExclusiveDevice::new(hardware.spi, hardware.cs, Delay).unwrap_or_default();
+
+    let mut display = display::Display::new(display_spi, hardware.rst, hardware.dc);
 
     loop {
         let incoming_data = CDC_CHANNEL.receive().await;

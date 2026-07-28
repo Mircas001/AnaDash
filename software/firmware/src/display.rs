@@ -1,9 +1,4 @@
-use core::f32::MIN;
-use core::time::Duration;
-
 use embassy_rp::gpio::Output;
-use embassy_rp::pac::rosc::regs::Status;
-use embassy_rp::pac::xip_ctrl::regs::Stat;
 use embassy_rp::peripherals::SPI1;
 use embassy_rp::spi::{Blocking as BlockingSpi, Spi};
 use embassy_time::{Delay, Instant};
@@ -14,7 +9,7 @@ use embedded_graphics::{
     pixelcolor::Rgb565,
     prelude::*,
     primitives::{Line, PrimitiveStyle, Rectangle},
-    text::{Alignment, Text},
+    text::Text,
 };
 use embedded_hal_bus::spi::ExclusiveDevice;
 use embedded_icon::prelude::*;
@@ -42,12 +37,10 @@ static MINOR_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_5X7, Rg
 
 impl Display {
     pub fn new(
-        spi: Spi<'static, SPI1, BlockingSpi>,
-        cs: Output<'static>,
+        display_spi: ExclusiveDevice<Spi<'static, SPI1, BlockingSpi>, Output<'static>, Delay>,
         rst: Output<'static>,
         dc: Output<'static>,
     ) -> Self {
-        let display_spi = ExclusiveDevice::new(spi, cs, Delay).unwrap();
         let mut display = ST7735::new(display_spi, dc, rst, true, false, 160, 180);
         if display.init(&mut Delay).is_err() {
             if display.init(&mut Delay).is_err() {
@@ -60,9 +53,6 @@ impl Display {
         let noti_cooldown = Instant::now();
 
         let display_area = display.bounding_box();
-
-        let a: Icon<Rgb565, icons::iconoir::size32px::BellNotification> =
-            icons::iconoir::size32px::BellNotification::new(Rgb565::WHITE);
 
         Self {
             display: display,
