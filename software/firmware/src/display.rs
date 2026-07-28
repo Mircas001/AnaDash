@@ -1,11 +1,16 @@
+use core::f32::MIN;
+use core::time::Duration;
+
 use embassy_rp::gpio::Output;
+use embassy_rp::pac::rosc::regs::Status;
+use embassy_rp::pac::xip_ctrl::regs::Stat;
 use embassy_rp::peripherals::SPI1;
 use embassy_rp::spi::{Blocking as BlockingSpi, Spi};
 use embassy_time::{Delay, Instant};
 use embedded_graphics::prelude::*;
 use embedded_graphics::{
     image::Image,
-    mono_font::{MonoTextStyle, ascii::FONT_6X13, ascii::FONT_9X15_BOLD},
+    mono_font::{MonoTextStyle, ascii::FONT_5X7, ascii::FONT_7X13, ascii::FONT_9X15_BOLD},
     pixelcolor::Rgb565,
     prelude::*,
     primitives::{Line, PrimitiveStyle, Rectangle},
@@ -16,7 +21,7 @@ use embedded_icon::prelude::*;
 use embedded_layout::View;
 use embedded_layout::{layout::linear::LinearLayout, prelude::*};
 use heapless::String;
-use shared::{DashboardData, NotificationData, PlayerStatus};
+use shared::{DashboardData, NotificationData, PlayerStatus, duration_to_string};
 use st7735_lcd::ST7735;
 
 pub struct Display {
@@ -31,8 +36,9 @@ pub struct Display {
     display_area: Rectangle,
 }
 
-static STANDARD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_6X13, Rgb565::WHITE);
+static STANDARD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_7X13, Rgb565::WHITE);
 static BOLD_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_9X15_BOLD, Rgb565::WHITE);
+static MINOR_STYLE: MonoTextStyle<'_, Rgb565> = MonoTextStyle::new(&FONT_5X7, Rgb565::WHITE);
 
 impl Display {
     pub fn new(
@@ -54,6 +60,9 @@ impl Display {
         let noti_cooldown = Instant::now();
 
         let display_area = display.bounding_box();
+
+        let a: Icon<Rgb565, icons::iconoir::size32px::BellNotification> =
+            icons::iconoir::size32px::BellNotification::new(Rgb565::WHITE);
 
         Self {
             display: display,
@@ -135,6 +144,79 @@ impl Display {
     }
 
     fn draw_music_player(&mut self, dash: DashboardData) {
-        todo!();
+        self.draw_status_bar();
+        let title = Text::new(dash.title.as_str(), Point::zero(), BOLD_STYLE);
+        let artist = Text::new(dash.artist.as_str(), Point::zero(), STANDARD_STYLE);
+        let duration_string: String<20> = heapless::format!(
+            "[{}/{}]",
+            duration_to_string(dash.progress),
+            duration_to_string(dash.duration)
+        )
+        .unwrap_or_default();
+        let duration = Text::new(duration_string.as_str(), Point::zero(), MINOR_STYLE);
+        let player_status = StatusIcon::new(dash.player_status);
+        LinearLayout::vertical(
+            Chain::new(title)
+                .append(artist)
+                .append(duration)
+                .append(player_status),
+        )
+        .with_alignment(horizontal::Center)
+        .arrange()
+        .align_to(&self.display_area, horizontal::Center, vertical::Center)
+        .draw(&mut self.display)
+        .unwrap_or_default();
+    }
+}
+
+// * We use an struct to deal with the 3 icon possibilities
+
+struct StatusIcon {
+    status: shared::PlayerStatus,
+    position: Point,
+}
+
+impl StatusIcon {
+    fn new(status: PlayerStatus) -> Self {
+        Self {
+            status,
+            position: Point::zero(),
+        }
+    }
+}
+
+impl Drawable for StatusIcon {
+    type Color = Rgb565;
+    type Output = ();
+
+    fn draw<D>(&self, target: &mut D) -> Result<(), D::Error>
+    where
+        D: DrawTarget<Color = Rgb565>,
+    {
+        match self.status {
+            PlayerStatus::Playing => {
+                let icon = icons::iconoir::size24px::Play::new(Rgb565::WHITE);
+                Image::new(&icon, self.position).draw(target)
+            }
+            PlayerStatus::Stopped => {
+                let icon = icons::iconoir::size24px::Square::new(Rgb565::WHITE);
+                Image::new(&icon, self.position).draw(target)
+            }
+            PlayerStatus::Paused => {
+                let icon = icons::iconoir::size24px::Pause::new(Rgb565::WHITE);
+                Image::new(&icon, self.position).draw(target)
+            }
+        }
+    }
+}
+
+impl View for StatusIcon {
+    fn translate_impl(&mut self, by: Point) {
+        self.position += by;
+    }
+
+    fn bounds(&self) -> Rectangle {
+        // * All icons are 24x24px lmao
+        Rectangle::new(self.position, Size::new(24, 24))
     }
 }
