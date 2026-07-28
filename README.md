@@ -115,10 +115,12 @@ Also, there are also some key combinations baked in the firmware:
 
 ## BOM
 - 1x Raspberry Pi Pico
-- 4x JST-XH 2P Male to wire cables
+- 4x JST-XH 2P Male-Wire cables
 - 4x JST-XH 2P Female Vertical Through Hole Sockets
-- 6x JST-XH 5P Female Vertical Through Hole Sockets
-- 3x JST-XH 5P Male-Male cables 
+- 2x JST-XH 4P Female Vertical Through Hole Sockets
+- 1x JST-XH 4P Male-Male Cable 
+- 4x JST-XH 5P Female Vertical Through Hole Sockets
+- 2x JST-XH 5P Male-Male cables 
 - 4x 85C1 5mA Ammeters
 - 4x 660-680Ω Resistors
 - 1x EC11 Rotary Encoder

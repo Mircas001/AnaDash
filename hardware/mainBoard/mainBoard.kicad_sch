@@ -4175,16 +4175,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 73.66) (xy 110.49 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1544fb99-fb5b-4366-b9bd-6412745011aa")
-	)
-	(wire
-		(pts
 			(xy 185.42 50.8) (xy 185.42 54.61)
 		)
 		(stroke
@@ -4599,16 +4589,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 76.2) (xy 128.27 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "910749a6-9c0d-4f99-be81-45da554611c5")
-	)
-	(wire
-		(pts
 			(xy 39.37 95.25) (xy 38.1 95.25)
 		)
 		(stroke
@@ -4799,16 +4779,6 @@
 			(type default)
 		)
 		(uuid "c427acb9-ffd6-44b8-bcb3-65a0cf220f14")
-	)
-	(wire
-		(pts
-			(xy 110.49 73.66) (xy 110.49 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c869f463-a4de-412a-93b9-4a8c2d196f90")
 	)
 	(wire
 		(pts
@@ -6703,6 +6673,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 133.35 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76903ee0-dbd5-4180-be2a-8905b7749bb6")
+		(property "Reference" "J6"
+			(at 135.89 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "EncoderConnector"
+			(at 135.89 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "266d8322-2875-4a9f-ae23-ec5f701fe59c")
+		)
+		(pin "1"
+			(uuid "76e11513-af94-4c67-b96c-b5caa7f4bf7f")
+		)
+		(pin "3"
+			(uuid "8fe24013-8ab5-4ed9-858a-07673747bc30")
+		)
+		(pin "2"
+			(uuid "e03d61b6-e022-4638-8531-d026e358f0c8")
+		)
+		(instances
+			(project "mainBoard"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 87.63 99.06 0)
 		(unit 1)
@@ -6782,7 +6840,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 80.01 0)
+		(at 128.27 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6793,7 +6851,7 @@
 		(fields_autoplaced yes)
 		(uuid "83280b5d-5741-480b-9f2c-d9348a6a4cb3")
 		(property "Reference" "#PWR013"
-			(at 128.27 86.36 0)
+			(at 128.27 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6804,7 +6862,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 85.09 0)
+			(at 128.27 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6814,7 +6872,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 80.01 0)
+			(at 128.27 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6825,7 +6883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 80.01 0)
+			(at 128.27 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6836,7 +6894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 80.01 0)
+			(at 128.27 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8497,97 +8555,6 @@
 			(project "mainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 133.35 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed8f9198-dd40-418a-ad88-cc25f1b1b79f")
-		(property "Reference" "J6"
-			(at 135.89 69.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "EncoderConnector"
-			(at 135.89 72.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
-			(at 133.35 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 133.35 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "514475b9-3577-40e7-aae9-e5f3bdb82fef")
-		)
-		(pin "5"
-			(uuid "8a4c0dce-9e22-4b1a-837f-e5624e8e7538")
-		)
-		(pin "4"
-			(uuid "db805a7b-ca3a-4efc-ae8f-b9bf6281a530")
-		)
-		(pin "3"
-			(uuid "3fd3e62f-cb90-4a9d-8aa3-06352fff4a98")
-		)
-		(pin "2"
-			(uuid "eabf9452-f7e6-4f5d-a102-6e99deabacf6")
-		)
-		(instances
-			(project "mainBoard"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "J6")
 					(unit 1)
 				)
 			)
