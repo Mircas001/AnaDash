@@ -1,14 +1,15 @@
 use crate::Irqs;
 use defmt::*;
-use embassy_rp::gpio::Level::Low;
 use embassy_rp::gpio::{Input, Level, Output, Pull};
 use embassy_rp::i2c::{self, Config as I2cConfig};
 use embassy_rp::peripherals::{I2C1, SPI1, USB};
 use embassy_rp::spi::{Blocking as BlockingSpi, Config as SpiConfig, Spi};
+use embassy_rp::uart::{Config as UartConfig, Uart};
 
 pub mod input_handler;
 
 pub struct Hardware {
+    pub uart: Uart<'static, embassy_rp::uart::Blocking>,
     pub usb: embassy_rp::Peri<'static, USB>,
     pub inputs: input_handler::KeyInputs<'static>,
     pub i2c: i2c::I2c<'static, I2C1, i2c::Async>,
@@ -22,6 +23,8 @@ pub struct Hardware {
 impl Default for Hardware {
     fn default() -> Self {
         let p = embassy_rp::init(Default::default());
+
+        let uart = Uart::new_blocking(p.UART0, p.PIN_0, p.PIN_1, UartConfig::default());
 
         info!("Starting hardware!");
 
@@ -54,8 +57,9 @@ impl Default for Hardware {
             Input::new(p.PIN_22, Pull::Up),
         );
         Self {
-            inputs: key_inputs,
+            uart: uart,
             usb: usb,
+            inputs: key_inputs,
             i2c: i2c,
             ldac: ldac,
             cs: cs,

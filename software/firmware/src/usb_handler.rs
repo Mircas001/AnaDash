@@ -11,7 +11,6 @@ use static_cell::StaticCell;
 use embassy_sync::channel::Channel;
 use embassy_sync::blocking_mutex::raw::ThreadModeRawMutex;
 use usbd_hid::descriptor::{KeyboardReport, MediaKeyboardReport, SerializedDescriptor};
-use {defmt_rtt as _, panic_probe as _};
 use shared::{HostTransmission, DEVICE_PID, DEVICE_VID};
 
 mod input_task;

@@ -12,7 +12,6 @@ bench = false
 
 [dependencies]
 defmt = "1.1"
-defmt-rtt = "1.2"
 panic-probe = { version = "1.0", features = ["print-defmt"] }
 
 embedded-hal = "1.0.0"
@@ -24,7 +23,7 @@ embedded-storage = "0.3.1"
 embassy-executor = { version = "0.10", features = ["platform-cortex-m", "executor-thread", "defmt", "executor-interrupt"] }
 embassy-sync = { version = "0.8" }
 embassy-time = { version = "0.5", features = ["defmt", "defmt-timestamp-uptime"] }
-embassy-rp = { version = "0.9", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
+embassy-rp = { version = "0.10", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
 
 cortex-m = { version = "0.7.7" }
 cortex-m-rt = "0.7.5"
@@ -53,6 +52,8 @@ embedded-text = "0.7.3"
 heapless = "0.9.3"
 map-arduino = "0.1.4"
 embedded-icon = {version = "0.0.1", features = ["32px", "iconoir"]}
+smart-leds = "0.4.0"
+defmt-serial = "0.14.0"
 
 [profile.release]
 RUST_LOG = "error"
