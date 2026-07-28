@@ -616,13 +616,25 @@
           "group_by": false,
           "label": "LCSC Part #",
           "name": "LCSC Part #",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
+          "label": "LCSC Price",
+          "name": "LCSC Price",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "AliExpress Link",
+          "name": "AliExpress Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "AliExpress Price",
+          "name": "AliExpress Price",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -630,7 +642,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "LCSC Price"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,

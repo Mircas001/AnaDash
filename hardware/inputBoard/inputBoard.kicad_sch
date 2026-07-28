@@ -1871,7 +1871,29 @@
 				)
 			)
 		)
-		(property "Price" " $2.2797 "
+		(property "AliExpress Link" ""
+			(at 59.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" ""
+			(at 59.69 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" " $2.2797 "
 			(at 59.69 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -1991,7 +2013,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2099,7 +2143,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -2207,7 +2273,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -2315,7 +2403,29 @@
 				)
 			)
 		)
-		(property "Price" " $0.0574 "
+		(property "AliExpress Link" ""
+			(at 54.61 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" ""
+			(at 54.61 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" " $0.0574 "
 			(at 54.61 179.07 90)
 			(hide yes)
 			(show_name no)
@@ -2513,7 +2623,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2621,7 +2753,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2729,7 +2883,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -2836,7 +3012,29 @@
 				)
 			)
 		)
-		(property "Price" " $0.0878 "
+		(property "AliExpress Link" ""
+			(at 38.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" ""
+			(at 38.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" " $0.0878 "
 			(at 38.1 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3109,7 +3307,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3295,7 +3515,29 @@
 				)
 			)
 		)
-		(property "Price" "$0.265"
+		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" "$0,0265"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" "N/A"
 			(at 59.69 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3402,7 +3644,29 @@
 				)
 			)
 		)
-		(property "Price" " $0.0878 "
+		(property "AliExpress Link" ""
+			(at 38.1 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress Price" ""
+			(at 38.1 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Price" " $0.0878 "
 			(at 38.1 113.03 0)
 			(hide yes)
 			(show_name no)
