@@ -1761,6 +1761,392 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Pack04"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RN"
+				(at -7.62 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Pack04"
+				(at 5.08 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 6.985 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4 resistor network, parallel topology"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R network parallel topology isolated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Pack04_0_1"
+				(rectangle
+					(start -6.35 -2.413)
+					(end 3.81 2.413)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -5.715 1.905)
+					(end -4.445 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 1.905) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.175 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.905) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.635 1.905)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.905 1.905)
+					(end 3.175 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.905) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Pack04_1_1"
+				(pin passive line
+					(at -5.08 -5.08 90)
+					(length 2.54)
+					(name "R1.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "R2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "R3.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "R4.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 270)
+					(length 2.54)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:RaspberryPi_Pico"
 			(pin_names
 				(offset 0.762)
@@ -3971,10 +4357,16 @@
 		(uuid "35045d92-e1aa-48df-841f-172d0689a4c3")
 	)
 	(junction
-		(at 182.88 67.31)
+		(at 185.42 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6fd234cb-d3c8-4e81-9feb-b957795e6b6a")
+		(uuid "363b4e08-40e6-4fec-a79e-d4abefc770a7")
+	)
+	(junction
+		(at 181.61 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49a40a72-f31b-4dde-9ca9-7e57c0a7ac82")
 	)
 	(junction
 		(at 212.09 24.13)
@@ -4000,11 +4392,9 @@
 		(color 0 0 0 0)
 		(uuid "e72a912f-9422-4327-9897-4f82ff75419e")
 	)
-	(junction
-		(at 185.42 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed8f8c92-9c46-44ee-9131-5e60e6b99f77")
+	(no_connect
+		(at 182.88 31.75)
+		(uuid "05a1941b-66f2-4879-be9b-1f94e3d97683")
 	)
 	(no_connect
 		(at 64.77 43.18)
@@ -4019,8 +4409,16 @@
 		(uuid "5a2a730c-edb7-40d7-8fa2-9de315d302ca")
 	)
 	(no_connect
+		(at 180.34 31.75)
+		(uuid "667789dd-25db-47ee-b18b-8734c82411bb")
+	)
+	(no_connect
 		(at 110.49 78.74)
 		(uuid "75aa3092-89d0-4265-bd36-5d801cdc7a23")
+	)
+	(no_connect
+		(at 182.88 41.91)
+		(uuid "7d830042-3eea-4ed3-a239-bb234c6aad1f")
 	)
 	(no_connect
 		(at 229.87 52.07)
@@ -4041,6 +4439,14 @@
 	(no_connect
 		(at 64.77 78.74)
 		(uuid "c10f3fae-7f0b-4f90-bda1-6934693b0347")
+	)
+	(no_connect
+		(at 180.34 41.91)
+		(uuid "dade4f23-9ec8-4610-8d28-ecdf69826ff2")
+	)
+	(no_connect
+		(at 110.49 76.2)
+		(uuid "f2ae86e3-a1c8-48d8-a160-30b1f9756340")
 	)
 	(wire
 		(pts
@@ -4175,13 +4581,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 50.8) (xy 185.42 54.61)
+			(xy 177.8 41.91) (xy 177.8 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "17057e3b-2d15-4781-a34a-e71687b38025")
+		(uuid "1a2326b0-3f8a-4927-9a7b-c5c2fe9fb1e5")
 	)
 	(wire
 		(pts
@@ -4215,6 +4621,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 41.91) (xy 185.42 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "252b4b37-76ca-4c7d-a7e8-c2139ac3f35d")
+	)
+	(wire
+		(pts
 			(xy 237.49 54.61) (xy 237.49 36.83)
 		)
 		(stroke
@@ -4222,6 +4638,16 @@
 			(type default)
 		)
 		(uuid "25edcb3a-ff19-4779-a79f-aa2bc8b201e4")
+	)
+	(wire
+		(pts
+			(xy 185.42 24.13) (xy 212.09 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28b960db-2eaf-4791-ad2f-d6020c1027a0")
 	)
 	(wire
 		(pts
@@ -4242,6 +4668,16 @@
 			(type default)
 		)
 		(uuid "2a63d737-8d64-41b7-8683-87d73c5edf39")
+	)
+	(wire
+		(pts
+			(xy 177.8 24.13) (xy 185.42 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b788c48-3484-437b-90f2-72c0136e8ca8")
 	)
 	(wire
 		(pts
@@ -4315,16 +4751,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 67.31) (xy 194.31 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43d3f160-27fa-4a9d-bd83-c2f88282392f")
-	)
-	(wire
-		(pts
 			(xy 64.77 73.66) (xy 57.15 73.66)
 		)
 		(stroke
@@ -4362,16 +4788,6 @@
 			(type default)
 		)
 		(uuid "4ac19983-e8a2-4158-a63f-b43dda02c839")
-	)
-	(wire
-		(pts
-			(xy 185.42 24.13) (xy 212.09 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b2079a2-7d4c-41b6-928f-da1c68618b05")
 	)
 	(wire
 		(pts
@@ -4433,6 +4849,16 @@
 			(type default)
 		)
 		(uuid "6234b5e1-fd67-4ef0-8f7c-304c997e5290")
+	)
+	(wire
+		(pts
+			(xy 177.8 49.53) (xy 181.61 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ecea9e-8ef2-4f75-9a25-727ff2cfb35e")
 	)
 	(wire
 		(pts
@@ -4508,16 +4934,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 24.13) (xy 185.42 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e9eb9fa-d764-41dd-8c77-daa1fab87d28")
-	)
-	(wire
-		(pts
 			(xy 55.88 71.12) (xy 55.88 74.93)
 		)
 		(stroke
@@ -4589,6 +5005,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 67.31) (xy 194.31 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f192c62-a05e-4c7c-ac86-c19c3cddde4c")
+	)
+	(wire
+		(pts
 			(xy 39.37 95.25) (xy 38.1 95.25)
 		)
 		(stroke
@@ -4599,13 +5025,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 57.15) (xy 182.88 24.13)
+			(xy 177.8 31.75) (xy 177.8 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9bcc1184-b77e-445e-9d2b-ebf3505f8ce4")
+		(uuid "9b60c040-0cd1-4bc9-bdc0-1a41369e57d6")
 	)
 	(wire
 		(pts
@@ -4619,6 +5045,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 24.13) (xy 185.42 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2515b61-8d04-46ac-8acf-653f6707bef3")
+	)
+	(wire
+		(pts
 			(xy 44.45 67.31) (xy 35.56 67.31)
 		)
 		(stroke
@@ -4627,26 +5063,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "a2e9a40d-132e-4526-a113-c6ccdc1569a0")
-	)
-	(wire
-		(pts
-			(xy 185.42 24.13) (xy 185.42 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6825f71-2df9-48b3-b0fb-97696001d55c")
-	)
-	(wire
-		(pts
-			(xy 182.88 64.77) (xy 182.88 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a820ed7f-f643-4ac4-97fe-d4b60219739d")
 	)
 	(wire
 		(pts
@@ -4884,7 +5300,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 67.31) (xy 182.88 67.31)
+			(xy 180.34 67.31) (xy 181.61 67.31)
 		)
 		(stroke
 			(width 0)
@@ -4961,6 +5377,16 @@
 			(type default)
 		)
 		(uuid "fd1d5c82-ebe4-42ce-a52b-240359e1bc80")
+	)
+	(wire
+		(pts
+			(xy 181.61 49.53) (xy 181.61 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe495348-d4ac-4962-a8f7-a4853bd7a972")
 	)
 	(wire
 		(pts
@@ -5332,6 +5758,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C42924268"
+			(at 87.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $6.0306 "
+			(at 87.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "17"
 			(uuid "a97a27f4-2d65-4aab-88c0-c5fba6c58feb")
 		)
@@ -5528,6 +5976,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C158012"
+			(at 247.65 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0405 "
+			(at 247.65 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "42a74f7a-59bc-42cc-b46e-9aabbf1fd9a6")
 		)
@@ -5610,6 +6080,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C158012"
+			(at 247.65 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0405 "
+			(at 247.65 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6f744520-5fe6-43c2-9295-805908ae7966")
 		)
@@ -5637,7 +6129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2900295f-1c86-4578-b2dd-7c2be0a09e3c")
-		(property "Reference" "R6"
+		(property "Reference" "R4"
 			(at 241.3 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5690,6 +6182,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C137240"
+			(at 237.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0066 "
+			(at 237.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6fab80c6-e675-450e-92d6-e6482053f2fb")
 		)
@@ -5699,7 +6213,7 @@
 		(instances
 			(project "mainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R6")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5761,6 +6275,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C144395"
+			(at 30.48 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0574 "
 			(at 30.48 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -5881,7 +6417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fcf5f4d-c3d3-45b9-8d40-775f80a2eb5c")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 241.3 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5934,6 +6470,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C137240"
+			(at 237.49 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0066 "
+			(at 237.49 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "83d35f16-3b9b-45a4-a517-aa56ad0d951a")
 		)
@@ -5943,7 +6501,7 @@
 		(instances
 			(project "mainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6094,6 +6652,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C1945"
+			(at 212.09 24.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0333 "
+			(at 212.09 24.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ef40ecad-5946-43f1-bcb5-4fb1adb45d49")
 		)
@@ -6188,6 +6768,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack04")
+		(at 182.88 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60a746e2-8aac-45c8-9618-dce4499c9e2c")
+		(property "Reference" "RN1"
+			(at 187.96 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Pack04"
+			(at 187.96 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Concave_4x0603"
+			(at 189.865 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology"
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "67c1905e-e437-41b9-84ad-7b8893b123db")
+		)
+		(pin "3"
+			(uuid "adf1627b-b7b7-40ed-ab74-a07a9137740f")
+		)
+		(pin "8"
+			(uuid "532f0cdc-366e-4b8c-aa8a-fe1342203ede")
+		)
+		(pin "7"
+			(uuid "60fd4fbf-461f-439f-87b6-bf79b877c212")
+		)
+		(pin "6"
+			(uuid "f0619525-3f16-4384-aeca-ee027ad55298")
+		)
+		(pin "2"
+			(uuid "d45be599-b043-4406-b36f-1252693cdd3c")
+		)
+		(pin "1"
+			(uuid "1702c30f-2011-4e3a-9e8b-c42e2d539c51")
+		)
+		(pin "4"
+			(uuid "aa145764-7107-4de8-8b22-1b3db661de3e")
+		)
+		(instances
+			(project "mainBoard"
+				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
+					(reference "RN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Resistors:Resistor")
 		(at 237.49 77.47 0)
 		(unit 1)
@@ -6199,7 +6879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64c8a0f7-89bd-441b-8227-238782486920")
-		(property "Reference" "R5"
+		(property "Reference" "R3"
 			(at 241.3 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,6 +6932,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C137240"
+			(at 237.49 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0066 "
+			(at 237.49 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "84c620cc-5659-4139-bf64-e35049213460")
 		)
@@ -6261,7 +6963,7 @@
 		(instances
 			(project "mainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6346,88 +7048,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Resistors:Resistor")
-		(at 182.88 57.15 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69c15a32-933a-4fe0-9544-4fa5b119e355")
-		(property "Reference" "R1"
-			(at 185.42 59.6899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 185.42 62.2299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 182.88 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 182.88 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9958f357-84b4-458b-8612-71b9495c8a5d")
-		)
-		(pin "2"
-			(uuid "0f82354a-6e34-4f25-8afe-5534937523b4")
-		)
-		(instances
-			(project "mainBoard"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
 		(at 30.48 46.99 0)
 		(mirror y)
@@ -6482,6 +7102,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C157991"
+			(at 30.48 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0878 "
 			(at 30.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6739,6 +7381,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C144395"
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0574 "
+			(at 133.35 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "266d8322-2875-4a9f-ae23-ec5f701fe59c")
 		)
@@ -6983,6 +7647,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C158012"
+			(at 247.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0405 "
+			(at 247.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "87fcd77e-d83f-4d2b-89f1-ce21668d4b88")
 		)
@@ -7132,6 +7818,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C492407"
+			(at 30.48 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0456 "
 			(at 30.48 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7311,6 +8019,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C157991"
+			(at 133.35 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0878 "
 			(at 133.35 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -7566,6 +8296,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C144394"
+			(at 33.02 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0543 "
+			(at 33.02 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6be18636-1929-49a2-aa47-b3f5be03ab31")
 		)
@@ -7720,6 +8472,28 @@
 		)
 		(property "Description" "Polarised capacitor"
 			(at 114.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C1952719"
+			(at 114.3 22.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.716 "
+			(at 114.3 22.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7889,6 +8663,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C158012"
+			(at 247.65 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0405 "
+			(at 247.65 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e106bccd-a813-4390-88e8-0d4340db6301")
 		)
@@ -7991,7 +8787,7 @@
 				)
 			)
 		)
-		(property "Price" "None"
+		(property "Price" " $2.5177 "
 			(at 212.09 31.75 0)
 			(hide yes)
 			(show_name yes)
@@ -8046,6 +8842,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C108207"
+			(at 212.09 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "923e8cc7-e0bd-43c5-99a0-05c150c92d9c")
 		)
@@ -8087,88 +8894,6 @@
 	)
 	(symbol
 		(lib_id "Resistors:Resistor")
-		(at 185.42 43.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d34ab71e-9c1b-4032-9716-d5e925192be1")
-		(property "Reference" "R2"
-			(at 187.96 45.7199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 187.96 48.2599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 185.42 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 185.42 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "76ba5e88-b4a4-4827-8b58-fe1803cd57ed")
-		)
-		(pin "2"
-			(uuid "0bc9c933-4537-4765-a088-17247e1f6ee1")
-		)
-		(instances
-			(project "mainBoard"
-				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistors:Resistor")
 		(at 237.49 36.83 0)
 		(unit 1)
 		(body_style 1)
@@ -8179,7 +8904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7f9da93-ad88-442e-bfea-5d93be6e9adc")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 241.3 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8232,6 +8957,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C137240"
+			(at 237.49 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0066 "
+			(at 237.49 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cb507ef5-b9ca-442c-a4a3-88011cef05ae")
 		)
@@ -8241,7 +8988,7 @@
 		(instances
 			(project "mainBoard"
 				(path "/be2e610a-0da0-4417-ae24-40d589f4bf40"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
