@@ -134,6 +134,7 @@ Also, there are also some key combinations baked in the firmware:
 - 1x Case (x 3d printed parts)
 ### Optional:
 - An neopixel lightning strip
+- An extra JST 4P Female through hole socket for debugging
 
 PS: The pin header doesn't necessarily need to be male, it can be female, and you can use an male to male cable! Male cables are easier to get in the right amount though... 
 
