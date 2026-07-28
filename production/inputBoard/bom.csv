@@ -1,0 +1,6 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+J101,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1,LeftKeyConnector,
+J102,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1,RightKeyConnector,
+J103,JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,1,EncoderConnector,
+"SW101, SW102, SW103, SW104, SW105, SW106, SW107, SW108",SW_Cherry_MX_1.00u_PCB,8,SW_Push,
+SW109,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,1,RotaryEncoder_Switch_MP,

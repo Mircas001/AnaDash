@@ -6790,7 +6790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "10K"
 			(at 187.96 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6824,6 +6824,28 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology"
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C29718"
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" " $0.0149 "
 			(at 182.88 36.83 0)
 			(hide yes)
 			(show_name no)
