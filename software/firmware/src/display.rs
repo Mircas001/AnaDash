@@ -158,8 +158,8 @@ impl Display {
         LinearLayout::vertical(
             Chain::new(title)
                 .append(artist)
-                .append(duration)
-                .append(player_status),
+                .append(player_status)
+                .append(duration),
         )
         .with_alignment(horizontal::Center)
         .arrange()
