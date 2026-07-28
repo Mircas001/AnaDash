@@ -115,10 +115,10 @@ Also, there are also some key combinations baked in the firmware:
 
 ## BOM
 - 1x Raspberry Pi Pico
-- 2x JST-XH 5P Male to Male Cables
-- 4x JST-XH 5P Female Vertical Through Hole Sockets
-- 2x JST-XH 4P Male to Male Cables
-- 5x JST-XH 4P Female Vertical Through Hole Sockets
+- 4x JST-XH 2P Male to wire cables
+- 4x JST-XH 2P Female Vertical Through Hole Sockets
+- 6x JST-XH 5P Female Vertical Through Hole Sockets
+- 3x JST-XH 5P Male-Male cables 
 - 4x 85C1 5mA Ammeters
 - 4x 660-680Ω Resistors
 - 1x EC11 Rotary Encoder
@@ -130,6 +130,9 @@ Also, there are also some key combinations baked in the firmware:
 - ?x M3 6mm Machine Screws (I used Phillips but I believe Torx could be a better fit if you have the tip)
 - 1x Sticker paper
 - 1x Case (x 3d printed parts)
+### Optional:
+- 8x WS2812B LEDs 
+- An neopixel lightning strip
 
 PS: The pin header doesn't necessarily need to be male, it can be female, and you can use an male to male cable! Male cables are easier to get in the right amount though... 
 
