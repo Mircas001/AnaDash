@@ -526,7 +526,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "../../production/",
+      "plot": "../../production/mainBoard/gerbers/",
       "specctra_dsn": "",
       "step": "mainBoard.step",
       "vrml": ""
