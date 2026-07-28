@@ -17,6 +17,7 @@ use embedded_hal_bus::spi::ExclusiveDevice;
 use mcp4728::MCP4728Async;
 use shared::HostTransmission;
 use smart_leds::RGB8;
+use static_cell::StaticCell;
 use {defmt as _, panic_probe as _};
 
 mod display;
@@ -30,9 +31,17 @@ bind_interrupts!(struct Irqs {
     PIO0_IRQ_0 => PioIrqs<PIO0>;
     DMA_IRQ_0 => dma::InterruptHandler<DMA_CH0>;
 });
+
+static SERIAL: StaticCell<embassy_rp::uart::Uart<'static, embassy_rp::uart::Blocking>> =
+    StaticCell::new();
+
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
     let mut hardware = hardware::Hardware::default();
+
+    let uart = SERIAL.init(hardware.uart);
+
+    defmt_serial::defmt_serial(uart);
 
     info!("Hello!");
 
