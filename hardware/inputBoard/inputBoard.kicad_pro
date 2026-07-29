@@ -526,7 +526,7 @@
       "netlist": "",
       "plot": "../../production/inputBoard/gerbers/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../case/assets/inputBoard.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
