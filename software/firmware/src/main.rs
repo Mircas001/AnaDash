@@ -7,19 +7,14 @@ use crate::usb_handler::CDC_CHANNEL;
 use defmt::*;
 use embassy_executor::Spawner;
 use embassy_rp::bind_interrupts;
-use embassy_rp::dma;
 use embassy_rp::i2c::InterruptHandler as i2cIrqs;
-use embassy_rp::peripherals::{DMA_CH0, DMA_CH1, DMA_CH2, I2C1, PIO0, UART0, USB};
-use embassy_rp::pio::{InterruptHandler as PioIrqs, Pio};
-use embassy_rp::pio_programs::ws2812::{PioWs2812, PioWs2812Program};
+use embassy_rp::peripherals::{I2C1, UART0, USB};
 use embassy_rp::uart::InterruptHandler as UARTInterruptHandler;
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
-use embassy_time::{Delay, Duration, Instant, Ticker};
-use embassy_usb::class::dfu::consts::Status::Ok;
+use embassy_time::Delay;
 use embedded_hal_bus::spi::ExclusiveDevice;
 use mcp4728::MCP4728Async;
 use shared::HostTransmission;
-use smart_leds::RGB8;
 use static_cell::StaticCell;
 use {defmt as _, panic_probe as _};
 
@@ -31,8 +26,6 @@ bind_interrupts!(struct Irqs {
     USBCTRL_IRQ => UsbIrqs<USB>;
     I2C1_IRQ => i2cIrqs<I2C1>;
     UART0_IRQ => UARTInterruptHandler<UART0>;
-    PIO0_IRQ_0 => PioIrqs<PIO0>;
-    DMA_IRQ_0 => dma::InterruptHandler<DMA_CH0>;
 });
 
 static SERIAL: StaticCell<embassy_rp::uart::Uart<'static, embassy_rp::uart::Blocking>> =

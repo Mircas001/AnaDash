@@ -3,10 +3,10 @@
 This is an dashboard that aims to have all the important functions and information within your arm's reach!
 
 ## Features:
-- 4x Analog Gauges showing CPU usage, CPU temperature, RAM usage and Swap usage, driven by an Adafruit MCP4728 module!
+- 4x Analog Gauges showing CPU usage, CPU temperature, RAM usage and Swap usage, driven by an MCP4728 chip!
 - 8x Cherry MX keys for any macro your heart wishes!
-- An OLED display that can show animations, time, notification and current song!
-- An rotary encoder for UI navigation and changing your volume! Including a switch for mute!
+- An LCD display that can show time, notifications and current song!
+- An rotary encoder for changing your volume! Including a switch for mute!
 
 ## Cad Model
 (insert cad here) FIXME
@@ -114,7 +114,7 @@ Also, there are also some key combinations baked in the firmware:
 - You can press key4 and key5 (the two innermost keys) to go into DFU mode!
 
 ## BOM
-- 1x Raspberry Pi Pico
+- 1x Raspberry Pi Pico or an compatible board
 - 4x JST-XH 2P Male-Wire cables
 - 4x JST-XH 2P Female Vertical Through Hole Sockets
 - 2x JST-XH 4P Female Vertical Through Hole Sockets
@@ -123,13 +123,17 @@ Also, there are also some key combinations baked in the firmware:
 - 2x JST-XH 5P Male-Male cables 
 - 4x 85C1 5mA Ammeters
 - 4x 660-680Ω Resistors
-- 1x EC11 Rotary Encoder
+- 1x 10K 0603x4 4 Resistor Network
+- 1x MCP4728-E IC
+- 1x 100nF Ceramic Capacitor
+- 1x 10µF Tantalum Capacitor
+- 1x EC11 20mm Rotary Encoder with switch
 - 8x Cherry MX Compatible Switches 
 - 1x ST7735 1.77 inch LCD TFT Display
 - 1x 8 Pin 2.54mm (DuPont) Pin Header 
-- 8x Female-to-Male 2.54mm (Dupont) cables
+- 8x Female-to-Female 2.54mm (Dupont) cables
 - ?x M3x5x4 Heatset Inserts
-- ?x M3 6mm Machine Screws (I used Phillips but I believe Torx could be a better fit if you have the tip)
+- ?x M3 5mm Machine Screws (Preferrably an Flat Torx)
 - 1x Sticker paper
 - 1x Case (x 3d printed parts)
 ### Optional:
@@ -137,6 +141,7 @@ Also, there are also some key combinations baked in the firmware:
 - An extra JST 4P Female through hole socket for debugging
 
 PS: The pin header doesn't necessarily need to be male, it can be female, and you can use an male to male cable! Male cables are easier to get in the right amount though... 
+PS 2: I have added an header for an NeoPixel led, but the code for it was not implemented, feel free to add it!
 
 ## Software used:
 This project was designed in:
