@@ -31,10 +31,10 @@ impl MprisPlayer {
 
     fn try_reconnection(&mut self) {
         if let Ok(finder) = PlayerFinder::new() {
-            // if this goes ok, get on the block
+            // * if this goes ok, get on the block
             if let Ok(player) = finder.find_active() {
-                // if he gets an active player
-                self.player = Some(player); // make new player
+                // * if he gets an active player
+                self.player = Some(player); // * make new player
             }
         }
     }

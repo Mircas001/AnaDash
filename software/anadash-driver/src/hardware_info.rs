@@ -33,7 +33,7 @@ impl HardwareInfo {
         let last_reading = Instant::now();
         let components = Components::new_with_refreshed_list();
 
-        // acha o índice do componente de CPU uma única vez
+        // * Gets the cpu IDX once
         let cpu_idx = components.iter().position(|c| {
             let l = c.label().to_lowercase();
             l.contains("tctl") || l.contains("package")

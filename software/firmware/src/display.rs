@@ -44,7 +44,7 @@ impl Display {
         let mut display = ST7735::new(display_spi, dc, rst, true, false, 160, 180);
         if display.init(&mut Delay).is_err() {
             if display.init(&mut Delay).is_err() {
-                defmt::error!("Screen error!");
+                defmt::error!("Screen error!"); // * we try twice, but it's nothing worth panicking over
             }
         }
 

@@ -1,6 +1,6 @@
 use anyhow::Result;
 use futures_util::stream::StreamExt;
-use log::error;
+use log::{error, warn};
 use shared::HostTransmission;
 use shared::NotificationData;
 use std::collections::HashMap;
@@ -11,6 +11,7 @@ use zbus::{Connection, MessageStream};
 /*
  * My understanding of this:
  * tx does nothing, rx is a yapping notifications thing
+ * yes, this was one of the HARDEST parts of the project
 */
 
 pub fn spawn_notification_monitor() -> mpsc::Receiver<HostTransmission> {
@@ -40,15 +41,16 @@ async fn monitor(tx: mpsc::Sender<HostTransmission>) -> Result<()> {
                 0u32,
             ),
         )
-        .await?;
+        .await?; // * this starts watching the DBUS monitor, we throw away the useless info so it's okay privacy wise, besides, it never leaves the machine
 
-    let mut stream = MessageStream::from(&connection);
+    let mut stream = MessageStream::from(&connection); // * we get a stream from the dbus 
     while let Some(msg) = stream.next().await {
+        // * then await the next message
         let msg = msg?;
 
         if msg.header().member().map(|m| m.as_str()) != Some("Notify") {
             continue;
-        }
+        } // * ignores any traffic that's not.. well, a notification
 
         /*
          * The definition of an notification:
@@ -68,9 +70,9 @@ async fn monitor(tx: mpsc::Sender<HostTransmission>) -> Result<()> {
             i32,
         ) = msg.body().deserialize()?;
 
-        let app: heapless::String<16> =
-            heapless::String::try_from(app.as_str()).unwrap_or_default();
-        let summary: heapless::String<128> =
+        let app: heapless::String<16> = // * I probably could use normal strings here, but heapless strings are better, no risk of memory fragmentation
+            heapless::String::try_from(app.as_str()).unwrap_or_default(); // * and the firmware needs an heapless one, one memory fragmentation on a embedded devuce
+        let summary: heapless::String<128> = // * and it's over
             heapless::String::try_from(summary.as_str()).unwrap_or_default();
         let body: heapless::String<256> =
             heapless::String::try_from(body.as_str()).unwrap_or_default();
@@ -85,7 +87,7 @@ async fn monitor(tx: mpsc::Sender<HostTransmission>) -> Result<()> {
             .await
             .is_err()
         {
-            error!("Sending notification data failed!");
+            warn!("Sending notification data failed!");
             break;
         }
     }

@@ -24,16 +24,14 @@ async fn main() -> Result<()> {
     info!("Opening serial port");
     let serial_path = std::env::args()
         .nth(1)
-        .expect("You shouldn't be running this manually! use: anadash-driver <device>");
+        .expect("You shouldn't be running this manually! use: anadash-driver <device>"); // * we know it's someone running it manually because they screwed up the port
     let mut keyboard_cdc = match tokio_serial::new(serial_path, 115200).open_native_async() {
         Ok(port) => port,
-        Err(e) => panic!("Error opening serial port! {}", e),
+        Err(e) => panic!("Error opening serial port! {}", e), // * seriously, I know good rust programs don't panic, but this is the whole core functionality
     };
 
     info!("Getting hardware info object");
     let mut hwinfo: hardware_info::HardwareInfo = hardware_info::HardwareInfo::new();
-
-    let mut timer: tokio::time::Interval = interval(Duration::from_secs(1));
 
     info!("Starting DBUS monitor");
     // naming it notificationsYapper would be unprofessional :(
@@ -42,13 +40,15 @@ async fn main() -> Result<()> {
     info!("Starting MPRIS monitor");
     let mut mpris_player = mpris_monitor::MprisPlayer::new();
 
+    let mut timer: tokio::time::Interval = interval(Duration::from_secs(1));
+
     loop {
         // this will send the current time every second to the resource monitor
         tokio::select! {
             Some(noti) = notifications_rx.recv() => {
                 info!("Notification received!");
                 let mut buf = [0u8; 256];
-                let bytes = postcard::to_slice_cobs(&noti, &mut buf)?;
+                let bytes = postcard::to_slice_cobs(&noti, &mut buf)?; // * nice format to send over data 
                 keyboard_cdc.write_all(bytes)?;
             }
             _ = tokio::signal::ctrl_c() => {
@@ -58,7 +58,7 @@ async fn main() -> Result<()> {
             _ = timer.tick() => {
                 info!("Getting hardware info");
                 let hw_stats = hwinfo.get_data();
-                info!("Getting MPRIS...");
+                info!("Getting MPRIS..."); // * i hope those infos don't take too much time.
                 mpris_player.update();
 
                 let data  = HostTransmission::Dashboard(DashboardData {
