@@ -1,6 +1,8 @@
 #![no_std]
 #![no_main]
 
+use core::error;
+
 use crate::usb_handler::CDC_CHANNEL;
 use defmt::*;
 use embassy_executor::Spawner;
@@ -13,6 +15,7 @@ use embassy_rp::pio_programs::ws2812::{PioWs2812, PioWs2812Program};
 use embassy_rp::uart::InterruptHandler as UARTInterruptHandler;
 use embassy_rp::usb::InterruptHandler as UsbIrqs;
 use embassy_time::{Delay, Duration, Instant, Ticker};
+use embassy_usb::class::dfu::consts::Status::Ok;
 use embedded_hal_bus::spi::ExclusiveDevice;
 use mcp4728::MCP4728Async;
 use shared::HostTransmission;
@@ -46,7 +49,9 @@ async fn main(_spawner: Spawner) {
     info!("Hello!");
 
     let mut meters = MCP4728Async::new(&mut hardware.i2c, 0x60);
-    meters.fast_write(4096, 4096, 4096, 4096).await.unwrap();
+    if let Err(e) = meters.fast_write(4096, 4096, 4096, 4096).await {
+        warn!("Failed to write to meters! {}", e);
+    }
     hardware.ldac.set_high();
 
     usb_handler::begin_usb_handler(&_spawner, hardware.usb, hardware.inputs);
@@ -64,10 +69,12 @@ async fn main(_spawner: Spawner) {
                 display.show_notification(noti);
             }
             HostTransmission::Dashboard(dash) => {
-                meters
+                if let Err(e) = meters
                     .fast_write(dash.cpu_load, dash.cpu_temp, dash.mem_used, dash.swap_used)
                     .await
-                    .unwrap();
+                {
+                    warn!("Failed to write to meters! {}", e);
+                }
                 hardware.ldac.set_high();
                 display.update_screen(dash);
             }
