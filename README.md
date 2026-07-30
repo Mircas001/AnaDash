@@ -114,8 +114,8 @@ Also, there are also some key combinations baked in the firmware:
 - You can press key4 and key5 (the two innermost keys) to go into DFU mode!
 
 ## BOM
-You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/MiscBOM.csv)
-You can also get the BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/bom.csv)
+You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
+You can also get the BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/jlcpcb_bom.csv)
 However, if you do get PCBA, make sure that:
 1. You only request they solder the SMD components
 2. You will need to manually fill in the 665ohm resistor, apparently, they're new, so it's not accepting it right out of the bat.
