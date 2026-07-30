@@ -3309,7 +3309,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Pack04"
+		(property "Value" "10K"
 			(at 0 2.6 0)
 			(layer "F.Fab")
 			(uuid "5f441876-23d0-414e-90b1-af9da7a243bd")
@@ -3342,6 +3342,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C29718"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6d18b57-ce01-46cc-9798-6d89d638f726")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" " $0.0149 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bee5e0bd-7eff-4a97-a1f6-85dfcabd667d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3484,7 +3510,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(RN1-R2.1-Pad2)")
 			(pinfunction "R2.1_2")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "90984952-4bc8-4cdf-a504-ae5f389000f3")
 		)
 		(pad "3" smd rect
@@ -3493,7 +3519,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(RN1-R3.1-Pad3)")
 			(pinfunction "R3.1_3")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "aca76990-738d-4f06-b315-e777e0e3cdf8")
 		)
 		(pad "4" smd rect
@@ -3520,7 +3546,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(RN1-R3.2-Pad6)")
 			(pinfunction "R3.2_6")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "47fb2fbb-2057-444e-99c8-d152caba6d38")
 		)
 		(pad "7" smd rect
@@ -3529,7 +3555,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(RN1-R2.2-Pad7)")
 			(pinfunction "R2.2_7")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "3e2f4588-ccd5-4fe9-9659-220f8765f3c4")
 		)
 		(pad "8" smd rect
@@ -8373,7 +8399,7 @@
 			(remove_unused_layers no)
 			(net "unconnected-(A1-GPIO26_ADC0-Pad31)")
 			(pinfunction "GPIO26_ADC0_31")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "92b31293-d8b0-48e1-b747-ebd30d92dd16")
 		)
 		(pad "31" smd roundrect
@@ -8381,9 +8407,9 @@
 			(size 3.2 1.6)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.5)
-			(net "unconnected-(A1-GPIO26_ADC0-Pad31)")
+			(net "unconnected-(A1-GPIO26_ADC0-Pad31)_1")
 			(pinfunction "GPIO26_ADC0_31")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "e55e27b8-85f3-4a1e-a483-0bf64beb4fe0")
 		)
 		(pad "32" thru_hole circle
@@ -12374,7 +12400,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C1952719"
+		(property "LCSC Part #" "C1958016"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12387,7 +12413,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.716 "
+		(property "Price" "$ 0.2239"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
