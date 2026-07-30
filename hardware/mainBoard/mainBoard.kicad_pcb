@@ -4560,9 +4560,9 @@
 		(descr "JST XH series connector, B4B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf)")
 		(tags "connector JST XH vertical")
 		(property "Reference" "J6"
-			(at 3.75 -3.55 0)
+			(at -4.25 0.85 0)
 			(layer "F.SilkS")
-			(uuid "11dd66bd-dc5b-4120-ae40-a006d954c890")
+			(uuid "58f6967c-d57b-41d0-af71-276c86b7d58f")
 			(effects
 				(font
 					(size 1 1)
@@ -4573,7 +4573,7 @@
 		(property "Value" "EncoderConnector"
 			(at 3.75 4.6 0)
 			(layer "F.Fab")
-			(uuid "a8eaedac-9f7d-4b6e-9af6-55d6c097a4fb")
+			(uuid "3db34daa-ac98-4110-ae12-9b7b8af1dcbc")
 			(effects
 				(font
 					(size 1 1)
@@ -4585,7 +4585,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e025d73-ca77-4126-80e8-933eb3d2202f")
+			(uuid "c3ba959d-0001-450f-8cdb-3725bc9fa44e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4596,7 +4596,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "236b7d63-a59a-4d4e-8569-43e9e21b75e5")
+			(uuid "1f0a6567-bdc0-4754-83d8-d99a49ecbbf9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12345,7 +12345,7 @@
 		(descr "Tantalum Capacitor SMD AVX-H (3528-15 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf)")
 		(tags "capacitor tantalum")
 		(property "Reference" "C1"
-			(at -0.0275 2.4 90)
+			(at -0.0775 -2.5175 90)
 			(layer "F.SilkS")
 			(uuid "ff180540-bee6-46df-bf6e-953bc5f15104")
 			(effects
@@ -12999,7 +12999,7 @@
 		)
 	)
 	(gr_text "A"
-		(at 179.270625 111 90)
+		(at 179.270625 110.75 90)
 		(layer "F.SilkS")
 		(uuid "0f76bfd0-8990-4db9-a714-f93a42d80d27")
 		(effects
@@ -13023,7 +13023,7 @@
 		)
 	)
 	(gr_text "B\n"
-		(at 181.770625 111 90)
+		(at 181.770625 110.75 90)
 		(layer "F.SilkS")
 		(uuid "65cdb716-2536-4326-9eea-3b740b632f54")
 		(effects
@@ -13047,7 +13047,7 @@
 		)
 	)
 	(gr_text "SW\n"
-		(at 184.270625 111 90)
+		(at 184.270625 110.75 90)
 		(layer "F.SilkS")
 		(uuid "a3b7c3e3-da84-427c-b3dd-e5939a1b0f24")
 		(effects
@@ -13071,7 +13071,7 @@
 		)
 	)
 	(gr_text "GND\n"
-		(at 186.770625 111.1 90)
+		(at 186.770625 110.75 90)
 		(layer "F.SilkS")
 		(uuid "b65b5add-f967-47ad-935e-83b892b249b5")
 		(effects
