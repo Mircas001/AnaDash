@@ -6656,7 +6656,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C1945"
+		(property "LCSC Part #" "C24497"
 			(at 212.09 24.13 90)
 			(hide yes)
 			(show_name no)
@@ -6667,7 +6667,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0333 "
+		(property "Price" "$0.0259"
 			(at 212.09 24.13 90)
 			(hide yes)
 			(show_name no)
@@ -8507,7 +8507,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C1958016"
+		(property "LCSC Part #" " C7171 "
 			(at 114.3 22.86 90)
 			(hide yes)
 			(show_name no)
@@ -8518,7 +8518,7 @@
 				)
 			)
 		)
-		(property "Price" "$ 0.2239"
+		(property "Price" " $0.1903 "
 			(at 114.3 22.86 90)
 			(hide yes)
 			(show_name no)

@@ -1,7 +1,7 @@
 ﻿Designator,Footprint,Quantity,Value,LCSC Part #
 A1,RaspberryPi_Pico_Common_Unspecified,1,RaspberryPi_Pico,C42924268
-C1,CP_EIA-3528-15_AVX-H_HandSolder,1,10µF,C1958016
-C2,1206,1,100nF,C1945
+C1,CP_EIA-3528-15_AVX-H_HandSolder,1,10µF, C7171 
+C2,1206,1,100nF,C24497
 J1,JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,1,UARTDebug,C144395
 J2,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1,LeftKeyConnector,C157991
 J3,PinHeader_1x08_P2.54mm_Vertical,1,DisplayConnector,C492407
