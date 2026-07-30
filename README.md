@@ -114,7 +114,7 @@ Also, there are also some key combinations baked in the firmware:
 - You can press key4 and key5 (the two innermost keys) to go into DFU mode!
 
 ## BOM
-You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)]
+You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
 
 You can also get the BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/jlcpcb_bom.csv)
 However, if you do get PCBA, make sure that:
