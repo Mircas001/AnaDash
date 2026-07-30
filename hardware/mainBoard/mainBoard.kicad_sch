@@ -6143,7 +6143,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 241.3 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6186,7 +6186,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 237.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6197,7 +6197,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 237.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6431,7 +6431,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 241.3 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6474,7 +6474,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 237.49 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6485,7 +6485,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 237.49 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6915,7 +6915,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 241.3 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6958,7 +6958,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 237.49 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6969,7 +6969,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 237.49 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8940,7 +8940,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 241.3 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8983,7 +8983,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 237.49 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8994,7 +8994,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 237.49 36.83 0)
 			(hide yes)
 			(show_name no)

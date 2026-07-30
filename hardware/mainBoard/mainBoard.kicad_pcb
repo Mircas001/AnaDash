@@ -9798,7 +9798,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "34d30638-f970-442c-880e-d3ba06d478ee")
@@ -9856,7 +9856,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9869,7 +9869,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10966,7 +10966,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "02cd5c35-24ef-46a0-b5dc-e899df81f0e9")
@@ -11024,7 +11024,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11037,7 +11037,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11510,7 +11510,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "c3ee911e-062b-45c4-8418-5c62539c59f6")
@@ -11568,7 +11568,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11581,7 +11581,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12589,7 +12589,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "665"
 			(at 0 1.83 0)
 			(layer "F.Fab")
 			(uuid "51e91cd1-5f61-45d5-978b-b2c857e05a79")
@@ -12647,7 +12647,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137240"
+		(property "LCSC Part #" "C54532953"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12660,7 +12660,7 @@
 				)
 			)
 		)
-		(property "Price" " $0.0066 "
+		(property "Price" " $0.0059 "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
