@@ -114,34 +114,12 @@ Also, there are also some key combinations baked in the firmware:
 - You can press key4 and key5 (the two innermost keys) to go into DFU mode!
 
 ## BOM
-- 1x Raspberry Pi Pico or an compatible board
-- 4x JST-XH 2P Male-Wire cables
-- 4x JST-XH 2P Female Vertical Through Hole Sockets
-- 2x JST-XH 4P Female Vertical Through Hole Sockets
-- 1x JST-XH 4P Male-Male Cable 
-- 4x JST-XH 5P Female Vertical Through Hole Sockets
-- 2x JST-XH 5P Male-Male cables 
-- 4x 85C1 5mA Ammeters
-- 4x 660-680Ω Resistors
-- 1x 10K 0603x4 4 Resistor Network
-- 1x MCP4728-E IC
-- 1x 100nF Ceramic Capacitor
-- 1x 10µF Tantalum Capacitor
-- 1x EC11 20mm Rotary Encoder with switch
-- 8x Cherry MX Compatible Switches 
-- 1x ST7735 1.77 inch LCD TFT Display
-- 1x 8 Pin 2.54mm (DuPont) Pin Header 
-- 8x Female-to-Female 2.54mm (Dupont) cables
-- ?x M3x5x4 Heatset Inserts
-- ?x M3 5mm Machine Screws (Preferrably an Flat Torx)
-- 1x Sticker paper
-- 1x Case (x 3d printed parts)
-### Optional:
-- An neopixel lightning strip
-- An extra JST 4P Female through hole socket for debugging
-
-PS: The pin header doesn't necessarily need to be male, it can be female, and you can use an male to male cable! Male cables are easier to get in the right amount though... 
-PS 2: I have added an header for an NeoPixel led, but the code for it was not implemented, feel free to add it!
+You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/MiscBOM.csv)
+You can also get the BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/bom.csv)
+However, if you do get PCBA, make sure that:
+1. You only request they solder the SMD components
+2. You will need to manually fill in the 665ohm resistor, apparently, they're new, so it's not accepting it right out of the bat.
+Also, there is an BOM for the input board, but I did not put in the LCSC parts because they don't have them, and I do not recommend you use it, since it's all through hole components. You should order the parts from aliexpress and manually solder it yourself instead!
 
 ## Software used:
 This project was designed in:
