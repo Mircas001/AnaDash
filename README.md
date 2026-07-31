@@ -117,7 +117,7 @@ Also, there are also some key combinations baked in the firmware:
 - You can press the 4th key and the 5th key (the two innermost keys) to go into DFU mode!
 
 ## Miscellaneous note
-You will need to print the labels for the meters in sticker paper, if you are an manufacturer, you should get it custom printed!                           
+You will need to print the labels for the meters in A4 sticker paper, if you are an manufacturer, you should get it custom printed!                           
 The labels are available here: [Labels](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/production/meterLabels.svg)
 
 There is an LED header added to the PCB, however, I did not implement the code for it, it is there for future use!
