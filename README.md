@@ -1,6 +1,6 @@
 # AnaDash - An dashboard for your PC
 **THIS IS WIP! NOT TESTED YET!**
-![InsertThumbnail](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/thumbnail.png)
+![Thumbnail](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/thumbnail.png)
 This is an dashboard that aims to have all the important functions and information within your arm's reach!
 
 ## Features:
