@@ -38,7 +38,7 @@ Before setting up the software, you'll need to install these programs!
 - [rustup](https://rustup.rs) - this is the rust toolchain, and it's the recommended way to compile rust code!
 - [probe-rs](https://probe.rs) - **ONLY IF** you are gonna upload via an **debug probe**.
 - [picotool](https://github.com/raspberrypi/pico-sdk-tools/releases) - **ONLY IF** you are gonna upload via **USB**.
-- [lm-sensors](https://FIXME.com) - This provides the sensors the driver can read from! Make sure to set it up before!
+- [lm-sensors](https://github.com/lm-sensors/lm-sensors) - This provides the sensors the driver can read from! Make sure to set it up before!
 
 It's consisted in 3 parts:
 - Firmware: Runs the Pico!
@@ -134,7 +134,7 @@ The input board does not feature an JLCPCB BOM for PCBA because they do not have
 ## Software used:
 This project was designed in:
 - [KiCad for the PCBs!](https://www.kicad.org)
-- [Visual Studio Code for the software!](https://FIXME.com)
+- [Visual Studio Code for the software!](https://code.visualstudio.com/)
 - [Onshape for the 3D design!](https://onshape.com/)
 
 ## TODO List:
