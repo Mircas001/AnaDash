@@ -4445,10 +4445,6 @@
 		(uuid "dade4f23-9ec8-4610-8d28-ecdf69826ff2")
 	)
 	(no_connect
-		(at 177.8 35.56)
-		(uuid "ddfb3f5e-719c-488e-acc7-d3bba0d94ea5")
-	)
-	(no_connect
 		(at 110.49 76.2)
 		(uuid "f2ae86e3-a1c8-48d8-a160-30b1f9756340")
 	)
