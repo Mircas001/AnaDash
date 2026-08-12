@@ -6,11 +6,12 @@ created_at : "June26"
 ---
 
 # August 12: Devlog 34 -  It's over, i'm free
+
 I have finally finished this project, today I finished the diary, and I also polished up the project, making the screws self centered and whatnot, I accidentally screwed up the front plate in this process, so yeah, there's that, but it works!!!!!!!! That's what matters.
 I'm so happy, i'm going to sleep, and upload tomorrow, in case any idea pops up in my head.
 No image today cause hack club servers down :(
 
-**Total time spent:40min**
+**Total time spent:1h20min**
 
 # August 11: Devlog 33 - I FINISHED CAD
 
