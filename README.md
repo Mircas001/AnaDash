@@ -1,6 +1,7 @@
 # AnaDash - An dashboard for your PC
 **THIS IS WIP! NOT TESTED YET!**
 ![Thumbnail](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/thumbnail.png)
+
 This is an dashboard that aims to have all the important functions and information within your arm's reach!
 
 ## Features:
@@ -9,8 +10,10 @@ This is an dashboard that aims to have all the important functions and informati
 - An LCD display that can show time, notifications and current song!
 - An rotary encoder for changing your volume! Including a switch for mute!
 
-## Cad Model
-(insert cad here) FIXME
+## Case
+AnaDash consists of 3 parts
+- An case, that supports it and holds it, also houses the raspberry
+- An front plate, that 
 
 ## PCB
 This project was designed in KiCad, it uses a pair of 2 layer PCBs, the PCBs were split because the switches had to be at an angle while the pico had to sit straight.

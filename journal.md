@@ -5,6 +5,13 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "2026-06-26"
 ---
 
+# 2026-08-12: Devlog 34 -  It's over, i'm free
+I have finally finished this project, today I finished the diary, and I also polished up the project, making the screws self centered and whatnot, I accidentally screwed up the front plate in this process, so yeah, there's that, but it works!!!!!!!! That's what matters.
+I'm so happy, i'm going to sleep, and upload tomorrow, in case any idea pops up in my head.
+No image today cause hack club servers down :(
+
+**Total time spent:40min**
+
 # 2026-08-11: Devlog 33 - I FINISHED CAD
 
 As you can see, the end product is here:
