@@ -2,17 +2,17 @@
 title : "AnaDash"
 author: "Mircas001"
 description: "An cool looking dashboard for your PC! Features 4 analog meters for resources, 8 macro keys and even a LCD screen!"
-created_at : "2026-06-26"
+created_at : "June26"
 ---
 
-# 2026-08-12: Devlog 34 -  It's over, i'm free
+# August 12: Devlog 34 -  It's over, i'm free
 I have finally finished this project, today I finished the diary, and I also polished up the project, making the screws self centered and whatnot, I accidentally screwed up the front plate in this process, so yeah, there's that, but it works!!!!!!!! That's what matters.
 I'm so happy, i'm going to sleep, and upload tomorrow, in case any idea pops up in my head.
 No image today cause hack club servers down :(
 
 **Total time spent:40min**
 
-# 2026-08-11: Devlog 33 - I FINISHED CAD
+# August 11: Devlog 33 - I FINISHED CAD
 
 As you can see, the end product is here:
 ![image.png](https://cdn.hackclub.com/019ff340-c03e-7b50-b646-31034178a0ba/image.png)
@@ -21,7 +21,7 @@ The proccess was striaght forward, I made a rectangle which is an copy of the pl
 
 **Total Time Spent:1h56min**
 
-# 2026-08-10: Devlog 32 -  I have finished the front plate
+# August 10: Devlog 32 -  I have finished the front plate
 
 Mating the parts perfectly wanst too difficult, all I had to do is match corners, so yeah, that's done, but this inst the main focus.
 ![image.png](https://cdn.hackclub.com/019fee34-dd47-7a92-a257-8461193519a9/image.png)
@@ -33,7 +33,7 @@ As you can see, each hole is a screw, the big hole at the meters houses the thin
 
 **Total Time Spent:2h54min**
 
-# 2026-08-08: Devlog 31 - Screws have been figured out
+# August 08: Devlog 31 - Screws have been figured out
 
 Yes, I actually spent two hours placing screws, mainly because they were either sitting too high or they were upside down, BUT I FIXED IT! I had to do an offset at the mate connector, and voila, perfect flush screws.
 I need to figure out how to mate these perfectly next.
@@ -42,7 +42,7 @@ I need to figure out how to mate these perfectly next.
 
 **Total Time Spent:2h**
 
-# 2026-08-06: Devlog 30 - No significant progress, but stuff has been figured out
+# August 06: Devlog 30 - No significant progress, but stuff has been figured out
 
 Well, I wouldn't say I have made gargatuan progress, but stuff has advanced, and I figured out all 4 previous questions.
 
@@ -63,7 +63,7 @@ Yeah, I WAS TIRED, anyways, just splitting it into two parts solved our issues, 
 
 **Total Time Spent:4h17min**
 
-# 2026-08-03: Devlog 29 - So many complicated cad issues
+# August 03: Devlog 29 - So many complicated cad issues
 
 As the title says, i've run into A LOT of cad issues, but i'll list em:
 1. How do I insert heatset insert? 
@@ -80,7 +80,7 @@ Oh yeah, I finished the encoder knob, and I hope this one is more 3d printer fri
 
 **Total Time Spent:1h30min**
 
-# 2026-08-01: Devlog 28 - Encoder Knob is done AND I fixed the meters
+# August 01: Devlog 28 - Encoder Knob is done AND I fixed the meters
 
 As the name says, I have finished both the encoder knob and the meters, meters only took me half an hour, I had already gone thru all steps before and I didn't even need to do some, I had to get new a CAD Model and put the decal there, so that's done. Btw I'm actually really really proud of these meters! Looking at them just gives me satisfaction, idk why, so rewarding
 ![image](https://cdn.hackclub.com/019fbe80-772e-7c38-b790-f79e2b668cdf/image.png)
@@ -89,7 +89,7 @@ Then I started to make the encoder knob, i'm not sure if this printable, and I m
 
 **Total Time Spent:3h10min**
 
-# 2026-07-31: Devlog 27 - Onshape madnesss
+# July 31: Devlog 27 - Onshape madnesss
 
 So, apparently my pc is not strong enough to run fusion 360, so I went to onshape, so I first begun by designing an encoder knob, and 50 minutes later, voilá, I had one, and was quite happy...
 ![image](https://cdn.hackclub.com/019fba96-8dad-72e8-bd78-b7b8526e417b/image.png)
@@ -99,7 +99,7 @@ But, for some reason I do not know, I decided that I would put work on making th
 
 **Total Time Spent:4h15min**
 
-# 2026-07-30: Devlog 26 - The whole project is nearly done except for CAD AHHHHHHHHH
+# July 30: Devlog 26 - The whole project is nearly done except for CAD AHHHHHHHHH
 
 Some final adjustments were made, stuff like the BOM, some bug fixing, and other polish.
 As the title says, the whole project is nearly done, the pcb is done, the software is done, however, for some reason, FUSION 360 JUST DOENST WORK, WHY? I've spent the whole day trying to install this thing and it simply cannot function! WHY? WHY MUST IT WORK LIKE THIS? anyways, i hope it works now, but i'm in a standoff right now. 
@@ -107,14 +107,14 @@ As the title says, the whole project is nearly done, the pcb is done, the softwa
 
 **Total Time Spent:1h30min**
 
-# 2026-07-28 Devlog 26 - Okay, NOW THE SOFTWARE IS FINISHED, AND THE PRODUCTION FILES 
+# July 28 Devlog 26 - Okay, NOW THE SOFTWARE IS FINISHED, AND THE PRODUCTION FILES 
 
 I've added an LED header and decided to implement it, however, halfway thru, I got distracted, so I made all the production files, and they work well. Then, after an hour of coding, I have realized that adding LED support would be complicated and difficult, so i'm calling it off, and, instead, I'm just leaving the LED header there, empty, for the future
 ![image](https://cdn.hackclub.com/019fab68-b737-7a85-bba6-7ccacd8111ba/image.png)
 
 **Total time spent:1h30min**
 
-# 2026-07-28: Devlog 25 - SOFTWARE IS DONE LETS GOOOOOO
+# July 28: Devlog 25 - SOFTWARE IS DONE LETS GOOOOOO
 
 I have finished software side of things, the final thing needed being a music player, I skipped the progress bar due to it being an hassle to implement, and I don't have much time. But, overall, it's finished, it should work. The biggest problem during this step was well, figuring out how do i make the icon for the player status, but the solution was implementing a custom struct as much as an hassle that was, anyways, everything works now, let's GOOOOOOOOOOOOOOOOO!
 The next step I plan is adding an optional led strip header
@@ -122,7 +122,7 @@ The next step I plan is adding an optional led strip header
 
 **Total time spent:3h30min**
 
-# 2026-07-27: Devlog 24 - I have finished the driver 
+# July 27: Devlog 24 - I have finished the driver 
 
 I stopped working on the firmware for the UI so I could work in an intermission for the driver, I begun by first making a PKGBUILD, but, after seeing tests being performed, I got sucked in a rabbit hole, spending over an hour writing benchmarks only to find out the library I'm using to perform benchmarks didn't support binaries, but that didn't stop me from writing a simple test that prints the system info to the terminal. I also rewrote the function that gets cpu temp to use an more universal approach using lm-sensors. 
 After that 1h30m rendezvous I started making the PKGBUILD, like many other things in the project, it was a whole new world, however, after over an hour of work, it works and it compiles! It was very very rewarding.
@@ -131,7 +131,7 @@ Finally, to wrap it all up, I cleaned up most warnings, there's just one that th
 
 **Total time spent:4h**
 
-# 2026-07-27: Devlog 23 - Implementing the UI for my project
+# July 27: Devlog 23 - Implementing the UI for my project
 
 I begun writing the code for the display, only to realize my decision to not care about what pins I used would backfire, so, I had to rewire the schematic AND pcb, but it's all okay now. Also, learning this was tough, whole new world, spent over an hour just figuring out how to pass the embassy spi to the ST7735 driver.
 After that, I begun by making the status bar, aka 
@@ -144,7 +144,7 @@ I am now stopping this devlog because it got too big, but that's where i am now.
 
 **Total time spent:4h30min**
 
-# 2026-07-24: Devlog 22 - MCP4728 was hard, and I made the driver better
+# July 24: Devlog 22 - MCP4728 was hard, and I made the driver better
 
 Let me first begin by saying, that this line:
 
@@ -184,7 +184,7 @@ Finally, after all that work, I had to do the MCP4728, and that line in the star
 
 **Total time spent:2h8min**
 
-# 2026-07-23: Devlog 21 - New UART Port, better drivers
+# July 23: Devlog 21 - New UART Port, better drivers
 
 I took a break from programming and decided to go back to PCB design, I replaced the screen pinout, and, more importantly, added an debug UART pin so you can get logging, while on it, I realized I would have to move a bunch of connectors! So i spent over an hour painfully rerouting, only to realize it broke more, I also had to rethink the pull up resistors because those had nowhere to go, anyways, thankfully everything's working now, so i'm happy. After that break, I decided that I would start the handler for incoming host messages, but, for some reason, which I dont know, I started doing the README??? anyways, the readme is very pretty and has instructions on how to compile now, so that's great ^^. Then, for some reason I decided to do the driver again?? I improved it, and it now gets the serial port using VID and PID, wayy better, it was just painful figuring out for the first time how to use results! And on a more unrelated note: If you noticed, yes, I'm purposefully delaying the CAD part because it's been hell whenever I tried it, fusion 360 simply won't run and I'm not sure if onshape is good for polishing, also I'm so scared of the deadline cuz I'm not sure if JLCPCB can get the parts here in time, the BOM is also scaring me, seems so complicated. 
 ![image.png](https://cdn.hackclub.com/019fe8df-71d8-7bc6-8e71-16be6f0dbf55/image.png)
@@ -192,7 +192,7 @@ I took a break from programming and decided to go back to PCB design, I replaced
 
 **Total time spent:4h40min**
 
-# 2026-07-21: Devlog 20 - CDC is done, so is the encoder
+# July 21: Devlog 20 - CDC is done, so is the encoder
 
 As the title says, I finished both of them and I'm very excited to move on to the next step which is driving the MCP4728 :D ! The rotary was tough because there's 700 hundred libraries, but I picked the one someone in youtube had used, as that's an good proof. The CDC was tough understanding the new concepts, but i'm proud it turned out ok! Anyways, can't wait for the UI part after the MCP4728, and I hope this project is shipped by sunday :D. 
 ![image.png](https://cdn.hackclub.com/019fe8df-0f93-72bc-87f3-bf7b232d8851/image.png)
@@ -200,14 +200,14 @@ As the title says, I finished both of them and I'm very excited to move on to th
 
 **Total time spent:1h38min**
 ,
-# 2026-07-20: Devlog 19 - I made it work :D
+# July 20: Devlog 19 - I made it work :D
 
 I have figured out that partial move issue! :D All I had to do was just stop trying exporting the peripherals object, so that's solved :D I have finished the part that sends the macro keys to the computer, and i'm really proud of how it turned out! I'm also proud of the solution I used to save up memory, which is an bool array made out of one u8 int! I save up 7 bytes, which is small, but you gotta remember our memory is constrained! I also implemented the encoder switch, and I've been making more use of consts! The next step will be implementing the CDC! 
 ![image.png](https://cdn.hackclub.com/019fe8de-94d1-7bce-892e-f344261c5e6f/image.png)
 
 **Total time spent:2h30min**
 
-# 2026-07-20: Devlog 18 - I spent 5 hours developing the firmware only for it to be pain
+# July 20: Devlog 18 - I spent 5 hours developing the firmware only for it to be pain
 
 I started developing the firmware, BUT IT'S SO HARD AND CONFUSING, while I had a bit of an whiplash when I started developing the driver, it was nothing compared to what I'm currently experiencing with the no_std embassy firmware. I don't really understand what I'm doing, I'm having to learn new concepts such as lifetimes and other stuff and it's so confusing and messy, it's making me crazy. To make matters worse, I was about to delete part of the firmware to start over but somehow the problem went away??????????? What??????????????? It doens't make sense, nothing should be working here, but somehow, it does, and that does not make sense Nevermind the error is back, it just wans't included in the commits, I have no idea, i'm tired. 
 ![image.png](https://cdn.hackclub.com/019fe8de-0f40-7095-9d2e-7d3998bd7ef9/image.png)
@@ -216,28 +216,28 @@ I started developing the firmware, BUT IT'S SO HARD AND CONFUSING, while I had a
 
 **Total time spent:5h**
 
-# 2026-07-18: Devlog 17 - Driver's done
+# July 18: Devlog 17 - Driver's done
 
 Well, this part was a bit different cause a bunch of new concepts came into play, but basically, to get data from the PC to the driver I had to use serialization and deserializaiton, basically it's like packaging a cake, and then taking it out of the packaging and eating it at home, yum. I also switched from std strings to heapless strings cause those are memory friendly, crucial for something like a embedded controller, it's basically C style char array. Anyways, I had to apply these and voila, it worked
 ![image](https://cdn.hackclub.com/019f76df-f5f5-78ad-93ef-505a9f8399b7/image.png)
 
 **Total time spent:3h**
 
-# 2026-07-18: Devlog 16 - Driver is nearly done
+# July 18: Devlog 16 - Driver is nearly done
 
 The rust driver is nearly done :D It gets the system information, it gets notification, gets mpris player information, and gets the time. It wanst easy, I spent a lot of time learning tokio, I also had to learn some concepts about parallelization, but i'm really happy with how it turned out :D I have been struggling with an creative block for some reason, idk, it just feels daunting to finish this. 
 ![image.png](https://cdn.hackclub.com/019fe8db-2935-7e20-894e-d9c5082e7fa5/image.png)
 
 **Total time spent:2h30min**
 
-# 2026-07-15: Devlog 15 -  I made the labels for the meters, but at what cost?
+# July 15: Devlog 15 -  I made the labels for the meters, but at what cost?
 
 I have made the labels for the meters, at the cost of my sanity :( For context, the measurements and arch thing I am borrowing from Lex Bailey at Computing the Details, however, the rest I made from scratch. For the first 20 minutes, things went smoothly, and i added the label of what the meter measures, along with 50% and the unit it's measuring. But things did take a turn when adding the other 2 values. See how it's at an angle (because this is a needle meter), it was hell to align it with the text, I spent an hour of my life frustrating about how do I even do this, in the end, the solution I decided upon was just accepting defeat and making it roughly accurate, but it's quite an bummer 
 ![image.png](https://cdn.hackclub.com/019fe8da-ca48-7448-a6f7-fa166ef6d9e6/image.png)
 
 **Total time spent:2h14min**
 
-# 2026-07-14: Devlog 14 -  Labeling my connectors and rust code updates 
+# July 14: Devlog 14 -  Labeling my connectors and rust code updates 
 
 I have labeled the connectors on both PCBs! Why? Because I realized my README got confusing with the pinouts, and I realized it would be an struggle to connect everything based on a single markdown file. 
 ![image.png](https://cdn.hackclub.com/019fe8da-1659-708f-b874-e77ddccbf6ea/image.png)
@@ -248,7 +248,7 @@ Another thing: Right now, I have no idea about what should be the next step of t
 
 **Total time spent:40min**
 
-# 2026-07-13: Devlog 13 - We are now using the raw MCP4728 chip 
+# July 13: Devlog 13 - We are now using the raw MCP4728 chip 
 
 I have switched from the adafruit prebuilt DAC module to the raw MCP4728 chip, this way, I cut the cost of the DAC in about half. Since it was my first time doing a raw chip, it was pretty tough, and quite complicated to understand, took 2 hours of my life. But it works, it's a mess tho, but hey, I'm glad it works! It feels a bit wrong too, idk why, I might have to do a clean up. 
 ![image.png](https://cdn.hackclub.com/019fe8c0-c60d-7a13-bedc-b111e76ad833/image.png)
@@ -257,21 +257,21 @@ I have switched from the adafruit prebuilt DAC module to the raw MCP4728 chip, t
 
 **Total time spent:5h57min**
 
-# 2026-07-10: Devlog 12 - Switched displays :D 
+# July 10: Devlog 12 - Switched displays :D 
 
 I have switched displays, why? Well, I realized that having some constant UI on an OLED display will quickly lead to burn in, so that's a major change. I'm glad I haven't actually started designing the UI, so I didn't lose a bunch of time designing for a monochrome display.
 ![image.png](https://cdn.hackclub.com/019fe8c0-831a-734b-9c62-003973d4da0c/image.png)
 
 **Total time spent:1h**
 
-# 2026-07-10: Devlog 11 - Driver done yay
+# July 10: Devlog 11 - Driver done yay
 
 I rewrote the whole entire thing, and we finally have achieved drivers :D, reading the cpu load average, memory and swap were pretty easy, as I had already done it before, the only issue was reading the temperature, I did have to learn quite a bit, but it works, I also have added the time too! Now, it's not ready in any way, shape, or form, for now it just prints the data to console, but i'm overall really happy with the results! Next devlog I'm making firmware and finally moving on to the monster that's named 3d modeling, I did try it today, only for onshape to not be really good and fusion just refuses to run. Do note that this is just the beta firmware, I'll hold on the fancy features for now, and will only be adding them when I get to build it.
 ![image.png](https://cdn.hackclub.com/019fe8b7-533e-7e33-8c24-7473858e1e41/image.png)
 
 **Total time spent:3h 30m**
 
-# 2026-07-09: Devlog 10 Driver madness
+# July 09: Devlog 10 Driver madness
 
 Today, I woke up feeling like doing the drivers, so that's what I at least tried to do...
 
@@ -283,7 +283,7 @@ By the way, yes, I did not work the past few days
 
 **Total time spent:5h**
 
-# 2026-07-05: Devlog 9 - Both PCB done
+# July 05: Devlog 9 - Both PCB done
 
 I have finished both PCBs :D It was pretty smooth actually, I haven't got it sanity checked yet, but, I'm actually surprised due to how smooth that went. The biggest issue was getting the 3d models just right, and also figuring out where to place stuff. Also, making sure both connectors were matched was sorta an issue. Also, I have begun writing the README, but, I'm struggling a bit with it. 
 ![image.png](https://cdn.hackclub.com/019fe8b5-638d-70fa-a4b9-ade0f96a07f8/image.png)
@@ -291,7 +291,7 @@ I have finished both PCBs :D It was pretty smooth actually, I haven't got it san
 
 **Total time spent:1h**
 
-# 2026-07-03: Devlog 8- The mainboard PCB is done, hooray :D 
+# July 03: Devlog 8- The mainboard PCB is done, hooray :D 
 
 Making the PCB was actually rather smooth. Now, I DID encounter some issues. But it was mainly with the 3D model of the DAC I had downloaded, but the fix for that was just making one myself with the Adafruit PCB Design files. I'm very very happy and proud of this work :D 
 ![image.png](https://cdn.hackclub.com/019fe8b5-0222-766d-be54-13c8203d8427/image.png)
@@ -299,7 +299,7 @@ Making the PCB was actually rather smooth. Now, I DID encounter some issues. But
 
 **Total time spent:3h**
 
-# 2026-07-02: Devlog 7 - 41 ERC Errors
+# July 02: Devlog 7 - 41 ERC Errors
 
 Basically, I went to check the ERC and I had 46 errors. Half of them were simply a lack of an not connected symbol 
 ![image.png](https://cdn.hackclub.com/019fe8b4-7a17-713a-adcb-ac8795b556cf/image.png)
@@ -311,7 +311,7 @@ Kicad sent my library to outer space and I spent 20 minutes trying to find where
 
 **Total time spent:4h**
 
-# 2026-07-01: Devlog 6 - Splitting PCBs
+# July 01: Devlog 6 - Splitting PCBs
 
 Basically, i HAD begun designing PCBs, keyword HAD. Now it took 90 minutes of my life for me to realize something: For context, you need to understand that the dashboard part of the project will be sitting at angle, for the sake of ergonomics. So, I quickly ran into an issue, which was that mounting an pico at an angle would make it hard for the USB cable later. I also ran into the issue that the PCB would be too big to fit in JLCPCB promotion of 5$ to get a PCB. So, after thinking, I decided the best course of action would be to split the design into two PCBs, now, I haven't started the PCB part, but I did start the schematic part. I also took this oppurtunity to make the schematics pretty. 
 ![image.png](https://cdn.hackclub.com/019fe8b3-7ec4-7363-b657-7d8c02ad4ce3/image.png)
@@ -319,7 +319,7 @@ Basically, i HAD begun designing PCBs, keyword HAD. Now it took 90 minutes of my
 
 **Total time spent:2h**
 
-# 2026-06-30: Devlog 5 - I botched the CAD
+# June30: Devlog 5 - I botched the CAD
 
 Remember that cad from yesterday? Well, basically, I made an useless box. Why? Because I dont have a PCB to put there, and the measurements were wrong, so I'll have to redo the design. I'll explain it better the day I do the 3d design Second, I have re-added the rotary encoder switch, I also had to change the switches's pins because I realized routing the switches wire to the other side would be awkward. (You see, it would be 4 switches on one side and 4 on the other, so it's best to use that side's pins for the switch) Another improvement to the schematic today was the addition of test points and status LEDs for debugging. 
 ![image.png](https://cdn.hackclub.com/019fe8b3-3933-7453-a892-55dc75b168a5/image.png)
@@ -327,7 +327,7 @@ Remember that cad from yesterday? Well, basically, I made an useless box. Why? B
 
 **Total time spent:1h5min**
 
-# 2026-06-29: Devlog 4 - I came back to the pico
+# June29: Devlog 4 - I came back to the pico
  
 Today, I realized going to the esp32 was a pretty dumb decision, because it doenst come with USB support natively (which I need for the macro keys), so I went back a few commits to the pico 
 ![image.png](https://cdn.hackclub.com/019fe8b2-bbfd-7f1c-bf5a-19bd3d9923a8/image.png)
@@ -336,7 +336,7 @@ I then meddled a bit with onshape, but got tired quickly and decided to spend th
 
 **Total time spent:1h23min**
 
-# 2026-06-28: Devlog 3 - Going to an ESP32
+# June28: Devlog 3 - Going to an ESP32
 Today consisted in wiring up the stuff in the schematic, after a sanity check, it was realized that an ESP32 would be better cut for this
 ![image](https://cdn.hackclub.com/019f104d-7950-7cdc-bd1d-b93f4265e56e/image.png)
 So I replaced the pico with the cheaper ESP32.
@@ -345,7 +345,7 @@ Also, I added a rotary encoder to go with the 8 macro keys, and a buzzer, for no
 
 **Total time spent:1h15min**
 
-# 2026-06-27: Devlog 2, footprints and stuff 
+# June27: Devlog 2, footprints and stuff 
 
 Devlog 2
 I have figured out how to do the footprint :d:
@@ -359,7 +359,7 @@ I begun to wire the DAC and the meters, which is quite simple. You may notice th
 
 **Total time spent:2h5min**
 
-# 2026-06-26: The beggining 
+# June26: The beggining 
 
 Today, i have started the development of AnaDash, this project aims to be a cool dashboard for your PC, featuring 4 analogue resource monitors, a few macro keys, and an OLED screen for showing whatever your heart desires! Today, I begun the project, then realized that i can't find the DAC breakout board online, so what i did? I decided to make my own footprint 
 ![image.png](https://cdn.hackclub.com/019fe8b1-0f49-7215-ba33-e66bf2cbfcde/image.png)
