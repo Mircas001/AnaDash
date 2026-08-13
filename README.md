@@ -13,7 +13,12 @@ This is an dashboard that aims to have all the important functions and informati
 ## Case
 AnaDash consists of 3 parts
 - An case, that supports it and holds it, also houses the raspberry
-- An front plate, that 
+- An front plate, that you insert heatset inserts into and then screw the parts in
+- An front case, which hides all the PCBs and wiring and gives a nice flush finish
+
+Each part would be ~330mm long, so for this reason, every part is split in half, and you can weld it together later, this way, it fits on begginers printers. Do use an plastic welder or cheap soldering tip for this, **I am not responsible for damage to the tip**.
+
+The design files are available [here](https://cad.onshape.com/documents/ea3d35dc7a38396ad80a61d7/w/835ea08936cef2d122cf7568/e/898c0cf3f941f1983e6f2559)
 
 ## PCB
 This project was designed in KiCad, it uses a pair of 2 layer PCBs, the PCBs were split because the switches had to be at an angle while the pico had to sit straight.
