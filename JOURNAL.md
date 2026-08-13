@@ -10,12 +10,14 @@ Today, I finally ended it, I exported file, did a check up, and I believe I can 
 ![image](https://cdn.hackclub.com/019ffd7f-229e-7837-bab7-6c49c608cae0/image.png)
 I thank everyone who guided me thru this, from the person who made the hack club instagram to the amazing people at the slack, I truly wouldn't have made this without you all. Also, I wish the opposite of an shoutout to customs people, y'all ruined my progress. Anyways, I hope the next one is an building devlog and not an fixing one.I thank everyone who guided me thru this, from the person who made the hack club instagram to the amazing people at the slack, I truly wouldn't have made this without you all. Also, I wish the opposite of an shoutout to customs people, y'all ruined my progress. Anyways, I hope the next one is an building devlog and not an fixing one.
 
+**Total time spent:20min**
+
 # August 12: Devlog 34 -  It's over, i'm free
 
 
 I have finally finished this project, today I finished the diary, and I also polished up the project, making the screws self centered and whatnot, I accidentally screwed up the front plate in this process, so yeah, there's that, but it works!!!!!!!! That's what matters.
 I'm so happy, i'm going to sleep, and upload tomorrow, in case any idea pops up in my head.
-No image today cause hack club servers down :(
+ ![image](https://cdn.hackclub.com/019ffd6d-562c-7ec3-8baf-dd65a6378486/image.png)
 
 **Total time spent:1h20min**
 
