@@ -11,12 +11,14 @@ This is an dashboard that aims to have all the important functions and informati
 - An rotary encoder for changing your volume! Including a switch for mute!
 
 ## Case
-AnaDash consists of 3 parts
-- An case, that supports it and holds it, also houses the raspberry
-- An front plate, that you insert heatset inserts into and then screw the parts in
-- An front case, which hides all the PCBs and wiring and gives a nice flush finish
+AnaDash consists of embedded-rust-rp2040 parts, each one split into 
+- An case, that supports it and holds it, also houses the raspberry, this part is split in two as it's too big to fit in most printers! 
+- An front plate, that you insert heatset inserts into and then screw the parts in, also split in two!
+- An front case, which hides all the PCBs and wiring and gives a nice flush finish, split in two as well!
+- An encoder, not split in two, with regular rectangular extruding parts for better grip while also keeping printability!
+![image](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/printables.png)
 
-Each part would be ~330mm long, so for this reason, every part is split in half, and you can weld it together later, this way, it fits on begginers printers. Do use an plastic welder or cheap soldering tip for this, **I am not responsible for damage to the tip**.
+Since the parts are split in two, you'll have to weld them, use an cheap soldering iron or preferentially an plastic welder for this job, since it can damage soldering tips. I can also help you make an version where both parts are one in case you want to print them as one part.
 
 The design files are available [here](https://cad.onshape.com/documents/ea3d35dc7a38396ad80a61d7/w/835ea08936cef2d122cf7568/e/898c0cf3f941f1983e6f2559)
 
