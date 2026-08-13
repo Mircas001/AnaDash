@@ -8,9 +8,10 @@ created_at : "June26"
 # August 13 - Devlog 35 - Final devlog 
 Today, I finally ended it, I exported file, did a check up, and I believe I can finally upload it, damm, it just feels... so weird? Like, what, so disappointing, like, I can't understand, it's an different feeling... i haven't watched TV, in like 14 days working on this, yes I know this is not really dev but come on, let me talk
 ![image](https://cdn.hackclub.com/019ffd7f-229e-7837-bab7-6c49c608cae0/image.png)
-I thank everyone who guided me thru this, from the person who made the hack club instagram to the amazing people at the slack, I truly wouldn't have made this without you all. Also, I wish the opposite of an shoutout to customs people, y'all ruined my progress. Anyways, I hope the next one is an building devlog and not an fixing one.I thank everyone who guided me thru this, from the person who made the hack club instagram to the amazing people at the slack, I truly wouldn't have made this without you all. Also, I wish the opposite of an shoutout to customs people, y'all ruined my progress. Anyways, I hope the next one is an building devlog and not an fixing one.
+I thank everyone who guided me thru this, from the person who made the hack club instagram to the amazing people at the slack, I truly wouldn't have made this without you all. Also, I wish the opposite of an shoutout to customs people, y'all ruined my progress. Anyways, I hope the next one is an building devlog and not an fixing one.
+Oh, after writing this, I was reminded that my README cad portion sucked, so that was fixed
 
-**Total time spent:20min**
+**Total time spent:40min**
 
 # August 12: Devlog 34 -  It's over, i'm free
 
