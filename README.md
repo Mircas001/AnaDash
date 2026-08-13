@@ -16,6 +16,7 @@ AnaDash consists of embedded-rust-rp2040 parts, each one split into
 - An front plate, that you insert heatset inserts into and then screw the parts in, also split in two!
 - An front case, which hides all the PCBs and wiring and gives a nice flush finish, split in two as well!
 - An encoder, not split in two, with regular rectangular extruding parts for better grip while also keeping printability!
+
 ![image](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/printables.png)
 
 Since the parts are split in two, you'll have to weld them, use an cheap soldering iron or preferentially an plastic welder for this job, since it can damage soldering tips. I can also help you make an version where both parts are one in case you want to print them as one part.
