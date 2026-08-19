@@ -12,7 +12,8 @@ This is an dashboard that aims to have all the important functions and informati
 
 ## Case
 AnaDash consists of embedded-rust-rp2040 parts, each one split into 
-- An case, that supports it and holds it, also houses the raspberry, this part is split in two as it's too big to fit in most printers! 
+- An case, that supports it and holds it, also houses the raspberry, this part is split in two as it's too big to fit in most printers!
+ 
 - An front plate, that you insert heatset inserts into and then screw the parts in, also split in two!
 - An front case, which hides all the PCBs and wiring and gives a nice flush finish, split in two as well!
 - An encoder, not split in two, with regular rectangular extruding parts for better grip while also keeping printability!
@@ -34,11 +35,13 @@ You must make the following connections: (Pinouts are in left to right, when vie
 
 ### Main PCB
 This Board features the Pico, the DAC, the outputs for the ammeters, the display connector and the connections to the input board.            
+![Schematic](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/mainBoardSchematic.png)
 [You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FmainBoard)                                            
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/mainBoardModel.png)
 
 ### Input PCB
 This PCB has all the keys and the encoder and serves to take inputs, it is angled together with the display and gauges at 45 degrees for ergonomics!                 
+![Schematic](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/inputBoardSchematic.png)
 [You can check out the PCB and schematic on KiCanvas!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMircas001%2FAnaDash%2Ftree%2Fmain%2Fhardware%2FinputBoard)                                         
 ![3D Model](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/inputBoardModel.png)
 

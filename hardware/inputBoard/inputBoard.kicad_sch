@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "4afd32ea-561a-4b0e-b8bd-b5545b1531de")
-	(paper "A4")
+	(paper "A5")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
@@ -1169,8 +1169,8 @@
 		)
 	)
 	(rectangle
-		(start 40.64 149.86)
-		(end 77.47 187.96)
+		(start 102.87 48.26)
+		(end 139.7 86.36)
 		(stroke
 			(width 0)
 			(type default)
@@ -1181,8 +1181,8 @@
 		(uuid "dd9729c5-818e-46ff-ae4c-23beaf2744b9")
 	)
 	(rectangle
-		(start 26.67 58.42)
-		(end 71.12 139.7)
+		(start 22.86 36.83)
+		(end 67.31 118.11)
 		(stroke
 			(width 0)
 			(type default)
@@ -1194,7 +1194,7 @@
 	)
 	(text "Switches\n"
 		(exclude_from_sim no)
-		(at 48.895 141.732 0)
+		(at 45.085 120.142 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1204,7 +1204,7 @@
 	)
 	(text "Rotary Encoder\n"
 		(exclude_from_sim no)
-		(at 59.055 189.992 0)
+		(at 121.285 88.392 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1213,66 +1213,66 @@
 		(uuid "5cd430b8-39e5-4203-ab60-bc07ac92c842")
 	)
 	(junction
-		(at 64.77 77.47)
+		(at 60.96 55.88)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "152c93e2-414b-4e80-8ade-5621592ad9f6")
 	)
 	(junction
-		(at 64.77 97.79)
+		(at 60.96 76.2)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "26a720f7-0476-45d0-9dad-97d19e3ec4f5")
 	)
 	(junction
-		(at 64.77 128.27)
+		(at 60.96 106.68)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "4a47362a-3914-4668-b5d0-97cddb4154e1")
 	)
 	(junction
-		(at 64.77 118.11)
+		(at 60.96 96.52)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "74adeddf-653a-49bd-8169-e65ea3b58e3c")
 	)
 	(junction
-		(at 64.77 102.87)
+		(at 60.96 81.28)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "82a4f154-0084-47f2-9926-66f9e8a9a354")
 	)
 	(junction
-		(at 64.77 87.63)
+		(at 60.96 66.04)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "b7c99222-cbcc-40a7-8b8b-da3a6c8e6ac5")
 	)
 	(junction
-		(at 69.85 170.18)
+		(at 132.08 68.58)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "c5d6a5d3-ce5e-4ae7-9417-f31bb8bdb912")
 	)
 	(junction
-		(at 52.07 170.18)
+		(at 114.3 68.58)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "f0136d29-327f-47aa-8dbf-0db41a614261")
 	)
 	(junction
-		(at 64.77 107.95)
+		(at 60.96 86.36)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "fedc77b5-f947-4e21-88da-d4d9f2c7ad54")
 	)
 	(no_connect
-		(at 59.69 168.91)
+		(at 121.92 67.31)
 		(uuid "1df1c641-89ac-495d-9270-2e02226ece89")
 	)
 	(wire
 		(pts
-			(xy 69.85 170.18) (xy 71.12 170.18)
+			(xy 132.08 68.58) (xy 133.35 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1283,7 +1283,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 128.27) (xy 50.8 128.27)
+			(xy 50.8 106.68) (xy 46.99 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1293,7 +1293,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 67.31) (xy 49.53 67.31)
+			(xy 50.8 45.72) (xy 45.72 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1303,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 128.27) (xy 64.77 138.43)
+			(xy 60.96 106.68) (xy 60.96 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1314,7 +1314,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 77.47) (xy 50.8 90.17)
+			(xy 46.99 55.88) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1324,7 +1324,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 115.57) (xy 49.53 138.43)
+			(xy 45.72 93.98) (xy 45.72 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1334,7 +1334,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 110.49) (xy 52.07 118.11)
+			(xy 48.26 88.9) (xy 48.26 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1344,7 +1344,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 172.72) (xy 54.61 172.72)
+			(xy 129.54 71.12) (xy 116.84 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1355,7 +1355,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 97.79) (xy 64.77 102.87)
+			(xy 60.96 76.2) (xy 60.96 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1366,7 +1366,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 107.95) (xy 64.77 118.11)
+			(xy 60.96 86.36) (xy 60.96 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1377,7 +1377,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 163.83) (xy 67.31 172.72)
+			(xy 129.54 62.23) (xy 129.54 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +1388,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 107.95) (xy 54.61 107.95)
+			(xy 39.37 86.36) (xy 50.8 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1398,7 +1398,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 167.64) (xy 57.15 167.64)
+			(xy 114.3 66.04) (xy 119.38 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1408,7 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 102.87) (xy 68.58 102.87)
+			(xy 60.96 81.28) (xy 64.77 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1419,7 +1419,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 170.18) (xy 52.07 170.18)
+			(xy 109.22 68.58) (xy 114.3 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1430,7 +1430,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 54.61 95.25)
+			(xy 50.8 76.2) (xy 50.8 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1440,7 +1440,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 87.63) (xy 52.07 87.63)
+			(xy 50.8 66.04) (xy 48.26 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1450,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 115.57) (xy 49.53 115.57)
+			(xy 39.37 93.98) (xy 45.72 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1460,7 +1460,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 113.03) (xy 43.18 113.03)
+			(xy 46.99 91.44) (xy 39.37 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1470,7 +1470,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 167.64) (xy 57.15 173.99)
+			(xy 119.38 66.04) (xy 119.38 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1480,7 +1480,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 118.11) (xy 64.77 128.27)
+			(xy 60.96 96.52) (xy 60.96 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1491,7 +1491,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 138.43) (xy 54.61 138.43)
+			(xy 45.72 116.84) (xy 50.8 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1501,7 +1501,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 124.46) (xy 43.18 118.11)
+			(xy 39.37 102.87) (xy 39.37 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1511,7 +1511,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 77.47) (xy 64.77 87.63)
+			(xy 60.96 55.88) (xy 60.96 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1522,7 +1522,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 171.45) (xy 59.69 173.99)
+			(xy 121.92 69.85) (xy 121.92 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1533,7 +1533,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 92.71) (xy 43.18 92.71)
+			(xy 48.26 71.12) (xy 39.37 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1543,7 +1543,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 87.63) (xy 52.07 92.71)
+			(xy 48.26 66.04) (xy 48.26 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1553,7 +1553,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 87.63) (xy 43.18 87.63)
+			(xy 45.72 66.04) (xy 39.37 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1563,7 +1563,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 87.63) (xy 64.77 97.79)
+			(xy 60.96 66.04) (xy 60.96 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1574,7 +1574,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 67.31) (xy 64.77 77.47)
+			(xy 60.96 45.72) (xy 60.96 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1585,7 +1585,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 97.79) (xy 43.18 97.79)
+			(xy 46.99 76.2) (xy 39.37 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1596,7 +1596,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 158.75) (xy 67.31 158.75)
+			(xy 133.35 57.15) (xy 129.54 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1607,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 170.18) (xy 52.07 173.99)
+			(xy 114.3 68.58) (xy 114.3 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1618,7 +1618,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 170.18) (xy 71.12 158.75)
+			(xy 133.35 68.58) (xy 133.35 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1629,7 +1629,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 158.75) (xy 43.18 171.45)
+			(xy 105.41 57.15) (xy 105.41 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1640,7 +1640,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 67.31) (xy 49.53 87.63)
+			(xy 45.72 45.72) (xy 45.72 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1650,7 +1650,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 110.49) (xy 52.07 110.49)
+			(xy 39.37 88.9) (xy 48.26 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1660,7 +1660,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 167.64) (xy 52.07 163.83)
+			(xy 114.3 66.04) (xy 114.3 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1670,7 +1670,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 158.75) (xy 43.18 158.75)
+			(xy 114.3 57.15) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1681,7 +1681,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 161.29) (xy 46.99 161.29)
+			(xy 114.3 59.69) (xy 109.22 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1692,7 +1692,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 171.45) (xy 59.69 171.45)
+			(xy 105.41 69.85) (xy 121.92 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1703,7 +1703,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 172.72) (xy 54.61 173.99)
+			(xy 116.84 71.12) (xy 116.84 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1714,7 +1714,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 95.25) (xy 54.61 95.25)
+			(xy 39.37 73.66) (xy 50.8 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1724,7 +1724,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 77.47) (xy 54.61 77.47)
+			(xy 46.99 55.88) (xy 50.8 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1734,7 +1734,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 170.18) (xy 69.85 170.18)
+			(xy 114.3 68.58) (xy 132.08 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1745,7 +1745,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 90.17) (xy 50.8 90.17)
+			(xy 39.37 68.58) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1755,7 +1755,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 102.87) (xy 64.77 107.95)
+			(xy 60.96 81.28) (xy 60.96 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1766,7 +1766,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 128.27) (xy 50.8 113.03)
+			(xy 46.99 106.68) (xy 46.99 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1776,7 +1776,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 118.11) (xy 54.61 118.11)
+			(xy 48.26 96.52) (xy 50.8 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1786,7 +1786,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 161.29) (xy 46.99 170.18)
+			(xy 109.22 59.69) (xy 109.22 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1797,7 +1797,7 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
-		(at 59.69 161.29 0)
+		(at 121.92 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1808,7 +1808,7 @@
 		(fields_autoplaced yes)
 		(uuid "069bd499-f1b7-47e3-a48c-c076a8087fcf")
 		(property "Reference" "SW109"
-			(at 59.69 151.13 0)
+			(at 121.92 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1818,7 +1818,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder_Switch_MP"
-			(at 59.69 153.67 0)
+			(at 121.92 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1828,7 +1828,7 @@
 			)
 		)
 		(property "Footprint" "footprints:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 55.88 157.226 0)
+			(at 118.11 55.626 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1839,7 +1839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 173.99 0)
+			(at 121.92 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1850,7 +1850,7 @@
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
-			(at 59.69 176.53 0)
+			(at 121.92 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1861,7 +1861,7 @@
 			)
 		)
 		(property "LCSC Part #" "C370986"
-			(at 59.69 161.29 0)
+			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1872,7 +1872,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 59.69 161.29 0)
+			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1883,7 +1883,7 @@
 			)
 		)
 		(property "AliExpress Price" ""
-			(at 59.69 161.29 0)
+			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1894,7 +1894,7 @@
 			)
 		)
 		(property "LCSC Price" " $2.2797 "
-			(at 59.69 161.29 0)
+			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1939,7 +1939,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 107.95 0)
+		(at 55.88 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1950,7 +1950,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b0df901-061b-4218-b52e-25667a65e5b9")
 		(property "Reference" "SW105"
-			(at 59.69 100.33 0)
+			(at 55.88 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1960,7 +1960,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 102.87 0)
+			(at 55.88 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1970,7 +1970,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 102.87 0)
+			(at 55.88 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1981,7 +1981,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 102.87 0)
+			(at 55.88 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1992,7 +1992,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 107.95 0)
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2003,7 +2003,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 107.95 0)
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2014,7 +2014,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 107.95 0)
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2025,7 +2025,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 107.95 0)
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2036,7 +2036,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 107.95 0)
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2069,7 +2069,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 128.27 0)
+		(at 55.88 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2080,7 +2080,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f258bf1-05c1-49a3-8a1b-b3b0c1f4180a")
 		(property "Reference" "SW107"
-			(at 59.69 120.65 0)
+			(at 55.88 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2090,7 +2090,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 123.19 0)
+			(at 55.88 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2100,7 +2100,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 123.19 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2111,7 +2111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 123.19 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2122,7 +2122,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 128.27 0)
+			(at 55.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2133,7 +2133,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 128.27 0)
+			(at 55.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2144,7 +2144,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 128.27 0)
+			(at 55.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2155,7 +2155,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 128.27 0)
+			(at 55.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2166,7 +2166,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 128.27 0)
+			(at 55.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2199,7 +2199,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 138.43 0)
+		(at 55.88 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2210,7 +2210,7 @@
 		(fields_autoplaced yes)
 		(uuid "231de2c9-654a-4edd-a193-c1413bd89a44")
 		(property "Reference" "SW108"
-			(at 59.69 130.81 0)
+			(at 55.88 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2220,7 +2220,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 133.35 0)
+			(at 55.88 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2230,7 +2230,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 133.35 0)
+			(at 55.88 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2241,7 +2241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 133.35 0)
+			(at 55.88 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2252,7 +2252,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 138.43 0)
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2263,7 +2263,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 138.43 0)
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2274,7 +2274,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 138.43 0)
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2285,7 +2285,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 138.43 0)
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2296,7 +2296,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 138.43 0)
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2329,7 +2329,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 54.61 179.07 90)
+		(at 116.84 77.47 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2340,7 +2340,7 @@
 		(dnp no)
 		(uuid "24f0fc2e-95d6-4982-8db3-97d82c788cc5")
 		(property "Reference" "J103"
-			(at 55.88 182.88 90)
+			(at 118.11 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2350,7 +2350,7 @@
 			)
 		)
 		(property "Value" "EncoderConnector"
-			(at 55.88 185.42 90)
+			(at 118.11 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2360,7 +2360,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 54.61 179.07 0)
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2371,7 +2371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 179.07 0)
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2382,7 +2382,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 54.61 179.07 0)
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2393,7 +2393,7 @@
 			)
 		)
 		(property "LCSC Part #" "C144395"
-			(at 54.61 179.07 90)
+			(at 116.84 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2404,7 +2404,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 54.61 179.07 90)
+			(at 116.84 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2415,7 +2415,7 @@
 			)
 		)
 		(property "AliExpress Price" ""
-			(at 54.61 179.07 90)
+			(at 116.84 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2426,7 +2426,7 @@
 			)
 		)
 		(property "LCSC Price" " $0.0574 "
-			(at 54.61 179.07 90)
+			(at 116.84 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2465,7 +2465,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 102.87 0)
+		(at 64.77 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2476,7 +2476,7 @@
 		(fields_autoplaced yes)
 		(uuid "41bb160d-7d2a-4ae0-83f9-dd020e0f6621")
 		(property "Reference" "#PWR0103"
-			(at 68.58 109.22 0)
+			(at 64.77 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2487,7 +2487,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 107.95 0)
+			(at 64.77 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2497,7 +2497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 102.87 0)
+			(at 64.77 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2508,7 +2508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 102.87 0)
+			(at 64.77 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2519,7 +2519,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 102.87 0)
+			(at 64.77 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2549,7 +2549,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 97.79 0)
+		(at 55.88 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2560,7 +2560,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e96ec5a-32dd-492b-b10b-d750f415f902")
 		(property "Reference" "SW104"
-			(at 59.69 90.17 0)
+			(at 55.88 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2570,7 +2570,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 92.71 0)
+			(at 55.88 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2580,7 +2580,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 92.71 0)
+			(at 55.88 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2591,7 +2591,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 92.71 0)
+			(at 55.88 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2602,7 +2602,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 97.79 0)
+			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2613,7 +2613,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 97.79 0)
+			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2624,7 +2624,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 97.79 0)
+			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2635,7 +2635,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 97.79 0)
+			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2646,7 +2646,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 97.79 0)
+			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2679,7 +2679,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 87.63 0)
+		(at 55.88 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2690,7 +2690,7 @@
 		(fields_autoplaced yes)
 		(uuid "52ccd59e-4435-4e1b-bbb7-dd40657fb69a")
 		(property "Reference" "SW103"
-			(at 59.69 80.01 0)
+			(at 55.88 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2700,7 +2700,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 82.55 0)
+			(at 55.88 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2710,7 +2710,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 82.55 0)
+			(at 55.88 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2721,7 +2721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 82.55 0)
+			(at 55.88 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2732,7 +2732,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 87.63 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2743,7 +2743,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 87.63 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2754,7 +2754,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 87.63 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2765,7 +2765,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 87.63 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2776,7 +2776,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 87.63 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2809,7 +2809,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 118.11 0)
+		(at 55.88 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2820,7 +2820,7 @@
 		(fields_autoplaced yes)
 		(uuid "61968322-069b-423f-90aa-b90b9647f3c2")
 		(property "Reference" "SW106"
-			(at 59.69 110.49 0)
+			(at 55.88 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2830,7 +2830,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 113.03 0)
+			(at 55.88 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2840,7 +2840,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 113.03 0)
+			(at 55.88 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2851,7 +2851,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 113.03 0)
+			(at 55.88 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2862,7 +2862,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 118.11 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2873,7 +2873,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 118.11 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2884,7 +2884,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 118.11 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2895,7 +2895,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 118.11 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2906,7 +2906,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 118.11 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2939,7 +2939,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 38.1 92.71 180)
+		(at 34.29 71.12 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2949,7 +2949,7 @@
 		(dnp no)
 		(uuid "69b5d6b3-3780-46e8-bd56-8bca16fb8dd4")
 		(property "Reference" "J101"
-			(at 38.1 104.14 0)
+			(at 34.29 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2959,7 +2959,7 @@
 			)
 		)
 		(property "Value" "LeftKeyConnector"
-			(at 38.1 101.6 0)
+			(at 34.29 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2969,7 +2969,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +2980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2991,7 +2991,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3002,7 +3002,7 @@
 			)
 		)
 		(property "LCSC Part #" "C157991"
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3013,7 +3013,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3024,7 +3024,7 @@
 			)
 		)
 		(property "AliExpress Price" ""
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3035,7 +3035,7 @@
 			)
 		)
 		(property "LCSC Price" " $0.0878 "
-			(at 38.1 92.71 0)
+			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3077,7 +3077,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 170.18 0)
+		(at 132.08 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3088,7 +3088,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e136c50-4cdf-4f0a-aaa7-0c12fb0dae65")
 		(property "Reference" "#PWR0104"
-			(at 69.85 176.53 0)
+			(at 132.08 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3099,7 +3099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 175.26 0)
+			(at 132.08 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3109,7 +3109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 170.18 0)
+			(at 132.08 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3120,7 +3120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 170.18 0)
+			(at 132.08 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3131,7 +3131,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 170.18 0)
+			(at 132.08 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3155,7 +3155,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 97.79 0)
+		(at 46.99 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3166,7 +3166,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a62a404-9edb-4734-91b5-3998ed90b0f9")
 		(property "Reference" "#PWR0102"
-			(at 50.8 104.14 0)
+			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3177,7 +3177,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 102.87 0)
+			(at 46.99 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3187,7 +3187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 97.79 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3198,7 +3198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 97.79 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3209,7 +3209,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 97.79 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3233,7 +3233,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 67.31 0)
+		(at 55.88 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3244,7 +3244,7 @@
 		(fields_autoplaced yes)
 		(uuid "90520134-2bca-4f23-b7e1-29898e29f211")
 		(property "Reference" "SW101"
-			(at 59.69 59.69 0)
+			(at 55.88 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3254,7 +3254,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 62.23 0)
+			(at 55.88 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3264,7 +3264,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 62.23 0)
+			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3275,7 +3275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 62.23 0)
+			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3286,7 +3286,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 67.31 0)
+			(at 55.88 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3297,7 +3297,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 67.31 0)
+			(at 55.88 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,7 +3308,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 67.31 0)
+			(at 55.88 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3319,7 +3319,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 67.31 0)
+			(at 55.88 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3330,7 +3330,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 67.31 0)
+			(at 55.88 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3363,7 +3363,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 124.46 0)
+		(at 39.37 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3374,7 +3374,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae18dccd-5bf1-4889-9603-33b0c7934004")
 		(property "Reference" "#PWR0101"
-			(at 43.18 130.81 0)
+			(at 39.37 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,7 +3385,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 129.54 0)
+			(at 39.37 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3395,7 +3395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 124.46 0)
+			(at 39.37 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3406,7 +3406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 124.46 0)
+			(at 39.37 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3417,7 +3417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 124.46 0)
+			(at 39.37 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3441,7 +3441,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 59.69 77.47 0)
+		(at 55.88 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3452,7 +3452,7 @@
 		(fields_autoplaced yes)
 		(uuid "d508690c-db6c-4f02-82be-69228ef05c9b")
 		(property "Reference" "SW102"
-			(at 59.69 69.85 0)
+			(at 55.88 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3462,7 +3462,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 59.69 72.39 0)
+			(at 55.88 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3472,7 +3472,7 @@
 			)
 		)
 		(property "Footprint" "footprints:SW_Cherry_MX_1.00u_PCB"
-			(at 59.69 72.39 0)
+			(at 55.88 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3483,7 +3483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 72.39 0)
+			(at 55.88 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3494,7 +3494,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 59.69 77.47 0)
+			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3505,7 +3505,7 @@
 			)
 		)
 		(property "LCSC Part #" "N/A"
-			(at 59.69 77.47 0)
+			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3516,7 +3516,7 @@
 			)
 		)
 		(property "AliExpress Link" "https://pt.aliexpress.com/item/1005010462521108.html"
-			(at 59.69 77.47 0)
+			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3527,7 +3527,7 @@
 			)
 		)
 		(property "AliExpress Price" "$0,0265"
-			(at 59.69 77.47 0)
+			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3538,7 +3538,7 @@
 			)
 		)
 		(property "LCSC Price" "N/A"
-			(at 59.69 77.47 0)
+			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3571,7 +3571,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 38.1 113.03 180)
+		(at 34.29 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3581,7 +3581,7 @@
 		(dnp no)
 		(uuid "ea8d3e9f-516b-46db-8044-2964619ebeef")
 		(property "Reference" "J102"
-			(at 38.1 124.46 0)
+			(at 34.29 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3591,7 +3591,7 @@
 			)
 		)
 		(property "Value" "RightKeyConnector"
-			(at 38.1 121.92 0)
+			(at 34.29 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3601,7 +3601,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3612,7 +3612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3623,7 +3623,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3634,7 +3634,7 @@
 			)
 		)
 		(property "LCSC Part #" "C157991"
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3645,7 +3645,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3656,7 +3656,7 @@
 			)
 		)
 		(property "AliExpress Price" ""
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3667,7 +3667,7 @@
 			)
 		)
 		(property "LCSC Price" " $0.0878 "
-			(at 38.1 113.03 0)
+			(at 34.29 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
