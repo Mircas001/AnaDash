@@ -5,6 +5,16 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+# August 18 - Devlog 36 - Not final devlog, atleast I hope that's the end of design
+Well, I needed schematic picture on the README.md, so, I have readded that, so simple, really, I didn't bother tracking it with Lapse, so yeah, that's done. I'm proud that it only needed this, expected 500 complaints, impostor syndrome ig! Also, the inputBoard schematic is now A5, since it's so smol. Oh yeah, I accidentally placed a PNG link to an SVG file, congrations to me ig. Anddd I used an svg not covering everything, tried again, still won't print, what? 
+![image](https://cdn.hackclub.com/01a01bc6-53b7-73b9-91b1-1f0f3223ab56/mainboardschematic.svg)
+Oh, just print to pdf and export it using pdf to png tool. Anyways, I did that and the image turned out to have these horrible colors:
+![image](https://user-cdn.hackclub-assets.com/01a01bc6-4ff9-7d03-9b80-5a4778f86a9e/mainboardschematic.png)
+But it turns out it was because I was printing in color, so to fix this, I printed in black and white, and then inverted colors
+![image](https://cdn.hackclub.com/01a01bc6-4d4a-7d27-a88f-1d33a85ddd91/mainboardschematic.png)
+
+**Total Time Spent:1h**
+
 # August 13 - Devlog 35 - Final devlog 
 Today, I finally ended it, I exported file, did a check up, and I believe I can finally upload it, damm, it just feels... so weird? Like, what, so disappointing, like, I can't understand, it's an different feeling... i haven't watched TV, in like 14 days working on this, yes I know this is not really dev but come on, let me talk
 ![image](https://cdn.hackclub.com/019ffd7f-229e-7837-bab7-6c49c608cae0/image.png)
