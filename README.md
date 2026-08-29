@@ -1,8 +1,8 @@
-# AnaDash - An dashboard for your PC
+# AnaDash - Resource monitor + macropad 
 **THIS IS WIP! NOT TESTED YET!**
 ![Thumbnail](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/thumbnail.png)
 
-This is an dashboard that aims to have all the important functions and information within your arm's reach!
+This is an resource monitor for your PC, also featuring an macropad, inspired by Alex Bailey's system monitor and Hack Club's hackpad program! It allows you to take a quick glance and see your system information, while keeping the screen free for anything you do!
 
 ## Features:
 - 4x Analog Gauges showing CPU usage, CPU temperature, RAM usage and Swap usage, driven by an MCP4728 chip!
