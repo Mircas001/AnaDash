@@ -134,10 +134,32 @@ Also, there are also some key combinations baked in the firmware:
 You will need to print the labels for the meters in A4 sticker paper, if you are an manufacturer, you should get it custom printed!                           
 The labels are available here: [Labels](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/production/meterLabels.svg)
 
-There is an LED header added to the PCB, however, I did not implement the code for it, it is there for future use!
+There is an LED header added to the PCB, however, I did not implement the code for it, it is there for future use! You are also free to repurpose it!
 
 ## BOM
-You can get the master BOM here, which contains all parts necessary to the project: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
+| Designator                                  | Qty |
+|---------------------------------------------|-----|
+| 1.77inch ST7735 Display                     | 1   |
+| 85C1 Ammeter 5mA                            | 4   |
+| FIXME SCREWS                                | 1   |
+| M3 X 4.2 X L4.0 Brass Heatset Insert 100pcs | 1   |
+| M2 X 3.2 X L4.0 Brass Heatset Insert 100pcs | 1   |
+| Countersunk M3x8mm screw                    | 12  |
+| Countersunk M3x20mm screw                   | 4   |
+| Panhead M2x8mm screw                        | 4   |
+| Panhead M3x8mm screw                        | 4   |
+| Cherry MX Compatible Switches 10pcs         | 8   |
+| XDA2 1U Keycaps 10pcs                       | 1   |
+| EC11 Rotary Encoder 20mm with Switch        | 1   |
+| JST-XH Kit                                  | 1   |
+| Raspberry Pi Pico                           | 1   |
+| MCP4728-E                                   | 1   |
+| 10uF Tantalum Capacitor 1206                | 1   |
+| 100nF Ceramic Capacitor 1206                | 1   |
+| 10KΩ 4x0603 Concave Resistor Network        | 1   |
+| 665Ω Resistor                               | 4   |
+
+Details, such as aliexpress links, LCSC part numbers and cost (as of June 2026) are available here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
 
 You can also get the JLCPCB BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/jlcpcb_bom.csv)
 
