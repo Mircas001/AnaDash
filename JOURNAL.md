@@ -5,6 +5,11 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+# August 29 - Devlog 37 Project Returned again, for a dumb mistake
+Well, I saw this but I shosuld've known better, but the README is very vague, and it was an embarassingly simple fix, like a 5 minute fix, anyways, I'm resubmitting it, RIPPPP. Also added BOM, so yeah, there we go!
+![image.png](https://cdn.hackclub.com/01a04ddf-36f8-7a24-8a17-f99df8383137/image.png)
+**Total Time Spent:7mins**
+
 # August 18 - Devlog 36 - Not final devlog, atleast I hope that's the end of design
 Well, I needed schematic picture on the README.md, so, I have readded that, so simple, really, I didn't bother tracking it with Lapse, so yeah, that's done. I'm proud that it only needed this, expected 500 complaints, impostor syndrome ig! Also, the inputBoard schematic is now A5, since it's so smol. Oh yeah, I accidentally placed a PNG link to an SVG file, congrations to me ig. Anddd I used an svg not covering everything, tried again, still won't print, what? 
 ![image](https://cdn.hackclub.com/01a01bc6-53b7-73b9-91b1-1f0f3223ab56/mainboardschematic.svg)
