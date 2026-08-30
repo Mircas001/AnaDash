@@ -5,6 +5,30 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+
+## August 30 Devlog 37.1 Time to fix this
+
+![image](https://cdn.hackclub.com/01a05337-e74e-791a-8a0b-64f21cf10307/image.png)
+
+Woops, I didnt fix it enough.
+![image](https://cdn.hackclub.com/01a05337-eab1-7a83-8d46-63978acde6ac/image.png)
+
+Okay, this one I'm asking forge help, however
+Next:
+![image](https://cdn.hackclub.com/01a05337-edfe-70f6-92b1-17de2db3350c/image.png)
+
+Fair enough, I fixed it nowwwww, I hope it werks
+
+![image](https://cdn.hackclub.com/01a05337-f125-743f-9768-63ee0476ef5b/image.png)
+
+Uhhh, the BOM.CSV needed help, that's for sure. Also forgot the STEP files, so that's fixed
+
+![image](https://cdn.hackclub.com/01a05337-f431-7a3a-825c-50fe55c206e8/image.png)
+
+Sent it for sanity check, awaiting reply, see y'all tomorrow
+
+**Total Time Spent:20mins**
+
 # August 29 - Devlog 37 Project Returned again, for a dumb mistake
 Well, I saw this but I shosuld've known better, but the README is very vague, and it was an embarassingly simple fix, like a 5 minute fix, anyways, I'm resubmitting it, RIPPPP. Also added BOM, so yeah, there we go!
 ![image.png](https://cdn.hackclub.com/01a04ddf-36f8-7a24-8a17-f99df8383137/image.png)

@@ -3,6 +3,7 @@
 ![Thumbnail](https://raw.githubusercontent.com/Mircas001/AnaDash/refs/heads/main/assets/thumbnail.png)
 
 This is an resource monitor for your PC, also featuring an macropad, inspired by Alex Bailey's system monitor and Hack Club's hackpad program! It allows you to take a quick glance and see your system information, while keeping the screen free for anything you do!
+This was made after watching ![Alex Bailey's very silly cpu monitor video!](https://github.com/Mircas001/AnaDash), I've been wanting to make it for 2 years now! I also added an hackpad after seeing the very helpful ![Hack Club Hackpad program's guides](https://hackpad.hackclub.com)
 
 ## Features:
 - 4x Analog Gauges showing CPU usage, CPU temperature, RAM usage and Swap usage, driven by an MCP4728 chip!
@@ -124,6 +125,9 @@ systemctl status anadash-driver@<serialport>.service
 journalctl -u anadash-driver@<serialport>.service
 ```
 
+## Usage
+After installation of drivers, assembly, and flashing, the project SHOULD be plug and play. The macropad uses F13-F21, so to setup the macros, just use plug those keys in whatever software you want!  
+
 ## Debugging the device
 There is an UART port at the main board for debugging!
 Also, there are also some key combinations baked in the firmware:
@@ -138,7 +142,7 @@ There is an LED header added to the PCB, however, I did not implement the code f
 
 ## BOM
 | Designator                                  | Qty |
-|---------------------------------------------|-----|
+| ------------------------------------------- | --- |
 | 1.77inch ST7735 Display                     | 1   |
 | 85C1 Ammeter 5mA                            | 4   |
 | FIXME SCREWS                                | 1   |
@@ -160,6 +164,8 @@ There is an LED header added to the PCB, however, I did not implement the code f
 | 665Ω Resistor                               | 4   |
 
 Details, such as aliexpress links, LCSC part numbers and cost (as of June 2026) are available here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
+
+It is strongly recommended
 
 You can also get the JLCPCB BOM for the main board (in case you want to get PCBA) here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/mainBoard/jlcpcb_bom.csv)
 
