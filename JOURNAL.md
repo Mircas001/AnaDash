@@ -5,6 +5,8 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+## September 2 Devlog 37.2 - Time to fix this
+
 
 ## August 30 Devlog 37.1 Time to fix this
 
