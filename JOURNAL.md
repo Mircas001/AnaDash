@@ -43,6 +43,8 @@ Anyways, I did end up like, aligning it, but weirdly enough, it did not change i
 
 It's also important to note that since the third alignment, it's been a whole new day, but I'll continue working on the next devlog!
 
+**Total time spent:2h**
+
 ## August 30 Devlog 37.1 Time to fix this
 
 ![image](https://cdn.hackclub.com/01a05337-e74e-791a-8a0b-64f21cf10307/image.png)
