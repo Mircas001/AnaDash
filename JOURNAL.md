@@ -21,17 +21,27 @@ Before:
 ![image](https://cdn.hackclub.com/01a06e18-9ff1-7beb-b57a-2d11a90c3c31/image.png)
 After:
 ![image](https://hackclub.slack.com/archives/C016DEDUL87/p1788553504621319?thread_ts=1788553500.151439&cid=C016DEDUL87)
-So, by now I have spent around 30 mins of my life, and the project has 95h and 53 mins, this is important because I'm logging it use onshape editor hackatime extension! So time to workk in the 3d design, wish i believe will be the hardest, it's also 17h31m, andd I screwed up importing, yay. I'll just delete the faulty portions since it won't impact us!
+So, by now I have spent around 30 mins of my life, and the project has 95h and 53 mins, this is important because I'm logging it use onshape editor hackatime extension! So time to workk in the 3d design.
+
+Update on 3D design: I screwed up importing the mainboard step, the silkscreen did not turn out good, but that's okay because I just deleted the bad part! It's silkscreen, won't affect me
+
 Anyways, putting fastened mates was somewhat ok, untill I realized the right case was gone, but ok, it'll work. More stuff has disappeared, uhhh, I trust the thing. I then realized that it was missing an hole for the JST  spent over like, 15 mins trying to tweak the measurements until it worked!
 During this, I got distracted by assembly.md, so I finished it
 Andd my left front plate is gone, just like the right case:
 ![image](https://cdn.hackclub.com/01a06e55-2b1e-70a9-8d48-83b8628effea/image.png)
-![image](https://cdn.hackclub.com/01a06e55-d269-764b-8ae1-da2d177dc314/image.png)
-Ohb wait, it's still here??
-Anyways, i had to extrude it, I forgot, and itt works
-![image](https://cdn.hackclub.com/01a06e57-99a6-75d2-8fe3-84cb311d68fe/image.png)
-Anddd the assembly wont update?????????????? whattttttttttttttttttttttttttt
 
+Anyways, i had to extrude the left front plate again, and it came back I forgot, and itt works
+![image](https://cdn.hackclub.com/01a06e57-99a6-75d2-8fe3-84cb311d68fe/image.png)
+
+Anddd the assembly wont update?????????????? whattttttttttttttttttttttttttt
+I figured it out, I returned the assembly to an previous working started
+And something I suspected happened, the context from the previous models would not work, oh well, I'm deleting itt
+Well, I did not delete it but I can once again select it for some reason, nothing makes sense what
+And I realized my screws were'nt placed right, yayyyy. Basically, they were UNALIGNED, A LOTTT.
+Anyways, I did end up like, aligning it, but weirdly enough, it did not change it, and to mye eyes it then ended up unaligned again, so after 3 rounds of aligning I hope I fixed it. Which I did, due to the line tool showing it's aligned:
+![image](https://cdn.hackclub.com/01a072f1-acd3-726f-817c-24c17f779cb2/image.png)
+
+It's also important to note that since the third alignment, it's been a whole new day, but I'll continue working on the next devlog!
 
 ## August 30 Devlog 37.1 Time to fix this
 
@@ -51,6 +61,14 @@ Fair enough, I fixed it nowwwww, I hope it werks
 Uhhh, the BOM.CSV needed help, that's for sure. Also forgot the STEP files, so that's fixed
 
 ![image](https://cdn.hackclub.com/01a05337-f431-7a3a-825c-50fe55c206e8/image.png)
+
+Sent it for sanity check, awaiting reply, see y'all tomorrow
+
+**Total Time Spent:20mins**
+
+# August 29 - Devlog 37 Project Returned again, for a dumb mistake
+Well, I saw this but I shosuld've known better, but the README is very vague, and it was an embarassingly simple fix, like a 5 minute fix, anyways, I'm resubmitting it, RIPPPP. Also added BOM, so yeah, there we go!
+![image.png](https://cdn.hackclub.com/01a04ddf-36f8-7a24-8a17-f99df8383137/image.png)
 
 Sent it for sanity check, awaiting reply, see y'all tomorrow
 
@@ -406,14 +424,6 @@ Remember that cad from yesterday? Well, basically, I made an useless box. Why? B
 # June29: Devlog 4 - I came back to the pico
  
 Today, I realized going to the esp32 was a pretty dumb decision, because it doenst come with USB support natively (which I need for the macro keys), so I went back a few commits to the pico 
-![image.png](https://cdn.hackclub.com/019fe8b2-bbfd-7f1c-bf5a-19bd3d9923a8/image.png)
-I then meddled a bit with onshape, but got tired quickly and decided to spend the day drawing up the UI, only to realize lopaka doesnt do it well So I went back to onshape and made this case, which will hold 4 analog resource monitors, an OLED screen and 8 macro keys 
-![image.png](https://cdn.hackclub.com/019fe8b2-e231-76df-957a-7aeb95ca42ef/image.png)
-
-**Total time spent:1h23min**
-
-# June28: Devlog 3 - Going to an ESP32
-Today consisted in wiring up the stuff in the schematic, after a sanity check, it was realized that an ESP32 would be better cut for this
 ![image](https://cdn.hackclub.com/019f104d-7950-7cdc-bd1d-b93f4265e56e/image.png)
 So I replaced the pico with the cheaper ESP32.
 Also, I added a rotary encoder to go with the 8 macro keys, and a buzzer, for notification sounds
