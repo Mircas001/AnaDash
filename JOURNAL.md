@@ -5,6 +5,40 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+## September 5: Today's the day I finally get this done!
+
+So, you read the title, and here's the battleplan:
+1. Add inputboard.step to onshape, and add all the design constrains and what not
+2. Export all the files
+3. Make the ASSEMBLY.md 
+4. Go to sleep and submit tomorrow!
+
+So I begun by putting the inputboard assembly, all went well, except for me struggling to figure out fastened mate, but I got it to work. But I realized that 
+1. There was a family of abandoned boards living inside the thing 
+![image](https://cdn.hackclub.com/01a07309-13f3-70d3-80bc-2956714ab209/image.png)
+
+That was fixed and now it's all okay:
+![image](https://cdn.hackclub.com/01a0730a-1a98-71e0-b18c-075b5237f68f/image.png)
+
+2. The encoder lost the hole
+![image](https://cdn.hackclub.com/01a07309-16d1-79db-aaab-ca214d87551c/image.png)
+
+This was caused by an extrude feature being deleted, I fixed it now:
+![image](https://cdn.hackclub.com/01a0730c-9fa7-7c18-ad6d-ee810204a168/image.png)
+
+Next, was going back and finally finishing the concentric circles, and at last: the finished 3d printed parts:
+![image](https://cdn.hackclub.com/01a0730f-c42f-714d-8fb4-972bb48b7be5/image.png)
+
+Then, I went back to the assembly and updated the references, and the screws:
+![image](https://cdn.hackclub.com/01a07313-8ffb-7992-a7bd-0d82ff2f42fe/image.png)
+
+And to finish it all off, I updated the BOM, and finally, we got this beautiful result:
+![image](https://cdn.hackclub.com/01a0731a-1d84-78eb-8455-47a4b0e457ed/image.png)https://cdn.hackclub.com/01a0731a-1d84-78eb-8455-47a4b0e457ed/image.png
+
+I still need to figure out how to render, but I'm happy for now, so, next step of this project will be writing an assembly.md, which will be the next devlog! Yes I know I wrote that I would do it in this one, but I might as well split!
+
+**Total time spent: 1h15min**
+
 ## September 4: Devlog 37.2 - Time to fix this
 
 I did get the feedback on the 31st, but I've been procastinating since, but alas, here is the peer review feedback:

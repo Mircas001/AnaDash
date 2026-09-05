@@ -24,8 +24,8 @@ You should have
 - 4x 85C1 ammeters at 5mA
 ![image](https://github.com/Mircas001/AnaDash/blob/main/assets/meters.png)
 - 4x Panhead M2x8mm screws
-- 4x Panhead M3x8mm screws
-- 12x Countersunk M3x8mm screws 
+- 8x Panhead M3x8mm screws
+- 8x Countersunk M3x8mm screws 
 - 4x Countersunk M3x20mm screws
 - 4x M2 X 3.2 X L4.0 Brass Heatset Insert 
 - 20x M3 X 4.2 X L4.0 Brass Heatset Insert 
