@@ -13190,12 +13190,12 @@
 		)
 	)
 	(gr_text "AnaDash"
-		(at 129.6 101.8 45)
+		(at 128.9 102.2 45)
 		(layer "F.SilkS")
 		(uuid "765294c7-f062-4872-92bf-db97f7a6fc77")
 		(effects
 			(font
-				(size 5 5)
+				(size 4 4)
 				(bold yes)
 			)
 			(justify left bottom)

@@ -165,6 +165,9 @@ There is an LED header added to the PCB, however, I did not implement the code f
 | 100nF Ceramic Capacitor 1206                | 1   |
 | 10KΩ 4x0603 Concave Resistor Network        | 1   |
 | 665Ω Resistor                               | 4   |
+| Main Board at JLCPCB  (PCBA)                | 1   | 
+| Input board at JLCPCB                       | 1   |
+| 3D Printed parts                            | 7   | 
 
 Details, such as aliexpress links, LCSC part numbers and cost (as of June 2026) are available here: [BOM](https://github.com/Mircas001/AnaDash/blob/main/production/BOM.csv)
 

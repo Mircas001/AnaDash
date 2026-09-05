@@ -5,6 +5,12 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
+## September 5 - Final adjustments
+
+Here's the final adjustments I need to make today:
+1. Make the assembly.md 
+2. i forgor...
+
 ## September 5 - Today's the day I finally get this done!
 
 So, you read the title, and here's the battleplan:
