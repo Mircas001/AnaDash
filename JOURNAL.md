@@ -5,7 +5,8 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
-## September 4 Devlog 37.2 - Time to fix this
+## September 4: Devlog 37.2 - Time to fix this
+
 I did get the feedback on the 31st, but I've been procastinating since, but alas, here is the peer review feedback:
 ![image](https://cdn.hackclub.com/01a062f5-0bc1-7a2c-a337-56e86a1d0500/image.png)
 Anyways, so, I begin by deleting every asset related to the PCB, why? Because that way, I'm forced to update it, and I dont leave an outdated mess!
@@ -45,7 +46,7 @@ It's also important to note that since the third alignment, it's been a whole ne
 
 **Total time spent:2h**
 
-## August 30 Devlog 37.1 Time to fix this
+## August 30: Devlog 37.1 Time to fix this
 
 ![image](https://cdn.hackclub.com/01a05337-e74e-791a-8a0b-64f21cf10307/image.png)
 
