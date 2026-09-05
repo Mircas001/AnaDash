@@ -5,7 +5,32 @@ description: "An cool looking dashboard for your PC! Features 4 analog meters fo
 created_at : "June26"
 ---
 
-## September 2 Devlog 37.2 - Time to fix this
+## September 4 Devlog 37.2 - Time to fix this
+I did get the feedback on the 31st, but I've been procastinating since, but alas, here is the peer review feedback:
+![image](https://cdn.hackclub.com/01a062f5-0bc1-7a2c-a337-56e86a1d0500/image.png)
+Anyways, so, I begin by deleting every asset related to the PCB, why? Because that way, I'm forced to update it, and I dont leave an outdated mess!
+So, I deleted everything in onshape, I hope i can fix it later...
+Here's the before:
+![image](https://cdn.hackclub.com/01a06e07-1f3e-7e2d-81a4-d4a1f84747e6/image.png)
+Well, tbh, they kinda face outward and are good enough, so, I'm not rotating them, but I'll do the rest!
+Anyways, corners rounded, and I also added more silkscreen! here's the result!
+![image](https://cdn.hackclub.com/01a06e0a-f749-7e48-9d03-3359333f7e69/image.png)
+after, it was a matter of exporting step files and fabrication!
+Anyways, the inputboard was a bit easier, except for the fact I had forgotten an trace in the past submission, and i forgot to take a screenshot, I then also added some silkscreen to it!
+Before:
+![image](https://cdn.hackclub.com/01a06e18-9ff1-7beb-b57a-2d11a90c3c31/image.png)
+After:
+![image](https://hackclub.slack.com/archives/C016DEDUL87/p1788553504621319?thread_ts=1788553500.151439&cid=C016DEDUL87)
+So, by now I have spent around 30 mins of my life, and the project has 95h and 53 mins, this is important because I'm logging it use onshape editor hackatime extension! So time to workk in the 3d design, wish i believe will be the hardest, it's also 17h31m, andd I screwed up importing, yay. I'll just delete the faulty portions since it won't impact us!
+Anyways, putting fastened mates was somewhat ok, untill I realized the right case was gone, but ok, it'll work. More stuff has disappeared, uhhh, I trust the thing. I then realized that it was missing an hole for the JST  spent over like, 15 mins trying to tweak the measurements until it worked!
+During this, I got distracted by assembly.md, so I finished it
+Andd my left front plate is gone, just like the right case:
+![image](https://cdn.hackclub.com/01a06e55-2b1e-70a9-8d48-83b8628effea/image.png)
+![image](https://cdn.hackclub.com/01a06e55-d269-764b-8ae1-da2d177dc314/image.png)
+Ohb wait, it's still here??
+Anyways, i had to extrude it, I forgot, and itt works
+![image](https://cdn.hackclub.com/01a06e57-99a6-75d2-8fe3-84cb311d68fe/image.png)
+Anddd the assembly wont update?????????????? whattttttttttttttttttttttttttt
 
 
 ## August 30 Devlog 37.1 Time to fix this

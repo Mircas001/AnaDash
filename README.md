@@ -124,6 +124,8 @@ Since it's an systemd service, you can get the logs like this, replacing ```<ser
 systemctl status anadash-driver@<serialport>.service
 journalctl -u anadash-driver@<serialport>.service
 ```
+## Assembly  
+See assembly.md
 
 ## Usage
 After installation of drivers, assembly, and flashing, the project SHOULD be plug and play. The macropad uses F13-F21, so to setup the macros, just use plug those keys in whatever software you want!  
