@@ -9,7 +9,22 @@ created_at : "June26"
 
 Here's the final adjustments I need to make today:
 1. Make the assembly.md 
-2. i forgor...
+2. Add the final files
+3. Add final stuff to BOM.csv
+
+For some reason, I begun with no 2, but that was good because I realized I used the wrong unit in the STL printable files, and then I remembered 3mf exists! So I used that instead, because, well, it's better, and all slicers support it! I also added the final of the assembled .STEP, individual step files for the printables, etc etc. 
+![image](https://cdn.hackclub.com/01a0737a-9c92-78a5-b39e-03cb74d78ba8/image.png)
+
+And it will run us around 20$ to get all parts printed! 
+I then started work on the BOM, which took a while, and I realized our silkscreen was obscuring one of the pin labels, so I fixed that! I did not update the step models tho, as the labels are not even carried thru.
+Anyways, updating the bom took 30 mins because JLCPCB ordering is a bit hard, but I got it working, yay
+I then realized the project was expensive and did the max optimization I could on the BOM, anyways this whole ordeal took 40 minutes in the end, yayy :D
+![image](https://cdn.hackclub.com/01a073ab-5565-7b86-86d8-8188fa78011a/image.png)
+
+This leaves me with the final boss: Assembly.md, sonnnn
+
+**Total time spent: 40mins + hackatime time**
+
 
 ## September 5 - Today's the day I finally get this done!
 
